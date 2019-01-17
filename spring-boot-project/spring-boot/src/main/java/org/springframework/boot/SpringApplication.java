@@ -255,9 +255,18 @@ public class SpringApplication {
 	public SpringApplication(ResourceLoader resourceLoader, Class<?>... primarySources) {
 		this.resourceLoader = resourceLoader;
 		Assert.notNull(primarySources, "PrimarySources must not be null");
+		// 定义主类，这个主类就是我们springroot的那个含有main函数的入口类
 		this.primarySources = new LinkedHashSet<>(Arrays.asList(primarySources));
+		// 判断应用的类型，spring可以根据类文件类型，
+		// 来判断你这个是servlet应用还是reactive还是普通应用
+		// reactive了解一下
 		this.webApplicationType = WebApplicationType.deduceFromClasspath();
 		// 实例化
+		// springboot这里会把从配置中读取的信息放进initializers这个容器中去
+		// springboot 定义了两个容器:
+		// private List<ApplicationContextInitializer<?>> initializers;
+		// springboot的监听器，springboot里面运用了大量的监听事件调用
+		// private List<ApplicationListener<?>> listeners;
 		setInitializers((Collection) getSpringFactoriesInstances(
 				ApplicationContextInitializer.class));
 		// 设置spring的事件监听器

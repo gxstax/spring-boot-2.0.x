@@ -62,7 +62,7 @@ public enum WebApplicationType {
 
 	// spring判断该项目是属于什么项目
 	// spring中有一个reactive的东西，可以不依赖servlet运行
-	// 加入有一天oracle不支持servlet了，spring依旧可以运行
+	// 假如有一天oracle不支持servlet了，spring依旧可以运行
 	static WebApplicationType deduceFromClasspath() {
 		if (ClassUtils.isPresent(WEBFLUX_INDICATOR_CLASS, null)
 				&& !ClassUtils.isPresent(WEBMVC_INDICATOR_CLASS, null)
