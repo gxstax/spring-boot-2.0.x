@@ -301,9 +301,11 @@ public class SpringApplication {
 	public ConfigurableApplicationContext run(String... args) {
 		StopWatch stopWatch = new StopWatch();
 		stopWatch.start();
+		// 熟悉的spring 容器
 		ConfigurableApplicationContext context = null;
 		Collection<SpringBootExceptionReporter> exceptionReporters = new ArrayList<>();
 		configureHeadlessProperty();
+		// 获取监听器
 		SpringApplicationRunListeners listeners = getRunListeners(args);
 		listeners.starting();
 		try {
