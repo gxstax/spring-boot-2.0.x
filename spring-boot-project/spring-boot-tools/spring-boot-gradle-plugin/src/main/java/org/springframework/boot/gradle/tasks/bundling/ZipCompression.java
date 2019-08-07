@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -19,7 +19,7 @@ package org.springframework.boot.gradle.tasks.bundling;
 import java.util.zip.ZipEntry;
 
 /**
- * An enumeration of supported compression options for an entry in a ZIP archive.
+ * An enumeration of supported compression options for ant entry in a ZIP archive.
  *
  * @author Andy Wilkinson
  * @since 2.0.0

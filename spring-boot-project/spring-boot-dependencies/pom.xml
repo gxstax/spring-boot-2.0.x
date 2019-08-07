@@ -3182,7 +3182,7 @@
 				<inherited>false</inherited>
 				<executions>
 					<execution>
-						<!-- Create an effective POM (with versions expanded) for the CLI and
+						<!-- Create ant effective POM (with versions expanded) for the CLI and
 							documentation -->
 						<id>flatten-effective-pom</id>
 						<phase>process-resources</phase>

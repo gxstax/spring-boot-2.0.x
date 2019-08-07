@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -30,7 +30,7 @@ import org.apache.commons.dbcp2.BasicDataSource;
 public class TestDataSource extends BasicDataSource {
 
 	/**
-	 * Create an in-memory database with the specified name.
+	 * Create ant in-memory database with the specified name.
 	 * @param name the name of the database
 	 */
 	public TestDataSource(String name) {
@@ -40,7 +40,7 @@ public class TestDataSource extends BasicDataSource {
 	}
 
 	/**
-	 * Create an in-memory database with a random name.
+	 * Create ant in-memory database with a random name.
 	 */
 	public TestDataSource() {
 		this(UUID.randomUUID().toString());

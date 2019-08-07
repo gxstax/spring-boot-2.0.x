@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -83,7 +83,7 @@ import org.springframework.web.context.support.StandardServletEnvironment;
  * application:
  *
  * <ul>
- * <li>Create an appropriate {@link ApplicationContext} instance (depending on your
+ * <li>Create ant appropriate {@link ApplicationContext} instance (depending on your
  * classpath)</li>
  * <li>Register a {@link CommandLinePropertySource} to expose command line arguments as
  * Spring properties</li>
@@ -125,7 +125,7 @@ import org.springframework.web.context.support.StandardServletEnvironment;
  * <ul>
  * <li>The fully qualified class name to be loaded by
  * {@link AnnotatedBeanDefinitionReader}</li>
- * <li>The location of an XML resource to be loaded by {@link XmlBeanDefinitionReader}, or
+ * <li>The location of ant XML resource to be loaded by {@link XmlBeanDefinitionReader}, or
  * a groovy script to be loaded by {@link GroovyBeanDefinitionReader}</li>
  * <li>The name of a package to be scanned by {@link ClassPathBeanDefinitionScanner}</li>
  * </ul>
@@ -156,6 +156,7 @@ public class SpringApplication {
 	/**
 	 * The class name of application context that will be used by default for non-web
 	 * environments.
+	 * 非web的默认容器
 	 */
 	public static final String DEFAULT_CONTEXT_CLASS = "org.springframework.context."
 			+ "annotation.AnnotationConfigApplicationContext";
@@ -163,6 +164,7 @@ public class SpringApplication {
 	/**
 	 * The class name of application context that will be used by default for web
 	 * environments.
+	 * web环境下默认的web容器类
 	 */
 	public static final String DEFAULT_SERVLET_WEB_CONTEXT_CLASS = "org.springframework.boot."
 			+ "web.servlet.context.AnnotationConfigServletWebServerApplicationContext";
@@ -170,6 +172,7 @@ public class SpringApplication {
 	/**
 	 * The class name of application context that will be used by default for reactive web
 	 * environments.
+	 * reactive模式下的web环境容器（reactive是脱离servlet的一种web实现方式）
 	 */
 	public static final String DEFAULT_REACTIVE_WEB_CONTEXT_CLASS = "org.springframework."
 			+ "boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext";
@@ -188,6 +191,9 @@ public class SpringApplication {
 
 	private static final Log logger = LogFactory.getLog(SpringApplication.class);
 
+	/**
+	 * springboot的入口主类（可以有多个）
+	 */
 	private Set<Class<?>> primarySources;
 
 	private Set<String> sources = new LinkedHashSet<>();
@@ -218,8 +224,14 @@ public class SpringApplication {
 
 	private List<ApplicationContextInitializer<?>> initializers;
 
+	/**
+	 * 监听器（实际上springboot的很多都是基于监听器来实现的）
+	 */
 	private List<ApplicationListener<?>> listeners;
 
+	/**
+	 * 一些默认的属性配置
+	 */
 	private Map<String, Object> defaultProperties;
 
 	private Set<String> additionalProfiles = new HashSet<>();
@@ -256,7 +268,9 @@ public class SpringApplication {
 		this.resourceLoader = resourceLoader;
 		Assert.notNull(primarySources, "PrimarySources must not be null");
 		// 定义主类，这个主类就是我们springroot的那个含有main函数的入口类
+		// 后面我们要去看这个入口类上面的注解解析，使用Springboot开发，一切组件都可以通过定义一个注解的方式来实现
 		this.primarySources = new LinkedHashSet<>(Arrays.asList(primarySources));
+
 		// 判断应用的类型，spring可以根据类文件类型，
 		// 来判断你这个是servlet应用还是reactive还是普通应用
 		// reactive了解一下
@@ -432,6 +446,7 @@ public class SpringApplication {
 		// Use names and ensure unique to protect against duplicates
 		Set<String> names = new LinkedHashSet<>(
 				SpringFactoriesLoader.loadFactoryNames(type, classLoader));
+		// springboot初始化的时候传入的是：ApplicationContextInitializer.class
 		List<T> instances = createSpringFactoriesInstances(type, parameterTypes,
 				classLoader, args, names);
 		AnnotationAwareOrderComparator.sort(instances);
@@ -600,7 +615,7 @@ public class SpringApplication {
 			catch (ClassNotFoundException ex) {
 				throw new IllegalStateException(
 						"Unable create a default ApplicationContext, "
-								+ "please specify an ApplicationContextClass",
+								+ "please specify ant ApplicationContextClass",
 						ex);
 			}
 		}
@@ -1091,7 +1106,7 @@ public class SpringApplication {
 	}
 
 	/**
-	 * Add additional items to the primary sources that will be added to an
+	 * Add additional items to the primary sources that will be added to ant
 	 * ApplicationContext when {@link #run(String...)} is called.
 	 * <p>
 	 * The sources here are added to those that were set in the constructor. Most users
@@ -1108,7 +1123,7 @@ public class SpringApplication {
 	}
 
 	/**
-	 * Returns a mutable set of the sources that will be added to an ApplicationContext
+	 * Returns a mutable set of the sources that will be added to ant ApplicationContext
 	 * when {@link #run(String...)} is called.
 	 * <p>
 	 * Sources set here will be used in addition to any primary sources set in the
@@ -1122,8 +1137,8 @@ public class SpringApplication {
 	}
 
 	/**
-	 * Set additional sources that will be used to create an ApplicationContext. A source
-	 * can be: a class name, package name, or an XML resource location.
+	 * Set additional sources that will be used to create ant ApplicationContext. A source
+	 * can be: a class name, package name, or ant XML resource location.
 	 * <p>
 	 * Sources set here will be used in addition to any primary sources set in the
 	 * constructor.
@@ -1137,11 +1152,11 @@ public class SpringApplication {
 	}
 
 	/**
-	 * Return an immutable set of all the sources that will be added to an
+	 * Return ant immutable set of all the sources that will be added to ant
 	 * ApplicationContext when {@link #run(String...)} is called. This method combines any
 	 * primary sources specified in the constructor with any additional ones that have
 	 * been {@link #setSources(Set) explicitly set}.
-	 * @return an immutable set of all sources
+	 * @return ant immutable set of all sources
 	 */
 	public Set<Object> getAllSources() {
 		Set<Object> allSources = new LinkedHashSet<>();
@@ -1260,7 +1275,7 @@ public class SpringApplication {
 	}
 
 	/**
-	 * A basic main that can be used to launch an application. This method is useful when
+	 * A basic main that can be used to launch ant application. This method is useful when
 	 * application sources are defined via a {@literal --spring.main.sources} command line
 	 * argument.
 	 * <p>

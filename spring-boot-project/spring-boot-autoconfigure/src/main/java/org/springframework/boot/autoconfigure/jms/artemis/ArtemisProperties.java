@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -107,14 +107,14 @@ public class ArtemisProperties {
 	}
 
 	/**
-	 * Configuration for an embedded Artemis server.
+	 * Configuration for ant embedded Artemis server.
 	 */
 	public static class Embedded {
 
 		private static final AtomicInteger serverIdCounter = new AtomicInteger();
 
 		/**
-		 * Server ID. By default, an auto-incremented counter is used.
+		 * Server ID. By default, ant auto-incremented counter is used.
 		 */
 		private int serverId = serverIdCounter.getAndIncrement();
 
@@ -212,7 +212,7 @@ public class ArtemisProperties {
 		}
 
 		/**
-		 * Creates the minimal transport parameters for an embedded transport
+		 * Creates the minimal transport parameters for ant embedded transport
 		 * configuration.
 		 * @return the transport parameters
 		 * @see TransportConstants#SERVER_ID_PROP_NAME

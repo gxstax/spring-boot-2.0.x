@@ -78,7 +78,7 @@ public class Book extends TableImpl<Record> {
 	}
 
 	/**
-	 * Create an aliased <code>PUBLIC.BOOK</code> table reference
+	 * Create ant aliased <code>PUBLIC.BOOK</code> table reference
 	 */
 	public Book(String alias) {
 		this(alias, BOOK);

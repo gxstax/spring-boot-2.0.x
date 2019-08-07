@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -35,7 +35,7 @@ public interface AutoConfigurationMetadata {
 	boolean wasProcessed(String className);
 
 	/**
-	 * Get an {@link Integer} value from the meta-data.
+	 * Get ant {@link Integer} value from the meta-data.
 	 * @param className the source class
 	 * @param key the meta-data key
 	 * @return the meta-data value or {@code null}
@@ -43,7 +43,7 @@ public interface AutoConfigurationMetadata {
 	Integer getInteger(String className, String key);
 
 	/**
-	 * Get an {@link Integer} value from the meta-data.
+	 * Get ant {@link Integer} value from the meta-data.
 	 * @param className the source class
 	 * @param key the meta-data key
 	 * @param defaultValue the default value
@@ -69,7 +69,7 @@ public interface AutoConfigurationMetadata {
 	Set<String> getSet(String className, String key, Set<String> defaultValue);
 
 	/**
-	 * Get an {@link String} value from the meta-data.
+	 * Get ant {@link String} value from the meta-data.
 	 * @param className the source class
 	 * @param key the meta-data key
 	 * @return the meta-data value or {@code null}
@@ -77,7 +77,7 @@ public interface AutoConfigurationMetadata {
 	String get(String className, String key);
 
 	/**
-	 * Get an {@link String} value from the meta-data.
+	 * Get ant {@link String} value from the meta-data.
 	 * @param className the source class
 	 * @param key the meta-data key
 	 * @param defaultValue the default value

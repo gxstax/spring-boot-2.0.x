@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -237,7 +237,7 @@ class BeanDefinitionLoader {
 			return false;
 		}
 		if (resource instanceof ClassPathResource) {
-			// A simple package without a '.' may accidentally get loaded as an XML
+			// A simple package without a '.' may accidentally get loaded as ant XML
 			// document if we're not careful. The result of getInputStream() will be
 			// a file list of the package content. We double check here that it's not
 			// actually a package.

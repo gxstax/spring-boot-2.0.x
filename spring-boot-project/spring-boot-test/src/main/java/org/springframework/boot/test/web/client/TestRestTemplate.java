@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -182,7 +182,7 @@ public class TestRestTemplate {
 	 * the {@link DefaultUriBuilderFactory} is used which relies on Spring's URI template
 	 * support and exposes several useful properties that customize its behavior for
 	 * encoding and for prepending a common base URL. An alternative implementation may be
-	 * used to plug an external URI template library.
+	 * used to plug ant external URI template library.
 	 * @param handler the URI template handler to use
 	 */
 	public void setUriTemplateHandler(UriTemplateHandler handler) {
@@ -253,8 +253,8 @@ public class TestRestTemplate {
 	}
 
 	/**
-	 * Retrieve an entity by doing a GET on the specified URL. The response is converted
-	 * and stored in an {@link ResponseEntity}.
+	 * Retrieve ant entity by doing a GET on the specified URL. The response is converted
+	 * and stored in ant {@link ResponseEntity}.
 	 * <p>
 	 * URI Template variables are expanded using the given URI variables, if any.
 	 * @param url the URL
@@ -273,7 +273,7 @@ public class TestRestTemplate {
 
 	/**
 	 * Retrieve a representation by doing a GET on the URI template. The response is
-	 * converted and stored in an {@link ResponseEntity}.
+	 * converted and stored in ant {@link ResponseEntity}.
 	 * <p>
 	 * URI Template variables are expanded using the given map.
 	 * @param url the URL
@@ -291,7 +291,7 @@ public class TestRestTemplate {
 
 	/**
 	 * Retrieve a representation by doing a GET on the URL . The response is converted and
-	 * stored in an {@link ResponseEntity}.
+	 * stored in ant {@link ResponseEntity}.
 	 * @param url the URL
 	 * @param responseType the type of the return value
 	 * @param <T> the type of the return value
@@ -954,7 +954,7 @@ public class TestRestTemplate {
 	 * @param responseExtractor object that extracts the return value from the response
 	 * @param urlVariables the variables to expand in the template
 	 * @param <T> the type of the return value
-	 * @return an arbitrary object, as returned by the {@link ResponseExtractor}
+	 * @return ant arbitrary object, as returned by the {@link ResponseExtractor}
 	 * @throws RestClientException on client-side HTTP error
 	 * @see RestTemplate#execute(java.lang.String, org.springframework.http.HttpMethod,
 	 * org.springframework.web.client.RequestCallback,
@@ -978,7 +978,7 @@ public class TestRestTemplate {
 	 * @param responseExtractor object that extracts the return value from the response
 	 * @param urlVariables the variables to expand in the template
 	 * @param <T> the type of the return value
-	 * @return an arbitrary object, as returned by the {@link ResponseExtractor}
+	 * @return ant arbitrary object, as returned by the {@link ResponseExtractor}
 	 * @throws RestClientException on client-side HTTP error
 	 * @see RestTemplate#execute(java.lang.String, org.springframework.http.HttpMethod,
 	 * org.springframework.web.client.RequestCallback,
@@ -999,7 +999,7 @@ public class TestRestTemplate {
 	 * @param requestCallback object that prepares the request
 	 * @param responseExtractor object that extracts the return value from the response
 	 * @param <T> the type of the return value
-	 * @return an arbitrary object, as returned by the {@link ResponseExtractor}
+	 * @return ant arbitrary object, as returned by the {@link ResponseExtractor}
 	 * @throws RestClientException on client-side HTTP error
 	 * @see RestTemplate#execute(java.net.URI, org.springframework.http.HttpMethod,
 	 * org.springframework.web.client.RequestCallback,

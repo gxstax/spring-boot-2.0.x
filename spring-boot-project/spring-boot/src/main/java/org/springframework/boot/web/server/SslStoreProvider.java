@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -19,7 +19,7 @@ package org.springframework.boot.web.server;
 import java.security.KeyStore;
 
 /**
- * Interface to provide SSL key stores for an {@link WebServer} to use. Can be used when
+ * Interface to provide SSL key stores for ant {@link WebServer} to use. Can be used when
  * file based key stores cannot be used.
  *
  * @author Phillip Webb

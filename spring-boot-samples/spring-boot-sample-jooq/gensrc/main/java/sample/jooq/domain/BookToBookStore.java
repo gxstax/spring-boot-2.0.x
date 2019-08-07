@@ -66,7 +66,7 @@ public class BookToBookStore extends TableImpl<Record> {
 	}
 
 	/**
-	 * Create an aliased <code>PUBLIC.BOOK_TO_BOOK_STORE</code> table reference
+	 * Create ant aliased <code>PUBLIC.BOOK_TO_BOOK_STORE</code> table reference
 	 */
 	public BookToBookStore(String alias) {
 		this(alias, BOOK_TO_BOOK_STORE);

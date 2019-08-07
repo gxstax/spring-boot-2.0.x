@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -19,7 +19,7 @@ package org.springframework.boot.origin;
 import org.springframework.util.ObjectUtils;
 
 /**
- * A wrapper for an {@link Object} value and {@link Origin}.
+ * A wrapper for ant {@link Object} value and {@link Origin}.
  *
  * @author Madhura Bhave
  * @author Phillip Webb
@@ -74,12 +74,12 @@ public class OriginTrackedValue implements OriginProvider {
 	}
 
 	/**
-	 * Create an {@link OriginTrackedValue} containing the specified {@code value} and
+	 * Create ant {@link OriginTrackedValue} containing the specified {@code value} and
 	 * {@code origin}. If the source value implements {@link CharSequence} then so will
 	 * the resulting {@link OriginTrackedValue}.
 	 * @param value the source value
 	 * @param origin the origin
-	 * @return an {@link OriginTrackedValue} or {@code null} if the source value was
+	 * @return ant {@link OriginTrackedValue} or {@code null} if the source value was
 	 * {@code null}.
 	 */
 	public static OriginTrackedValue of(Object value, Origin origin) {

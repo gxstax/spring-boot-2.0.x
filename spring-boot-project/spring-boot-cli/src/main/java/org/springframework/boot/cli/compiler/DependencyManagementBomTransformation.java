@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -136,7 +136,7 @@ public class DependencyManagementBomTransformation
 				&& ((ConstantExpression) valueExpression).getValue() instanceof String) {
 			return Arrays.asList((ConstantExpression) valueExpression);
 		}
-		reportError("@DependencyManagementBom requires an inline constant that is a "
+		reportError("@DependencyManagementBom requires ant inline constant that is a "
 				+ "string or a string array", valueExpression);
 		return Collections.emptyList();
 	}
@@ -151,7 +151,7 @@ public class DependencyManagementBomTransformation
 			}
 			else {
 				reportError(
-						"Each entry in the array must be an " + "inline string constant",
+						"Each entry in the array must be ant " + "inline string constant",
 						expression);
 			}
 		}

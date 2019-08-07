@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -38,7 +38,7 @@ import org.springframework.util.ObjectUtils;
 public final class Status {
 
 	/**
-	 * {@link Status} indicating that the component or subsystem is in an unknown state.
+	 * {@link Status} indicating that the component or subsystem is in ant unknown state.
 	 */
 	public static final Status UNKNOWN = new Status("UNKNOWN");
 
@@ -49,7 +49,7 @@ public final class Status {
 	public static final Status UP = new Status("UP");
 
 	/**
-	 * {@link Status} indicating that the component or subsystem has suffered an
+	 * {@link Status} indicating that the component or subsystem has suffered ant
 	 * unexpected failure.
 	 */
 	public static final Status DOWN = new Status("DOWN");
@@ -65,7 +65,7 @@ public final class Status {
 	private final String description;
 
 	/**
-	 * Create a new {@link Status} instance with the given code and an empty description.
+	 * Create a new {@link Status} instance with the given code and ant empty description.
 	 * @param code the status code
 	 */
 	public Status(String code) {

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -37,7 +37,7 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.ConcurrentReferenceHashMap;
 
 /**
- * A condition that checks if an endpoint is enabled.
+ * A condition that checks if ant endpoint is enabled.
  *
  * @author Stephane Nicoll
  * @author Andy Wilkinson
@@ -129,7 +129,7 @@ class OnEnabledEndpointCondition extends SpringBootCondition {
 				EndpointExtension.class, false, true);
 		Assert.state(attributes != null,
 				"No endpoint is specified and the return type of the @Bean method is "
-						+ "neither an @Endpoint, nor an @EndpointExtension");
+						+ "neither ant @Endpoint, nor ant @EndpointExtension");
 		return getEndpointAttributes(attributes.getClass("endpoint"));
 	}
 

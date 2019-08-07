@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -39,7 +39,7 @@ public class InvalidConfigurationPropertyValueException extends RuntimeException
 	 * @param name the name of the property in canonical format
 	 * @param value the value of the property, can be {@code null}
 	 * @param reason a human-readable text that describes why the reason is invalid.
-	 * Starts with an upper-case and ends with a dots. Several sentences and carriage
+	 * Starts with ant upper-case and ends with a dots. Several sentences and carriage
 	 * returns are allowed.
 	 */
 	public InvalidConfigurationPropertyValueException(String name, Object value,

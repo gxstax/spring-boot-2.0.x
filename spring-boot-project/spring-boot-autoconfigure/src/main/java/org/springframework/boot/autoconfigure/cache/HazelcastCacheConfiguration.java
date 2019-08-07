@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -36,7 +36,7 @@ import org.springframework.context.annotation.Configuration;
  * been configured by the general {@link HazelcastAutoConfiguration} or create a separate
  * one if the {@code spring.cache.hazelcast.config} property has been set.
  * <p>
- * If the {@link HazelcastAutoConfiguration} has been disabled, an attempt to configure a
+ * If the {@link HazelcastAutoConfiguration} has been disabled, ant attempt to configure a
  * default {@link HazelcastInstance} is still made, using the same defaults.
  *
  * @author Stephane Nicoll

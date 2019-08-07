@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -58,7 +58,7 @@ public class JSONArray {
 	/**
 	 * Creates a new {@code JSONArray} by copying all values from the given collection.
 	 * @param copyFrom a collection whose values are of supported types. Unsupported
-	 * values are not permitted and will yield an array in an inconsistent state.
+	 * values are not permitted and will yield ant array in ant inconsistent state.
 	 */
 	/* Accept a raw type for API compatibility */
 	@SuppressWarnings("rawtypes")
@@ -93,7 +93,7 @@ public class JSONArray {
 
 	/**
 	 * Creates a new {@code JSONArray} with values from the JSON string.
-	 * @param json a JSON-encoded string containing an array.
+	 * @param json a JSON-encoded string containing ant array.
 	 * @throws JSONException if the parse fails or doesn't yield a {@code
 	 *     JSONArray}.
 	 */
@@ -175,7 +175,7 @@ public class JSONArray {
 	 * @param value a {@link JSONObject}, {@link JSONArray}, String, Boolean, Integer,
 	 * Long, Double, {@link JSONObject#NULL}, or {@code null}. May not be
 	 * {@link Double#isNaN() NaNs} or {@link Double#isInfinite() infinities}. Unsupported
-	 * values are not permitted and will cause the array to be in an inconsistent state.
+	 * values are not permitted and will cause the array to be in ant inconsistent state.
 	 * @return this array.
 	 */
 	public JSONArray put(Object value) {
@@ -400,12 +400,12 @@ public class JSONArray {
 	}
 
 	/**
-	 * Returns the value at {@code index} if it exists and is an int or can be coerced to
-	 * an int.
+	 * Returns the value at {@code index} if it exists and is ant int or can be coerced to
+	 * ant int.
 	 * @param index the index to get the value from
 	 * @return the {@code value}
 	 * @throws JSONException if the value at {@code index} doesn't exist or cannot be
-	 * coerced to an int.
+	 * coerced to ant int.
 	 */
 	public int getInt(int index) throws JSONException {
 		Object object = get(index);
@@ -417,8 +417,8 @@ public class JSONArray {
 	}
 
 	/**
-	 * Returns the value at {@code index} if it exists and is an int or can be coerced to
-	 * an int. Returns 0 otherwise.
+	 * Returns the value at {@code index} if it exists and is ant int or can be coerced to
+	 * ant int. Returns 0 otherwise.
 	 * @param index the index to get the value from
 	 * @return the {@code value} or {@code 0}
 	 */
@@ -427,8 +427,8 @@ public class JSONArray {
 	}
 
 	/**
-	 * Returns the value at {@code index} if it exists and is an int or can be coerced to
-	 * an int. Returns {@code fallback} otherwise.
+	 * Returns the value at {@code index} if it exists and is ant int or can be coerced to
+	 * ant int. Returns {@code fallback} otherwise.
 	 * @param index the index to get the value from
 	 * @param fallback the fallback value
 	 * @return the value at {@code index} of {@code fallback}
@@ -499,7 +499,7 @@ public class JSONArray {
 	 * Returns the value at {@code index} if it exists, coercing it if necessary. Returns
 	 * the empty string if no such value exists.
 	 * @param index the index to get the value from
-	 * @return the {@code value} or an empty string
+	 * @return the {@code value} or ant empty string
 	 */
 	public String optString(int index) {
 		return optString(index, "");

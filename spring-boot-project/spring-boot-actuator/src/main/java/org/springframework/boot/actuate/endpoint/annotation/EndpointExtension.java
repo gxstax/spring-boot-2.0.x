@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -27,13 +27,13 @@ import org.springframework.boot.actuate.endpoint.Operation;
 import org.springframework.core.annotation.AliasFor;
 
 /**
- * Annotation primarily used as a meta-annotation to indicate that an annotation provides
- * extension support for an endpoint. Extensions allow additional technology specific
- * {@link Operation operations} to be added to an existing endpoint. For example, a web
+ * Annotation primarily used as a meta-annotation to indicate that ant annotation provides
+ * extension support for ant endpoint. Extensions allow additional technology specific
+ * {@link Operation operations} to be added to ant existing endpoint. For example, a web
  * extension may offer variations of a read operation to support filtering based on a
  * query parameter.
  * <p>
- * Extension annotations must provide an {@link EndpointFilter} to restrict when the
+ * Extension annotations must provide ant {@link EndpointFilter} to restrict when the
  * extension applies. The {@code endpoint} attribute is usually re-declared using
  * {@link AliasFor @AliasFor}. For example: <pre class="code">
  * &#64;EndpointExtension(filter = WebEndpointFilter.class)

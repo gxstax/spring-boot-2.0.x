@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -29,7 +29,7 @@ import org.springframework.util.Assert;
 
 /**
  * {@link ReactiveHealthIndicator} that returns health indications from all registered
- * delegates. Provides an alternative {@link Health} for a delegate that reaches a
+ * delegates. Provides ant alternative {@link Health} for a delegate that reaches a
  * configurable timeout.
  *
  * @author Stephane Nicoll
@@ -74,11 +74,11 @@ public class CompositeReactiveHealthIndicator implements ReactiveHealthIndicator
 	}
 
 	/**
-	 * Specify an alternative timeout {@link Health} if a {@link HealthIndicator} failed
+	 * Specify ant alternative timeout {@link Health} if a {@link HealthIndicator} failed
 	 * to reply after specified {@code timeout}.
 	 * @param timeout number of milliseconds to wait before using the
 	 * {@code timeoutHealth}
-	 * @param timeoutHealth the {@link Health} to use if an health indicator reached the
+	 * @param timeoutHealth the {@link Health} to use if ant health indicator reached the
 	 * {@code timeout}
 	 * @return this instance
 	 */

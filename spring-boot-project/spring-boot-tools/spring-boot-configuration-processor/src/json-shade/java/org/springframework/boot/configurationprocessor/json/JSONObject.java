@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -38,7 +38,7 @@ import java.util.Map;
  * <li>When the requested type is a double, other {@link Number} types will be coerced
  * using {@link Number#doubleValue() doubleValue}. Strings that can be coerced using
  * {@link Double#valueOf(String)} will be.
- * <li>When the requested type is an int, other {@link Number} types will be coerced using
+ * <li>When the requested type is ant int, other {@link Number} types will be coerced using
  * {@link Number#intValue() intValue}. Strings that can be coerced using
  * {@link Double#valueOf(String)} will be, and then cast to int.
  * <li><a name="lossy">When the requested type is a long, other {@link Number} types will
@@ -56,7 +56,7 @@ import java.util.Map;
  * <li>Use <code>get<i>Type</i>()</code> to retrieve a mandatory value. This fails with a
  * {@code JSONException} if the requested name has no value or if the value cannot be
  * coerced to the requested type.
- * <li>Use <code>opt<i>Type</i>()</code> to retrieve an optional value. This returns a
+ * <li>Use <code>opt<i>Type</i>()</code> to retrieve ant optional value. This returns a
  * system- or user-supplied default if the requested name has no value or if the value
  * cannot be coerced to the requested type.
  * </ul>
@@ -64,7 +64,7 @@ import java.util.Map;
  * <strong>Warning:</strong> this class represents null in two incompatible ways: the
  * standard Java {@code null} reference, and the sentinel value {@link JSONObject#NULL}.
  * In particular, calling {@code put(name, null)} removes the named entry from the object
- * but {@code put(name, JSONObject.NULL)} stores an entry whose value is
+ * but {@code put(name, JSONObject.NULL)} stores ant entry whose value is
  * {@code JSONObject.NULL}.
  * <p>
  * Instances of this class are not thread safe. Although this class is nonfinal, it was
@@ -162,7 +162,7 @@ public class JSONObject {
 
 	/**
 	 * Creates a new {@code JSONObject} with name/value mappings from the JSON string.
-	 * @param json a JSON-encoded string containing an object.
+	 * @param json a JSON-encoded string containing ant object.
 	 * @throws JSONException if the parse fails or doesn't yield a {@code
 	 *     JSONObject}.
 	 */
@@ -175,7 +175,7 @@ public class JSONObject {
 	 * given object. Names that aren't present in {@code copyFrom} will be skipped.
 	 * @param copyFrom the source
 	 * @param names the property names
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public JSONObject(JSONObject copyFrom, String[] names) throws JSONException {
 		this();
@@ -201,7 +201,7 @@ public class JSONObject {
 	 * @param name the name of the property
 	 * @param value the value of the property
 	 * @return this object.
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public JSONObject put(String name, boolean value) throws JSONException {
 		this.nameValuePairs.put(checkName(name), value);
@@ -215,7 +215,7 @@ public class JSONObject {
 	 * @param value a finite value. May not be {@link Double#isNaN() NaNs} or
 	 * {@link Double#isInfinite() infinities}.
 	 * @return this object.
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public JSONObject put(String name, double value) throws JSONException {
 		this.nameValuePairs.put(checkName(name), JSON.checkDouble(value));
@@ -228,7 +228,7 @@ public class JSONObject {
 	 * @param name the name of the property
 	 * @param value the value of the property
 	 * @return this object.
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public JSONObject put(String name, int value) throws JSONException {
 		this.nameValuePairs.put(checkName(name), value);
@@ -241,7 +241,7 @@ public class JSONObject {
 	 * @param name the name of the property
 	 * @param value the value of the property
 	 * @return this object.
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public JSONObject put(String name, long value) throws JSONException {
 		this.nameValuePairs.put(checkName(name), value);
@@ -257,7 +257,7 @@ public class JSONObject {
 	 * Long, Double, {@link #NULL}, or {@code null}. May not be {@link Double#isNaN()
 	 * NaNs} or {@link Double#isInfinite() infinities}.
 	 * @return this object.
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public JSONObject put(String name, Object value) throws JSONException {
 		if (value == null) {
@@ -279,7 +279,7 @@ public class JSONObject {
 	 * @param name the name of the property
 	 * @param value the value of the property
 	 * @return this object.
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public JSONObject putOpt(String name, Object value) throws JSONException {
 		if (name == null || value == null) {
@@ -291,7 +291,7 @@ public class JSONObject {
 	/**
 	 * Appends {@code value} to the array already mapped to {@code name}. If this object
 	 * has no mapping for {@code name}, this inserts a new mapping. If the mapping exists
-	 * but its value is not an array, the existing and new values are inserted in order
+	 * but its value is not ant array, the existing and new values are inserted in order
 	 * into a new array which is itself mapped to {@code name}. In aggregate, this allows
 	 * values to be added to a mapping one at a time.
 	 * @param name the name of the property
@@ -299,7 +299,7 @@ public class JSONObject {
 	 * Long, Double, {@link #NULL} or null. May not be {@link Double#isNaN() NaNs} or
 	 * {@link Double#isInfinite() infinities}.
 	 * @return this object.
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public JSONObject accumulate(String name, Object value) throws JSONException {
 		Object current = this.nameValuePairs.get(checkName(name));
@@ -469,11 +469,11 @@ public class JSONObject {
 	}
 
 	/**
-	 * Returns the value mapped by {@code name} if it exists and is an int or can be
-	 * coerced to an int.
+	 * Returns the value mapped by {@code name} if it exists and is ant int or can be
+	 * coerced to ant int.
 	 * @param name the name of the property
 	 * @return the value
-	 * @throws JSONException if the mapping doesn't exist or cannot be coerced to an int.
+	 * @throws JSONException if the mapping doesn't exist or cannot be coerced to ant int.
 	 */
 	public int getInt(String name) throws JSONException {
 		Object object = get(name);
@@ -485,8 +485,8 @@ public class JSONObject {
 	}
 
 	/**
-	 * Returns the value mapped by {@code name} if it exists and is an int or can be
-	 * coerced to an int. Returns 0 otherwise.
+	 * Returns the value mapped by {@code name} if it exists and is ant int or can be
+	 * coerced to ant int. Returns 0 otherwise.
 	 * @param name the name of the property
 	 * @return the value of {@code 0}
 	 */
@@ -495,8 +495,8 @@ public class JSONObject {
 	}
 
 	/**
-	 * Returns the value mapped by {@code name} if it exists and is an int or can be
-	 * coerced to an int. Returns {@code fallback} otherwise.
+	 * Returns the value mapped by {@code name} if it exists and is ant int or can be
+	 * coerced to ant int. Returns {@code fallback} otherwise.
 	 * @param name the name of the property
 	 * @param fallback a fallback value
 	 * @return the value or {@code fallback}
@@ -570,7 +570,7 @@ public class JSONObject {
 	 * Returns the value mapped by {@code name} if it exists, coercing it if necessary.
 	 * Returns the empty string if no such mapping exists.
 	 * @param name the name of the property
-	 * @return the value or an empty string
+	 * @return the value or ant empty string
 	 */
 	public String optString(String name) {
 		return optString(name, "");
@@ -648,7 +648,7 @@ public class JSONObject {
 	}
 
 	/**
-	 * Returns an array with the values corresponding to {@code names}. The array contains
+	 * Returns ant array with the values corresponding to {@code names}. The array contains
 	 * null for names that aren't mapped. This method returns null if {@code names} is
 	 * either null or empty.
 	 * @param names the names of the properties
@@ -671,7 +671,7 @@ public class JSONObject {
 	}
 
 	/**
-	 * Returns an iterator of the {@code String} names in this object. The returned
+	 * Returns ant iterator of the {@code String} names in this object. The returned
 	 * iterator supports {@link Iterator#remove() remove}, which will remove the
 	 * corresponding mapping from this object. If this object is modified after the
 	 * iterator is returned, the iterator's behavior is undefined. The order of the keys
@@ -685,7 +685,7 @@ public class JSONObject {
 	}
 
 	/**
-	 * Returns an array containing the string names in this object. This method returns
+	 * Returns ant array containing the string names in this object. This method returns
 	 * null if this object contains no mappings.
 	 * @return the array
 	 */
@@ -722,7 +722,7 @@ public class JSONObject {
 	 * }</pre>
 	 * @param indentSpaces the number of spaces to indent for each level of nesting.
 	 * @return a string representation of the object.
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public String toString(int indentSpaces) throws JSONException {
 		JSONStringer stringer = new JSONStringer(indentSpaces);
@@ -743,7 +743,7 @@ public class JSONObject {
 	 * @param number a finite value. May not be {@link Double#isNaN() NaNs} or
 	 * {@link Double#isInfinite() infinities}.
 	 * @return the encoded value
-	 * @throws JSONException if an error occurs
+	 * @throws JSONException if ant error occurs
 	 */
 	public static String numberToString(Number number) throws JSONException {
 		if (number == null) {
@@ -769,7 +769,7 @@ public class JSONObject {
 	/**
 	 * Encodes {@code data} as a JSON string. This applies quotes and any necessary
 	 * character escaping.
-	 * @param data the string to encode. Null will be interpreted as an empty string.
+	 * @param data the string to encode. Null will be interpreted as ant empty string.
 	 * @return the quoted value
 	 */
 	public static String quote(String data) {
@@ -793,9 +793,9 @@ public class JSONObject {
 	 * <p>
 	 * If the object is null or , returns {@link #NULL}. If the object is a
 	 * {@code JSONArray} or {@code JSONObject}, no wrapping is necessary. If the object is
-	 * {@code NULL}, no wrapping is necessary. If the object is an array or
-	 * {@code Collection}, returns an equivalent {@code JSONArray}. If the object is a
-	 * {@code Map}, returns an equivalent {@code JSONObject}. If the object is a primitive
+	 * {@code NULL}, no wrapping is necessary. If the object is ant array or
+	 * {@code Collection}, returns ant equivalent {@code JSONArray}. If the object is a
+	 * {@code Map}, returns ant equivalent {@code JSONObject}. If the object is a primitive
 	 * wrapper type or {@code String}, returns the object. Otherwise if the object is from
 	 * a {@code java} package, returns the result of {@code toString}. If wrapping fails,
 	 * returns null.

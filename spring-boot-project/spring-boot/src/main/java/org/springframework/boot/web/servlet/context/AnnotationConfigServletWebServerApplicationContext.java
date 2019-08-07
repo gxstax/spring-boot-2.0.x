@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -45,7 +45,7 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
  * <p>
  * Note: In case of multiple {@code @Configuration} classes, later {@code @Bean}
  * definitions will override ones defined in earlier loaded files. This can be leveraged
- * to deliberately override certain bean definitions via an extra Configuration class.
+ * to deliberately override certain bean definitions via ant extra Configuration class.
  *
  * @author Phillip Webb
  * @see #register(Class...)
@@ -151,7 +151,7 @@ public class AnnotationConfigServletWebServerApplicationContext
 	/**
 	 * Set the {@link ScopeMetadataResolver} to use for detected bean classes.
 	 * <p>
-	 * The default is an {@link AnnotationScopeMetadataResolver}.
+	 * The default is ant {@link AnnotationScopeMetadataResolver}.
 	 * <p>
 	 * Any call to this method must occur prior to calls to {@link #register(Class...)}
 	 * and/or {@link #scan(String...)}.

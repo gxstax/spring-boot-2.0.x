@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -100,7 +100,7 @@ public class ValidatorAdapter implements SmartValidator, ApplicationContextAware
 	 * {@link javax.validation.Validator} is retrieved from the context and wrapped.
 	 * Otherwise, a new default validator is created.
 	 * @param applicationContext the application context
-	 * @param validator an existing validator to use or {@code null}
+	 * @param validator ant existing validator to use or {@code null}
 	 * @return the validator to use
 	 */
 	public static Validator get(ApplicationContext applicationContext,

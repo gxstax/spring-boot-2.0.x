@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -29,7 +29,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.util.StringUtils;
 
 /**
- * {@link Endpoint} to expose details of an application's beans, grouped by application
+ * {@link Endpoint} to expose details of ant application's beans, grouped by application
  * context.
  *
  * @author Dave Syer
@@ -72,7 +72,7 @@ public class BeansEndpoint {
 	}
 
 	/**
-	 * A description of an application's beans, primarily intended for serialization to
+	 * A description of ant application's beans, primarily intended for serialization to
 	 * JSON.
 	 */
 	public static final class ApplicationBeans {
@@ -90,7 +90,7 @@ public class BeansEndpoint {
 	}
 
 	/**
-	 * A description of an application context, primarily intended for serialization to
+	 * A description of ant application context, primarily intended for serialization to
 	 * JSON.
 	 */
 	public static final class ContextBeans {
@@ -149,7 +149,7 @@ public class BeansEndpoint {
 	}
 
 	/**
-	 * A description of a bean in an application context, primarily intended for
+	 * A description of a bean in ant application context, primarily intended for
 	 * serialization to JSON.
 	 */
 	public static final class BeanDescriptor {

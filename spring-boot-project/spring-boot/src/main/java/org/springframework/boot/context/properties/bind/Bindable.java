@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -144,9 +144,9 @@ public final class Bindable<T> {
 	}
 
 	/**
-	 * Create an updated {@link Bindable} instance with the specified annotations.
+	 * Create ant updated {@link Bindable} instance with the specified annotations.
 	 * @param annotations the annotations
-	 * @return an updated {@link Bindable}
+	 * @return ant updated {@link Bindable}
 	 */
 	public Bindable<T> withAnnotations(Annotation... annotations) {
 		return new Bindable<>(this.type, this.boxedType, this.value,
@@ -154,30 +154,30 @@ public final class Bindable<T> {
 	}
 
 	/**
-	 * Create an updated {@link Bindable} instance with an existing value.
+	 * Create ant updated {@link Bindable} instance with ant existing value.
 	 * @param existingValue the existing value
-	 * @return an updated {@link Bindable}
+	 * @return ant updated {@link Bindable}
 	 */
 	public Bindable<T> withExistingValue(T existingValue) {
 		Assert.isTrue(
 				existingValue == null || this.type.isArray()
 						|| this.boxedType.resolve().isInstance(existingValue),
-				() -> "ExistingValue must be an instance of " + this.type);
+				() -> "ExistingValue must be ant instance of " + this.type);
 		Supplier<T> value = (existingValue != null) ? () -> existingValue : null;
 		return new Bindable<>(this.type, this.boxedType, value, NO_ANNOTATIONS);
 	}
 
 	/**
-	 * Create an updated {@link Bindable} instance with a value supplier.
+	 * Create ant updated {@link Bindable} instance with a value supplier.
 	 * @param suppliedValue the supplier for the value
-	 * @return an updated {@link Bindable}
+	 * @return ant updated {@link Bindable}
 	 */
 	public Bindable<T> withSuppliedValue(Supplier<T> suppliedValue) {
 		return new Bindable<>(this.type, this.boxedType, suppliedValue, NO_ANNOTATIONS);
 	}
 
 	/**
-	 * Create a new {@link Bindable} of the type of the specified instance with an
+	 * Create a new {@link Bindable} of the type of the specified instance with ant
 	 * existing value equal to the instance.
 	 * @param <T> the source type
 	 * @param instance the instance (must not be {@code null})

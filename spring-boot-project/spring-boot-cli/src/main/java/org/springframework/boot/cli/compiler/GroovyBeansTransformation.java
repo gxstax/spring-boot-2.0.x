@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -35,7 +35,7 @@ import org.springframework.core.annotation.Order;
 /**
  * {@link ASTTransformation} to resolve beans declarations inside application source
  * files. Users only need to define a <code>beans{}</code> DSL element, and this
- * transformation will remove it and make it accessible to the Spring application via an
+ * transformation will remove it and make it accessible to the Spring application via ant
  * interface.
  *
  * @author Dave Syer

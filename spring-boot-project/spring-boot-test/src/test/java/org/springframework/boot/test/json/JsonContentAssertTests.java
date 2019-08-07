@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -908,7 +908,7 @@ public class JsonContentAssertTests {
 	public void hasEmptyJsonPathValueForIndefinitePathWithResults() {
 		String expression = "$.familyMembers[?(@.name == 'Bart')]";
 		this.thrown.expect(AssertionError.class);
-		this.thrown.expectMessage("Expected an empty value at JSON path \"" + expression
+		this.thrown.expectMessage("Expected ant empty value at JSON path \"" + expression
 				+ "\" but found: [{\"name\":\"Bart\"}]");
 		assertThat(forJson(SIMPSONS)).hasEmptyJsonPathValue(expression);
 	}
@@ -917,7 +917,7 @@ public class JsonContentAssertTests {
 	public void hasEmptyJsonPathValueForWhitespace() {
 		String expression = "$.whitespace";
 		this.thrown.expect(AssertionError.class);
-		this.thrown.expectMessage("Expected an empty value at JSON path \"" + expression
+		this.thrown.expectMessage("Expected ant empty value at JSON path \"" + expression
 				+ "\" but found: '    '");
 		assertThat(forJson(TYPES)).hasEmptyJsonPathValue(expression);
 	}
@@ -1051,7 +1051,7 @@ public class JsonContentAssertTests {
 		String expression = "$.str";
 		this.thrown.expect(AssertionError.class);
 		this.thrown.expectMessage(
-				"Expected an array at JSON path \"" + expression + "\" but found: 'foo'");
+				"Expected ant array at JSON path \"" + expression + "\" but found: 'foo'");
 		assertThat(forJson(TYPES)).hasJsonPathArrayValue(expression);
 	}
 
@@ -1169,7 +1169,7 @@ public class JsonContentAssertTests {
 		String expression = "$.str";
 		this.thrown.expect(AssertionError.class);
 		this.thrown.expectMessage(
-				"Expected an array at JSON path \"" + expression + "\" but found: 'foo'");
+				"Expected ant array at JSON path \"" + expression + "\" but found: 'foo'");
 		assertThat(forJson(TYPES)).extractingJsonPathArrayValue(expression);
 	}
 

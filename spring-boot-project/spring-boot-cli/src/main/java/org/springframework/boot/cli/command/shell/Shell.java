@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -39,7 +39,7 @@ import org.springframework.boot.loader.tools.SignalUtils;
 import org.springframework.util.StringUtils;
 
 /**
- * A shell for Spring Boot. Drops the user into an event loop (REPL) where command line
+ * A shell for Spring Boot. Drops the user into ant event loop (REPL) where command line
  * completion and history are available without relying on OS shell features.
  *
  * @author Jon Brisbin
@@ -170,7 +170,7 @@ public class Shell {
 	}
 
 	/**
-	 * Final handle an interrupt signal (CTRL-C).
+	 * Final handle ant interrupt signal (CTRL-C).
 	 */
 	protected void handleSigInt() {
 		if (this.commandRunner.handleSigInt()) {

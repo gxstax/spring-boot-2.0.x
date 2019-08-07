@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -183,9 +183,9 @@ public final class PropertyMapper {
 		}
 
 		/**
-		 * Return an adapted version of the source with {@link Integer} type.
+		 * Return ant adapted version of the source with {@link Integer} type.
 		 * @param <R> the resulting type
-		 * @param adapter an adapter to convert the current value to a number.
+		 * @param adapter ant adapter to convert the current value to a number.
 		 * @return a new adapted source instance
 		 */
 		public <R extends Number> Source<Integer> asInt(Function<T, R> adapter) {
@@ -193,7 +193,7 @@ public final class PropertyMapper {
 		}
 
 		/**
-		 * Return an adapted version of the source changed via the given adapter function.
+		 * Return ant adapted version of the source changed via the given adapter function.
 		 * @param <R> the resulting type
 		 * @param adapter the adapter to apply
 		 * @return a new adapted source instance
@@ -259,7 +259,7 @@ public final class PropertyMapper {
 		}
 
 		/**
-		 * Return a filtered version of the source that will only map values that are an
+		 * Return a filtered version of the source that will only map values that are ant
 		 * instance of the given type.
 		 * @param <R> the target type
 		 * @param target the target type to match

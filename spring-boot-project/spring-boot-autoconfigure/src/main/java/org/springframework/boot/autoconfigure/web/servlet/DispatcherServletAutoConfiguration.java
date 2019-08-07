@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -53,7 +53,7 @@ import org.springframework.web.servlet.DispatcherServlet;
 
 /**
  * {@link EnableAutoConfiguration Auto-configuration} for the Spring
- * {@link DispatcherServlet}. Should work for a standalone application where an embedded
+ * {@link DispatcherServlet}. Should work for a standalone application where ant embedded
  * web server is already present and also for a deployable application using
  * {@link SpringBootServletInitializer}.
  *

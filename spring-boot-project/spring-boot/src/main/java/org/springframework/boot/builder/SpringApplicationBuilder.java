@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -49,7 +49,7 @@ import org.springframework.util.StringUtils;
  * </pre>
  *
  * Another common use case is setting active profiles and default properties to set up the
- * environment for an application:
+ * environment for ant application:
  *
  * <pre class="code">
  * new SpringApplicationBuilder(Application.class).profiles(&quot;server&quot;)
@@ -119,11 +119,11 @@ public class SpringApplicationBuilder {
 	}
 
 	/**
-	 * Create an application context (and its parent if specified) with the command line
+	 * Create ant application context (and its parent if specified) with the command line
 	 * args provided. The parent is run first with the same arguments if has not yet been
 	 * started.
 	 * @param args the command line arguments
-	 * @return an application context created from the current state
+	 * @return ant application context created from the current state
 	 */
 	public ConfigurableApplicationContext run(String... args) {
 		if (this.running.get()) {
@@ -230,7 +230,7 @@ public class SpringApplicationBuilder {
 	}
 
 	/**
-	 * Add an already running parent context to an existing application.
+	 * Add ant already running parent context to ant existing application.
 	 * @param parent the parent context
 	 * @return the current builder (not the parent)
 	 */

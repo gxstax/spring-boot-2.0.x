@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Hints of an item to provide the list of values and/or the name of the provider
+ * Hints of ant item to provide the list of values and/or the name of the provider
  * responsible to identify suitable values. If the type of the related item is a
  * {@link java.util.Map} it can have both key and value hints.
  *
@@ -71,7 +71,7 @@ public class Hints {
 
 	/**
 	 * The value providers that are applicable to this item. Only one
-	 * {@link ValueProvider} is enabled for an item: the first in the list that is
+	 * {@link ValueProvider} is enabled for ant item: the first in the list that is
 	 * supported should be used.
 	 * @return the value providers
 	 */

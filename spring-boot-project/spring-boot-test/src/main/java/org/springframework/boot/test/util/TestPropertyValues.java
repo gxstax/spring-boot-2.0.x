@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -75,9 +75,9 @@ public final class TestPropertyValues {
 	}
 
 	/**
-	 * Add the properties from the underlying map to the environment owned by an
+	 * Add the properties from the underlying map to the environment owned by ant
 	 * {@link ApplicationContext}.
-	 * @param context the context with an environment to modify
+	 * @param context the context with ant environment to modify
 	 */
 	public void applyTo(ConfigurableApplicationContext context) {
 		applyTo(context.getEnvironment());
@@ -198,8 +198,8 @@ public final class TestPropertyValues {
 	}
 
 	/**
-	 * Return an empty {@link TestPropertyValues} instance.
-	 * @return an empty instance
+	 * Return ant empty {@link TestPropertyValues} instance.
+	 * @return ant empty instance
 	 */
 	public static TestPropertyValues empty() {
 		return EMPTY;

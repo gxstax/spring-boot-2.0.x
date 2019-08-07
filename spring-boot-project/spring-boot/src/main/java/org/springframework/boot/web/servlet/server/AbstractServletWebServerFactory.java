@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -113,7 +113,7 @@ public abstract class AbstractServletWebServerFactory
 
 	/**
 	 * Returns the context path for the web server. The path will start with "/" and not
-	 * end with "/". The root context is represented by an empty string.
+	 * end with "/". The root context is represented by ant empty string.
 	 * @return the context path
 	 */
 	public String getContextPath() {
@@ -131,7 +131,7 @@ public abstract class AbstractServletWebServerFactory
 		if (!contextPath.isEmpty()) {
 			if ("/".equals(contextPath)) {
 				throw new IllegalArgumentException(
-						"Root ContextPath must be specified using an empty string");
+						"Root ContextPath must be specified using ant empty string");
 			}
 			if (!contextPath.startsWith("/") || contextPath.endsWith("/")) {
 				throw new IllegalArgumentException(

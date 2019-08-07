@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -226,7 +226,7 @@ inline fun <reified T : Any> TestRestTemplate.postForEntity(url: URI, request: A
 		postForEntity(url, request, T::class.java)
 
 /**
- * Extension for [TestRestTemplate.exchange] providing an `exchange<Foo>(...)`
+ * Extension for [TestRestTemplate.exchange] providing ant `exchange<Foo>(...)`
  * variant leveraging Kotlin reified type parameters. This extension is not subject to
  * type erasure and retains actual generic type arguments.
  *
@@ -239,7 +239,7 @@ inline fun <reified T : Any> TestRestTemplate.exchange(url: String, method: Http
 		exchange(url, method, requestEntity, object : ParameterizedTypeReference<T>() {}, *uriVariables)
 
 /**
- * Extension for [TestRestTemplate.exchange] providing an `exchange<Foo>(...)`
+ * Extension for [TestRestTemplate.exchange] providing ant `exchange<Foo>(...)`
  * variant leveraging Kotlin reified type parameters. This extension is not subject to
  * type erasure and retains actual generic type arguments.
  *
@@ -252,7 +252,7 @@ inline fun <reified T : Any> TestRestTemplate.exchange(url: String, method: Http
 		exchange(url, method, requestEntity, object : ParameterizedTypeReference<T>() {}, uriVariables)
 
 /**
- * Extension for [TestRestTemplate.exchange] providing an `exchange<Foo>(...)`
+ * Extension for [TestRestTemplate.exchange] providing ant `exchange<Foo>(...)`
  * variant leveraging Kotlin reified type parameters. This extension is not subject to
  * type erasure and retains actual generic type arguments.
  *
@@ -265,7 +265,7 @@ inline fun <reified T : Any> TestRestTemplate.exchange(url: URI, method: HttpMet
 		exchange(url, method, requestEntity, object : ParameterizedTypeReference<T>() {})
 
 /**
- * Extension for [TestRestTemplate.exchange] providing an `exchange<Foo>(...)`
+ * Extension for [TestRestTemplate.exchange] providing ant `exchange<Foo>(...)`
  * variant leveraging Kotlin reified type parameters. This extension is not subject to
  * type erasure and retains actual generic type arguments.
  *

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -20,7 +20,7 @@ import javax.management.MalformedObjectNameException;
 import javax.management.ObjectName;
 
 /**
- * A factory to create an {@link ObjectName} for an {@link EndpointMBean}.
+ * A factory to create ant {@link ObjectName} for ant {@link EndpointMBean}.
  *
  * @author Stephane Nicoll
  * @since 2.0.0
@@ -29,7 +29,7 @@ import javax.management.ObjectName;
 public interface EndpointObjectNameFactory {
 
 	/**
-	 * Generate an {@link ObjectName} for the specified {@link ExposableJmxEndpoint
+	 * Generate ant {@link ObjectName} for the specified {@link ExposableJmxEndpoint
 	 * endpoint}.
 	 * @param endpoint the endpoint MBean to handle
 	 * @return the {@link ObjectName} to use for the endpoint

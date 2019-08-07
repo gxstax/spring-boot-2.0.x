@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -197,7 +197,7 @@ public class BindConverterTests {
 
 	@Test
 	public void convertWhenConvertingToFileShouldExcludeFileEditor() {
-		// For back compatibility we want true file conversion and not an accidental
+		// For back compatibility we want true file conversion and not ant accidental
 		// classpath resource reference. See gh-12163
 		BindConverter bindConverter = new BindConverter(new GenericConversionService(),
 				null);
@@ -284,7 +284,7 @@ public class BindConverterTests {
 	}
 
 	/**
-	 * {@link ConversionService} that always throws an {@link AssertionError}.
+	 * {@link ConversionService} that always throws ant {@link AssertionError}.
 	 */
 	private static class ThrowingConversionService implements ConversionService {
 

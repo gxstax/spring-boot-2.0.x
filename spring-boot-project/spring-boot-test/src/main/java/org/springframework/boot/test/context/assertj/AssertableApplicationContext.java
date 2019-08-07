@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -24,7 +24,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 
 /**
  * An {@link ApplicationContext} that additionally supports AssertJ style assertions. Can
- * be used to decorate an existing application context or an application context that
+ * be used to decorate ant existing application context or ant application context that
  * failed to start.
  * <p>
  * See {@link ApplicationContextAssertProvider} for more details.
@@ -40,9 +40,9 @@ public interface AssertableApplicationContext
 	/**
 	 * Factory method to create a new {@link AssertableApplicationContext} instance.
 	 * @param contextSupplier a supplier that will either return a fully configured
-	 * {@link ConfigurableApplicationContext} or throw an exception if the context fails
+	 * {@link ConfigurableApplicationContext} or throw ant exception if the context fails
 	 * to start.
-	 * @return an {@link AssertableApplicationContext} instance
+	 * @return ant {@link AssertableApplicationContext} instance
 	 */
 	static AssertableApplicationContext get(
 			Supplier<? extends ConfigurableApplicationContext> contextSupplier) {

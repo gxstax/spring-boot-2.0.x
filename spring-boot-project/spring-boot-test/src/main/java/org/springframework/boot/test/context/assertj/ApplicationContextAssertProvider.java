@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -27,7 +27,7 @@ import org.springframework.util.Assert;
 
 /**
  * An {@link ApplicationContext} that additionally supports AssertJ style assertions. Can
- * be used to decorate an existing application context or an application context that
+ * be used to decorate ant existing application context or ant application context that
  * failed to start.
  * <p>
  * Assertions can be applied using the standard AssertJ {@code assertThat(...)} style (see
@@ -39,7 +39,7 @@ import org.springframework.util.Assert;
  * {@link #getSourceApplicationContext()} method can be used.
  * <p>
  * Any {@link ApplicationContext} method called on a context that has failed to start will
- * throw an {@link IllegalStateException}.
+ * throw ant {@link IllegalStateException}.
  *
  * @param <C> the application context type
  * @author Phillip Webb
@@ -52,8 +52,8 @@ public interface ApplicationContextAssertProvider<C extends ApplicationContext> 
 		ApplicationContext, AssertProvider<ApplicationContextAssert<C>>, Closeable {
 
 	/**
-	 * Return an assert for AspectJ.
-	 * @return an AspectJ assert
+	 * Return ant assert for AspectJ.
+	 * @return ant AspectJ assert
 	 * @deprecated use standard AssertJ {@code assertThat(context)...} calls instead.
 	 */
 	@Deprecated
@@ -92,11 +92,11 @@ public interface ApplicationContextAssertProvider<C extends ApplicationContext> 
 	 * @param <T> the assert provider type
 	 * @param <C> the context type
 	 * @param type the type of {@link ApplicationContextAssertProvider} required (must be
-	 * an interface)
-	 * @param contextType the type of {@link ApplicationContext} being managed (must be an
+	 * ant interface)
+	 * @param contextType the type of {@link ApplicationContext} being managed (must be ant
 	 * interface)
 	 * @param contextSupplier a supplier that will either return a fully configured
-	 * {@link ApplicationContext} or throw an exception if the context fails to start.
+	 * {@link ApplicationContext} or throw ant exception if the context fails to start.
 	 * @return a {@link ApplicationContextAssertProvider} instance
 	 */
 	@SuppressWarnings("unchecked")
@@ -104,9 +104,9 @@ public interface ApplicationContextAssertProvider<C extends ApplicationContext> 
 			Class<T> type, Class<? extends C> contextType,
 			Supplier<? extends C> contextSupplier) {
 		Assert.notNull(type, "Type must not be null");
-		Assert.isTrue(type.isInterface(), "Type must be an interface");
+		Assert.isTrue(type.isInterface(), "Type must be ant interface");
 		Assert.notNull(contextType, "ContextType must not be null");
-		Assert.isTrue(contextType.isInterface(), "ContextType must be an interface");
+		Assert.isTrue(contextType.isInterface(), "ContextType must be ant interface");
 		Class<?>[] interfaces = { type, contextType };
 		return (T) Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(),
 				interfaces, new AssertProviderApplicationContextInvocationHandler(

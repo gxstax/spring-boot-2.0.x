@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -138,7 +138,7 @@ public abstract class AbstractErrorWebExceptionHandler
 
 	/**
 	 * Render the given error data as a view, using a template view if available or a
-	 * static HTML file if available otherwise. This will return an empty
+	 * static HTML file if available otherwise. This will return ant empty
 	 * {@code Publisher} if none of the above are available.
 	 * @param viewName the view name
 	 * @param responseBody the error response being built
@@ -194,7 +194,7 @@ public abstract class AbstractErrorWebExceptionHandler
 		builder.append("<html><body><h1>Whitelabel Error Page</h1>").append(
 				"<p>This application has no configured error view, so you are seeing this as a fallback.</p>")
 				.append("<div id='created'>").append(timestamp).append("</div>")
-				.append("<div>There was an unexpected error (type=")
+				.append("<div>There was ant unexpected error (type=")
 				.append(htmlEscape(error.get("error"))).append(", status=")
 				.append(htmlEscape(error.get("status"))).append(").</div>");
 		if (message != null) {

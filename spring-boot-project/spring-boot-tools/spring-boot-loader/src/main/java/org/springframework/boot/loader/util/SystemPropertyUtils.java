@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -59,7 +59,7 @@ public abstract class SystemPropertyUtils {
 	 * system property values.
 	 * @param text the String to resolve
 	 * @return the resolved String
-	 * @throws IllegalArgumentException if there is an unresolvable placeholder
+	 * @throws IllegalArgumentException if there is ant unresolvable placeholder
 	 * @see #PLACEHOLDER_PREFIX
 	 * @see #PLACEHOLDER_SUFFIX
 	 */
@@ -76,7 +76,7 @@ public abstract class SystemPropertyUtils {
 	 * @param properties a properties instance to use in addition to System
 	 * @param text the String to resolve
 	 * @return the resolved String
-	 * @throws IllegalArgumentException if there is an unresolvable placeholder
+	 * @throws IllegalArgumentException if there is ant unresolvable placeholder
 	 * @see #PLACEHOLDER_PREFIX
 	 * @see #PLACEHOLDER_SUFFIX
 	 */
@@ -172,7 +172,7 @@ public abstract class SystemPropertyUtils {
 	 * System properties would normally be {@code lower.case}.
 	 * @param key the key to resolve
 	 * @param defaultValue the default value
-	 * @param text optional extra context for an error message if the key resolution fails
+	 * @param text optional extra context for ant error message if the key resolution fails
 	 * (e.g. if System properties are not accessible)
 	 * @return a static property value or null of not found
 	 */

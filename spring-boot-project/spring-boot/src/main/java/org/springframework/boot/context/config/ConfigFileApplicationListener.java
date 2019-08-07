@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -86,7 +86,7 @@ import org.springframework.util.StringUtils;
  * profile is active 'application-web.properties' and 'application-web.yml' will be
  * considered.
  * <p>
- * The 'spring.config.name' property can be used to specify an alternative name to load
+ * The 'spring.config.name' property can be used to specify ant alternative name to load
  * and the 'spring.config.location' property can be used to specify alternative search
  * locations or specific files.
  * <p>

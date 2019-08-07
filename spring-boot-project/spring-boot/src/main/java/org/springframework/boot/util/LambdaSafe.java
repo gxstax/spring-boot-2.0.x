@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -298,7 +298,7 @@ public final class LambdaSafe {
 		 * Invoke the callback instances where the callback method returns a result.
 		 * @param invoker the invoker used to invoke the callback
 		 * @param <R> the result type
-		 * @return the results of the invocation (may be an empty stream if no callbacks
+		 * @return the results of the invocation (may be ant empty stream if no callbacks
 		 * could be called)
 		 */
 		public <R> Stream<R> invokeAnd(Function<C, R> invoker) {
@@ -334,7 +334,7 @@ public final class LambdaSafe {
 		 * Return a {@link Filter} that allows all callbacks to be invoked.
 		 * @param <C> the callback type
 		 * @param <A> the primary argument type
-		 * @return an "allow all" filter
+		 * @return ant "allow all" filter
 		 */
 		static <C, A> Filter<C, A> allowAll() {
 			return (callbackType, callbackInstance, argument,
@@ -345,7 +345,7 @@ public final class LambdaSafe {
 
 	/**
 	 * {@link Filter} that matches when the callback has a single generic and primary
-	 * argument is an instance of it.
+	 * argument is ant instance of it.
 	 */
 	private static class GenericTypeFilter<C, A> implements Filter<C, A> {
 
@@ -411,16 +411,16 @@ public final class LambdaSafe {
 		 * Create a new {@link InvocationResult} instance with the specified value.
 		 * @param value the value (may be {@code null})
 		 * @param <R> the result type
-		 * @return an {@link InvocationResult}
+		 * @return ant {@link InvocationResult}
 		 */
 		public static <R> InvocationResult<R> of(R value) {
 			return new InvocationResult<>(value);
 		}
 
 		/**
-		 * Return an {@link InvocationResult} instance representing no result.
+		 * Return ant {@link InvocationResult} instance representing no result.
 		 * @param <R> the result type
-		 * @return an {@link InvocationResult}
+		 * @return ant {@link InvocationResult}
 		 */
 		@SuppressWarnings("unchecked")
 		public static <R> InvocationResult<R> noResult() {

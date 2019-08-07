@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -21,7 +21,7 @@ import org.apache.activemq.artemis.jms.server.embedded.EmbeddedJMS;
 
 /**
  * Callback interface that can be implemented by beans wishing to customize the Artemis
- * JMS server {@link Configuration} before it is used by an auto-configured
+ * JMS server {@link Configuration} before it is used by ant auto-configured
  * {@link EmbeddedJMS} instance.
  *
  * @author Eddú Meléndez

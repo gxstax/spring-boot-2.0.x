@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -34,7 +34,7 @@ import org.springframework.util.ClassUtils;
  * Convenience class for building a {@link DataSource} with common implementations and
  * properties. If HikariCP, Tomcat or Commons DBCP are on the classpath one of them will
  * be selected (in that order with Hikari first). In the interest of a uniform interface,
- * and so that there can be a fallback to an embedded database if one can be detected on
+ * and so that there can be a fallback to ant embedded database if one can be detected on
  * the classpath, only a small set of common configuration properties are supported. To
  * inject additional properties into the result you can downcast it, or use
  * {@code @ConfigurationProperties}.

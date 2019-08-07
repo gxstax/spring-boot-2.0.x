@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -39,7 +39,7 @@ import org.springframework.util.Assert;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * AssertJ {@link org.assertj.core.api.Assert assertions} that can be applied to an
+ * AssertJ {@link org.assertj.core.api.Assert assertions} that can be applied to ant
  * {@link ApplicationContext}.
  *
  * @param <C> the application context type
@@ -232,14 +232,14 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 	/**
 	 * Obtain a single bean of the given type from the application context (or ancestors),
 	 * the bean becoming the object under test. If no beans of the specified type can be
-	 * found an assert on {@code null} is returned.
+	 * found ant assert on {@code null} is returned.
 	 * <p>
 	 * Example: <pre class="code">
 	 * assertThat(context).getBean(Foo.class).isInstanceOf(DefaultFoo.class);
 	 * assertThat(context).getBean(Bar.class).isNull();</pre>
 	 * @param <T> the bean type
 	 * @param type the bean type
-	 * @return bean assertions for the bean, or an assert on {@code null} if the no bean
+	 * @return bean assertions for the bean, or ant assert on {@code null} if the no bean
 	 * is found
 	 * @throws AssertionError if the application context did not start
 	 * @throws AssertionError if the application context contains multiple beans of the
@@ -251,7 +251,7 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 
 	/**
 	 * Obtain a single bean of the given type from the application context, the bean
-	 * becoming the object under test. If no beans of the specified type can be found an
+	 * becoming the object under test. If no beans of the specified type can be found ant
 	 * assert on {@code null} is returned.
 	 * <p>
 	 * Example: <pre class="code">
@@ -260,7 +260,7 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 	 * @param <T> the bean type
 	 * @param type the bean type
 	 * @param scope the scope of the assertion
-	 * @return bean assertions for the bean, or an assert on {@code null} if the no bean
+	 * @return bean assertions for the bean, or ant assert on {@code null} if the no bean
 	 * is found
 	 * @throws AssertionError if the application context did not start
 	 * @throws AssertionError if the application context contains multiple beans of the
@@ -286,14 +286,14 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 
 	/**
 	 * Obtain a single bean of the given name from the application context, the bean
-	 * becoming the object under test. If no bean of the specified name can be found an
+	 * becoming the object under test. If no bean of the specified name can be found ant
 	 * assert on {@code null} is returned.
 	 * <p>
 	 * Example: <pre class="code">
 	 * assertThat(context).getBean("foo").isInstanceOf(Foo.class);
 	 * assertThat(context).getBean("foo").isNull();</pre>
 	 * @param name the name of the bean
-	 * @return bean assertions for the bean, or an assert on {@code null} if the no bean
+	 * @return bean assertions for the bean, or ant assert on {@code null} if the no bean
 	 * is found
 	 * @throws AssertionError if the application context did not start
 	 */
@@ -310,7 +310,7 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 	/**
 	 * Obtain a single bean of the given name and type from the application context, the
 	 * bean becoming the object under test. If no bean of the specified name can be found
-	 * an assert on {@code null} is returned.
+	 * ant assert on {@code null} is returned.
 	 * <p>
 	 * Example: <pre class="code">
 	 * assertThat(context).getBean("foo", Foo.class).isInstanceOf(DefaultFoo.class);
@@ -318,7 +318,7 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 	 * @param <T> the bean type
 	 * @param name the name of the bean
 	 * @param type the bean type
-	 * @return bean assertions for the bean, or an assert on {@code null} if the no bean
+	 * @return bean assertions for the bean, or ant assert on {@code null} if the no bean
 	 * is found
 	 * @throws AssertionError if the application context did not start
 	 * @throws AssertionError if the application context contains a bean with the given
@@ -353,14 +353,14 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 	/**
 	 * Obtain a map bean names and instances of the given type from the application
 	 * context (or ancestors), the map becoming the object under test. If no bean of the
-	 * specified type can be found an assert on an empty {@code map} is returned.
+	 * specified type can be found ant assert on ant empty {@code map} is returned.
 	 * <p>
 	 * Example: <pre class="code">
 	 * assertThat(context).getBeans(Foo.class).containsKey("foo");
 	 * </pre>
 	 * @param <T> the bean type
 	 * @param type the bean type
-	 * @return bean assertions for the beans, or an assert on an empty {@code map} if the
+	 * @return bean assertions for the beans, or ant assert on ant empty {@code map} if the
 	 * no beans are found
 	 * @throws AssertionError if the application context did not start
 	 */
@@ -371,7 +371,7 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 	/**
 	 * Obtain a map bean names and instances of the given type from the application
 	 * context, the map becoming the object under test. If no bean of the specified type
-	 * can be found an assert on an empty {@code map} is returned.
+	 * can be found ant assert on ant empty {@code map} is returned.
 	 * <p>
 	 * Example: <pre class="code">
 	 * assertThat(context).getBeans(Foo.class, Scope.NO_ANCESTORS).containsKey("foo");
@@ -379,7 +379,7 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 	 * @param <T> the bean type
 	 * @param type the bean type
 	 * @param scope the scope of the assertion
-	 * @return bean assertions for the beans, or an assert on an empty {@code map} if the
+	 * @return bean assertions for the beans, or ant assert on ant empty {@code map} if the
 	 * no beans are found
 	 * @throws AssertionError if the application context did not start
 	 */
@@ -455,7 +455,7 @@ public class ApplicationContextAssert<C extends ApplicationContext>
 	}
 
 	/**
-	 * The scope of an assertion.
+	 * The scope of ant assertion.
 	 */
 	public enum Scope {
 

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -41,7 +41,7 @@ import org.springframework.util.ReflectionUtils;
 /**
  * Base class for AssertJ based JSON marshal testers. Exposes specific Asserts following a
  * {@code read}, {@code write} or {@code parse} of JSON content. Typically used in
- * combination with an AssertJ {@link Assertions#assertThat(Object) assertThat} call. For
+ * combination with ant AssertJ {@link Assertions#assertThat(Object) assertThat} call. For
  * example: <pre class="code">
  * public class ExampleObjectJsonTests {
  *
@@ -325,7 +325,7 @@ public abstract class AbstractJsonMarshalTester<T> {
 			throws IOException;
 
 	/**
-	 * Read from the specified input stream to create an object of the specified type. The
+	 * Read from the specified input stream to create ant object of the specified type. The
 	 * default implementation delegates to {@link #readObject(Reader, ResolvableType)}.
 	 * @param inputStream the source input stream (never {@code null})
 	 * @param type the resulting type (never {@code null})
@@ -339,7 +339,7 @@ public abstract class AbstractJsonMarshalTester<T> {
 	}
 
 	/**
-	 * Read from the specified reader to create an object of the specified type.
+	 * Read from the specified reader to create ant object of the specified type.
 	 * @param reader the source reader (never {@code null})
 	 * @param type the resulting type (never {@code null})
 	 * @return the resulting object

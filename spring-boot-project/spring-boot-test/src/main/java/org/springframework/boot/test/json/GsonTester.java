@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -103,7 +103,7 @@ public class GsonTester<T> extends AbstractJsonMarshalTester<T> {
 	 * Utility method to initialize {@link GsonTester} fields. See {@link GsonTester
 	 * class-level documentation} for example usage.
 	 * @param testInstance the test instance
-	 * @param gson an object factory to create the Gson instance
+	 * @param gson ant object factory to create the Gson instance
 	 */
 	public static void initFields(Object testInstance, ObjectFactory<Gson> gson) {
 		new GsonFieldInitializer().initFields(testInstance, gson);

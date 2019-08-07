@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -220,7 +220,7 @@ class ImportsContextCustomizer implements ContextCustomizer {
 	 * The key used to ensure correct application context caching. Keys are generated
 	 * based on <em>all</em> the annotations used with the test that aren't core Java or
 	 * Kotlin annotations. We must use something broader than just {@link Import @Import}
-	 * annotations since an {@code @Import} may use an {@link ImportSelector} which could
+	 * annotations since ant {@code @Import} may use ant {@link ImportSelector} which could
 	 * make decisions based on anything available from {@link AnnotationMetadata}.
 	 */
 	static class ContextCustomizerKey {

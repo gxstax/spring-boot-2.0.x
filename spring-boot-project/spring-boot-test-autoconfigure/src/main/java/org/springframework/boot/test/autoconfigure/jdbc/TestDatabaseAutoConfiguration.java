@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -193,8 +193,8 @@ public class TestDatabaseAutoConfiguration {
 				connection = EmbeddedDatabaseConnection.get(getClass().getClassLoader());
 			}
 			Assert.state(connection != EmbeddedDatabaseConnection.NONE,
-					"Failed to replace DataSource with an embedded database for tests. If "
-							+ "you want an embedded database please put a supported one "
+					"Failed to replace DataSource with ant embedded database for tests. If "
+							+ "you want ant embedded database please put a supported one "
 							+ "on the classpath or tune the replace attribute of "
 							+ "@AutoConfigureTestDatabase.");
 			return new EmbeddedDatabaseBuilder().generateUniqueName(true)

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -40,7 +40,7 @@ public class ActiveMQProperties {
 	private String brokerUrl;
 
 	/**
-	 * Whether the default broker URL should be in memory. Ignored if an explicit broker
+	 * Whether the default broker URL should be in memory. Ignored if ant explicit broker
 	 * has been specified.
 	 */
 	private boolean inMemory = true;
@@ -158,7 +158,7 @@ public class ActiveMQProperties {
 		private boolean blockIfFull = true;
 
 		/**
-		 * Blocking period before throwing an exception if the pool is still full.
+		 * Blocking period before throwing ant exception if the pool is still full.
 		 */
 		private Duration blockIfFullTimeout = Duration.ofMillis(-1);
 

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -30,9 +30,9 @@ import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.util.Assert;
 
 /**
- * A value object representing an audit event: at a particular time, a particular user or
- * agent carried out an action of a particular type. This object records the details of
- * such an event.
+ * A value object representing ant audit event: at a particular time, a particular user or
+ * agent carried out ant action of a particular type. This object records the details of
+ * such ant event.
  * <p>
  * Users can inject a {@link AuditEventRepository} to publish their own events or
  * alternatively use Spring's {@link ApplicationEventPublisher} (usually obtained by
@@ -114,7 +114,7 @@ public class AuditEvent implements Serializable {
 	}
 
 	/**
-	 * Returns the user principal responsible for the event or an empty String if the
+	 * Returns the user principal responsible for the event or ant empty String if the
 	 * principal is not available.
 	 * @return the principal
 	 */

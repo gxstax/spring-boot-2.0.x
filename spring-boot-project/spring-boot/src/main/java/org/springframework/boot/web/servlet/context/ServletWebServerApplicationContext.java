@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -62,7 +62,7 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
  * A {@link WebApplicationContext} that can be used to bootstrap itself from a contained
  * {@link ServletWebServerFactory} bean.
  * <p>
- * This context will create, initialize and run an {@link WebServer} by searching for a
+ * This context will create, initialize and run ant {@link WebServer} by searching for a
  * single {@link ServletWebServerFactory} bean within the {@link ApplicationContext}
  * itself. The {@link ServletWebServerFactory} is free to use standard Spring concepts
  * (such as dependency injection, lifecycle callbacks and property placeholder variables).
@@ -366,7 +366,7 @@ public class ServletWebServerApplicationContext extends GenericWebApplicationCon
 
 	/**
 	 * Utility class to store and restore any user defined scopes. This allow scopes to be
-	 * registered in an ApplicationContextInitializer in the same way as they would in a
+	 * registered in ant ApplicationContextInitializer in the same way as they would in a
 	 * classic non-embedded web application context.
 	 */
 	public static class ExistingWebApplicationScopes {

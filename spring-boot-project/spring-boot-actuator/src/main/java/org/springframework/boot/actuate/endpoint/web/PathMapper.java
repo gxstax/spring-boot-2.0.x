@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -19,7 +19,7 @@ package org.springframework.boot.actuate.endpoint.web;
 import org.springframework.boot.actuate.endpoint.EndpointId;
 
 /**
- * Strategy interface used to provide a mapping between an endpoint ID and the root path
+ * Strategy interface used to provide a mapping between ant endpoint ID and the root path
  * where it will be exposed.
  *
  * @author Stephane Nicoll
@@ -31,7 +31,7 @@ public interface PathMapper {
 
 	/**
 	 * Resolve the root path for the endpoint with the specified {@code endpointId}.
-	 * @param endpointId the id of an endpoint
+	 * @param endpointId the id of ant endpoint
 	 * @return the path of the endpoint
 	 * @since 2.0.6
 	 */
@@ -41,7 +41,7 @@ public interface PathMapper {
 
 	/**
 	 * Resolve the root path for the endpoint with the specified {@code endpointId}.
-	 * @param endpointId the id of an endpoint
+	 * @param endpointId the id of ant endpoint
 	 * @return the path of the endpoint
 	 * @deprecated since 2.0.6 in favor of {@link #getRootPath(EndpointId)}
 	 */
@@ -49,8 +49,8 @@ public interface PathMapper {
 	String getRootPath(String endpointId);
 
 	/**
-	 * Returns an {@link PathMapper} that uses the endpoint ID as the path.
-	 * @return an {@link PathMapper} that uses the lowercase endpoint ID as the path
+	 * Returns ant {@link PathMapper} that uses the endpoint ID as the path.
+	 * @return ant {@link PathMapper} that uses the lowercase endpoint ID as the path
 	 */
 	static PathMapper useEndpointId() {
 		return new PathMapper() {

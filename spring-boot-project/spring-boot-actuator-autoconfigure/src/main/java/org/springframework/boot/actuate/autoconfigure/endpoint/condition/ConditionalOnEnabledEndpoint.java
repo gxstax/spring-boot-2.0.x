@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -28,7 +28,7 @@ import org.springframework.context.annotation.Conditional;
 import org.springframework.core.env.Environment;
 
 /**
- * {@link Conditional} that checks whether an endpoint is enabled or not. Matches
+ * {@link Conditional} that checks whether ant endpoint is enabled or not. Matches
  * according to the endpoints specific {@link Environment} property, falling back to
  * {@code management.endpoints.enabled-by-default} or failing that
  * {@link Endpoint#enableByDefault()}.
@@ -64,7 +64,7 @@ import org.springframework.core.env.Environment;
  * <p>
  * In the sample above, {@code MyEndpointWebExtension} will be created if the endpoint is
  * enabled as defined by the rules above. {@code MyEndpointWebExtension} must be a regular
- * extension that refers to an endpoint, something like:
+ * extension that refers to ant endpoint, something like:
  *
  * <pre class="code">
  * &#064;EndpointWebExtension(endpoint = MyEndpoint.class)
@@ -99,7 +99,7 @@ public @interface ConditionalOnEnabledEndpoint {
 
 	/**
 	 * The endpoint type that should be checked. Inferred when the return type of the
-	 * {@code @Bean} method is either an {@link Endpoint} or an {@link EndpointExtension}.
+	 * {@code @Bean} method is either ant {@link Endpoint} or ant {@link EndpointExtension}.
 	 * @return the endpoint type to check
 	 * @since 2.0.6
 	 */

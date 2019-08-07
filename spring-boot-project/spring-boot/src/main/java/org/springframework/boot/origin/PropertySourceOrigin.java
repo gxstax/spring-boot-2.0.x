@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -67,8 +67,8 @@ public class PropertySourceOrigin implements Origin {
 	}
 
 	/**
-	 * Get an {@link Origin} for the given {@link PropertySource} and
-	 * {@code propertyName}. Will either return an {@link OriginLookup} result or a
+	 * Get ant {@link Origin} for the given {@link PropertySource} and
+	 * {@code propertyName}. Will either return ant {@link OriginLookup} result or a
 	 * {@link PropertySourceOrigin}.
 	 * @param propertySource the origin property source
 	 * @param name the property name

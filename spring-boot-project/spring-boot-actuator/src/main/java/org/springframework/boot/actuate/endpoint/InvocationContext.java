@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -22,7 +22,7 @@ import org.springframework.boot.actuate.endpoint.invoke.OperationInvoker;
 import org.springframework.util.Assert;
 
 /**
- * The context for the {@link OperationInvoker invocation of an operation}.
+ * The context for the {@link OperationInvoker invocation of ant operation}.
  *
  * @author Andy Wilkinson
  * @since 2.0.0
@@ -34,7 +34,7 @@ public class InvocationContext {
 	private final Map<String, Object> arguments;
 
 	/**
-	 * Creates a new context for an operation being invoked by the given {@code principal}
+	 * Creates a new context for ant operation being invoked by the given {@code principal}
 	 * with the given available {@code arguments}.
 	 * @param securityContext the current security context. Never {@code null}
 	 * @param arguments the arguments available to the operation. Never {@code null}

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -31,7 +31,7 @@ import org.springframework.core.annotation.AliasFor;
 
 /**
  * Enables scanning for Servlet components ({@link WebFilter filters}, {@link WebServlet
- * servlets}, and {@link WebListener listeners}). Scanning is only performed when using an
+ * servlets}, and {@link WebListener listeners}). Scanning is only performed when using ant
  * embedded web server.
  * <p>
  * Typically, one of {@code value}, {@code basePackages}, or {@code basePackageClasses}
@@ -60,7 +60,7 @@ public @interface ServletComponentScan {
 	String[] value() default {};
 
 	/**
-	 * Base packages to scan for annotated servlet components. {@link #value()} is an
+	 * Base packages to scan for annotated servlet components. {@link #value()} is ant
 	 * alias for (and mutually exclusive with) this attribute.
 	 * <p>
 	 * Use {@link #basePackageClasses()} for a type-safe alternative to String-based

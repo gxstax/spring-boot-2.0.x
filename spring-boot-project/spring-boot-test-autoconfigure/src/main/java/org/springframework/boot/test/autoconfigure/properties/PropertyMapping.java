@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -56,7 +56,7 @@ public @interface PropertyMapping {
 
 	/**
 	 * Defines the property mapping. When used at the type-level, this value will be used
-	 * as a prefix for all mapped attributes. When used on an attribute, the value
+	 * as a prefix for all mapped attributes. When used on ant attribute, the value
 	 * overrides the generated (kebab case) name.
 	 * @return the property mapping
 	 */

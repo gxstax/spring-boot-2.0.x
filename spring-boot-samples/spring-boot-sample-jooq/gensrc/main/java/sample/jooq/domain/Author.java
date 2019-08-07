@@ -84,7 +84,7 @@ public class Author extends TableImpl<Record> {
 	}
 
 	/**
-	 * Create an aliased <code>PUBLIC.AUTHOR</code> table reference
+	 * Create ant aliased <code>PUBLIC.AUTHOR</code> table reference
 	 */
 	public Author(String alias) {
 		this(alias, AUTHOR);

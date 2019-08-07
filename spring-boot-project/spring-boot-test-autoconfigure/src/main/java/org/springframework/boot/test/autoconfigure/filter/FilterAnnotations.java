@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -72,7 +72,7 @@ public class FilterAnnotations implements Iterable<TypeFilter> {
 		switch (filterType) {
 		case ANNOTATION:
 			Assert.isAssignable(Annotation.class, filterClass,
-					"An error occurred while processing an ANNOTATION type filter: ");
+					"An error occurred while processing ant ANNOTATION type filter: ");
 			return new AnnotationTypeFilter((Class<Annotation>) filterClass);
 		case ASSIGNABLE_TYPE:
 			return new AssignableTypeFilter(filterClass);

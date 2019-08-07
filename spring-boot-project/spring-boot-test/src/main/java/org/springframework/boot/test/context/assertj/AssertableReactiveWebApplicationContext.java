@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -23,7 +23,7 @@ import org.springframework.boot.web.reactive.context.ReactiveWebApplicationConte
 
 /**
  * A {@link ReactiveWebApplicationContext} that additionally supports AssertJ style
- * assertions. Can be used to decorate an existing reactive web application context or an
+ * assertions. Can be used to decorate ant existing reactive web application context or ant
  * application context that failed to start.
  * <p>
  * See {@link ApplicationContextAssertProvider} for more details.
@@ -41,7 +41,7 @@ public interface AssertableReactiveWebApplicationContext extends
 	 * Factory method to create a new {@link AssertableReactiveWebApplicationContext}
 	 * instance.
 	 * @param contextSupplier a supplier that will either return a fully configured
-	 * {@link ConfigurableReactiveWebApplicationContext} or throw an exception if the
+	 * {@link ConfigurableReactiveWebApplicationContext} or throw ant exception if the
 	 * context fails to start.
 	 * @return a {@link AssertableReactiveWebApplicationContext} instance
 	 */

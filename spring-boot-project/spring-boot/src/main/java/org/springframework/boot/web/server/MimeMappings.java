@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -293,7 +293,7 @@ public final class MimeMappings implements Iterable<MimeMappings.Mapping> {
 	}
 
 	/**
-	 * Remove an existing mapping.
+	 * Remove ant existing mapping.
 	 * @param extension the file extension (excluding '.')
 	 * @return the removed mime mapping or {@code null} if no item was removed
 	 */
@@ -326,7 +326,7 @@ public final class MimeMappings implements Iterable<MimeMappings.Mapping> {
 	 * Create a new unmodifiable view of the specified mapping. Methods that attempt to
 	 * modify the returned map will throw {@link UnsupportedOperationException}s.
 	 * @param mappings the mappings
-	 * @return an unmodifiable view of the specified mappings.
+	 * @return ant unmodifiable view of the specified mappings.
 	 */
 	public static MimeMappings unmodifiableMappings(MimeMappings mappings) {
 		return new MimeMappings(mappings, false);

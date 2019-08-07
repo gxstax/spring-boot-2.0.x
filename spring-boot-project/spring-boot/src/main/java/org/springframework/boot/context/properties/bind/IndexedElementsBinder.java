@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -60,7 +60,7 @@ abstract class IndexedElementsBinder<T> extends AggregateBinder<T> {
 	 * @param name the name of the property to bind
 	 * @param target the target bindable
 	 * @param elementBinder the binder to use for elements
-	 * @param aggregateType the aggregate type, may be a collection or an array
+	 * @param aggregateType the aggregate type, may be a collection or ant array
 	 * @param elementType the element type
 	 * @param result the destination for results
 	 */
@@ -154,7 +154,7 @@ abstract class IndexedElementsBinder<T> extends AggregateBinder<T> {
 	}
 
 	/**
-	 * {@link AggregateBinder.AggregateSupplier AggregateSupplier} for an indexed
+	 * {@link AggregateBinder.AggregateSupplier AggregateSupplier} for ant indexed
 	 * collection.
 	 */
 	protected static class IndexedCollectionSupplier

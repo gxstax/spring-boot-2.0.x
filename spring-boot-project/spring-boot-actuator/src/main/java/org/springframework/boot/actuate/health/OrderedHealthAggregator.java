@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -46,7 +46,7 @@ public class OrderedHealthAggregator extends AbstractHealthAggregator {
 
 	/**
 	 * Set the ordering of the status.
-	 * @param statusOrder an ordered list of the status
+	 * @param statusOrder ant ordered list of the status
 	 */
 	public void setStatusOrder(Status... statusOrder) {
 		String[] order = new String[statusOrder.length];
@@ -58,7 +58,7 @@ public class OrderedHealthAggregator extends AbstractHealthAggregator {
 
 	/**
 	 * Set the ordering of the status.
-	 * @param statusOrder an ordered list of the status codes
+	 * @param statusOrder ant ordered list of the status codes
 	 */
 	public void setStatusOrder(List<String> statusOrder) {
 		Assert.notNull(statusOrder, "StatusOrder must not be null");

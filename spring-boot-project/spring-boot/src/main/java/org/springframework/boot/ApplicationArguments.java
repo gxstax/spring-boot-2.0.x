@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -36,15 +36,15 @@ public interface ApplicationArguments {
 	/**
 	 * Return the names of all option arguments. For example, if the arguments were
 	 * "--foo=bar --debug" would return the values {@code ["foo", "debug"]}.
-	 * @return the option names or an empty set
+	 * @return the option names or ant empty set
 	 */
 	Set<String> getOptionNames();
 
 	/**
-	 * Return whether the set of option arguments parsed from the arguments contains an
+	 * Return whether the set of option arguments parsed from the arguments contains ant
 	 * option with the given name.
 	 * @param name the name to check
-	 * @return {@code true} if the arguments contain an option with the given name
+	 * @return {@code true} if the arguments contain ant option with the given name
 	 */
 	boolean containsOption(String name);
 
@@ -52,7 +52,7 @@ public interface ApplicationArguments {
 	 * Return the collection of values associated with the arguments option having the
 	 * given name.
 	 * <ul>
-	 * <li>if the option is present and has no argument (e.g.: "--foo"), return an empty
+	 * <li>if the option is present and has no argument (e.g.: "--foo"), return ant empty
 	 * collection ({@code []})</li>
 	 * <li>if the option is present and has a single value (e.g. "--foo=bar"), return a
 	 * collection having one element ({@code ["bar"]})</li>
@@ -67,7 +67,7 @@ public interface ApplicationArguments {
 
 	/**
 	 * Return the collection of non-option arguments parsed.
-	 * @return the non-option arguments or an empty list
+	 * @return the non-option arguments or ant empty list
 	 */
 	List<String> getNonOptionArgs();
 

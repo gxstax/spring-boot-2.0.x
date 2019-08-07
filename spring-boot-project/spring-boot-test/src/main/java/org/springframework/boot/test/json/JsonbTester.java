@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -103,7 +103,7 @@ public class JsonbTester<T> extends AbstractJsonMarshalTester<T> {
 	 * Utility method to initialize {@link JsonbTester} fields. See {@link JsonbTester
 	 * class-level documentation} for example usage.
 	 * @param testInstance the test instance
-	 * @param jsonb an object factory to create the Jsonb instance
+	 * @param jsonb ant object factory to create the Jsonb instance
 	 */
 	public static void initFields(Object testInstance, ObjectFactory<Jsonb> jsonb) {
 		new JsonbTester.JsonbFieldInitializer().initFields(testInstance, jsonb);

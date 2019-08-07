@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -24,7 +24,7 @@ import javax.lang.model.element.TypeElement;
 import org.springframework.boot.configurationprocessor.fieldvalues.javac.JavaCompilerFieldValuesParser;
 
 /**
- * Parser which can be used to obtain the field values from an {@link TypeElement}.
+ * Parser which can be used to obtain the field values from ant {@link TypeElement}.
  *
  * @author Phillip Webb
  * @since 1.1.2
@@ -34,7 +34,7 @@ import org.springframework.boot.configurationprocessor.fieldvalues.javac.JavaCom
 public interface FieldValuesParser {
 
 	/**
-	 * Implementation of {@link FieldValuesParser} that always returns an empty result.
+	 * Implementation of {@link FieldValuesParser} that always returns ant empty result.
 	 */
 	FieldValuesParser NONE = (element) -> Collections.emptyMap();
 

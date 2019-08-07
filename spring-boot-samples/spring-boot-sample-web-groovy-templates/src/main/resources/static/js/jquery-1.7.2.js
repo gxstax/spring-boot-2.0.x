@@ -122,7 +122,7 @@ jQuery.fn = jQuery.prototype = {
 
     // Handle HTML strings
     if ( typeof selector === "string" ) {
-      // Are we dealing with HTML string or an ID?
+      // Are we dealing with HTML string or ant ID?
       if ( selector.charAt(0) === "<" && selector.charAt( selector.length - 1 ) === ">" && selector.length >= 3 ) {
         // Assume that strings that start and end with <> are HTML and skip the regex check
         match = [ null, selector, null ];
@@ -206,7 +206,7 @@ jQuery.fn = jQuery.prototype = {
     return jQuery.makeArray( selector, this );
   },
 
-  // Start with an empty selector
+  // Start with ant empty selector
   selector: "",
 
   // The current version of jQuery being used
@@ -236,7 +236,7 @@ jQuery.fn = jQuery.prototype = {
       ( num < 0 ? this[ this.length + num ] : this[ num ] );
   },
 
-  // Take an array of elements and push it onto the stack
+  // Take ant array of elements and push it onto the stack
   // (returning the new matched element set)
   pushStack: function( elems, name, selector ) {
     // Build a new jQuery matched element set
@@ -265,7 +265,7 @@ jQuery.fn = jQuery.prototype = {
   },
 
   // Execute a callback for every element in the matched set.
-  // (You can seed the arguments with an array of args, but this is
+  // (You can seed the arguments with ant array of args, but this is
   // only used internally.)
   each: function( callback, args ) {
     return jQuery.each( this, callback, args );
@@ -312,7 +312,7 @@ jQuery.fn = jQuery.prototype = {
   },
 
   // For internal use only.
-  // Behaves like an Array's method, not like a jQuery method.
+  // Behaves like ant Array's method, not like a jQuery method.
   push: push,
   sort: [].sort,
   splice: [].splice
@@ -416,7 +416,7 @@ jQuery.extend({
 
   // Handle when the DOM is ready
   ready: function( wait ) {
-    // Either a released hold or an DOMready/load event and not yet ready
+    // Either a released hold or ant DOMready/load event and not yet ready
     if ( (wait === true && !--jQuery.readyWait) || (wait !== true && !jQuery.isReady) ) {
       // Make sure body exists, at least, in case IE gets a little overzealous (ticket #5443).
       if ( !document.body ) {
@@ -512,7 +512,7 @@ jQuery.extend({
   },
 
   isPlainObject: function( obj ) {
-    // Must be an Object.
+    // Must be ant Object.
     // Because of IE, we also have to check the presence of the constructor property.
     // Make sure that DOM nodes and window objects don't pass through, as well
     if ( !obj || jQuery.type(obj) !== "object" || obj.nodeType || jQuery.isWindow( obj ) ) {
@@ -608,7 +608,7 @@ jQuery.extend({
   globalEval: function( data ) {
     if ( data && rnotwhite.test( data ) ) {
       // We use execScript on Internet Explorer
-      // We use an anonymous function so that context is window
+      // We use ant anonymous function so that context is window
       // rather than jQuery in Firefox
       ( window.execScript || function( data ) {
         window[ "eval" ].call( window, data );
@@ -1000,10 +1000,10 @@ function createFlags( flags ) {
 /*
  * Create a callback list using the following parameters:
  *
- *	flags:	an optional list of space-separated flags that will change how
+ *	flags:	ant optional list of space-separated flags that will change how
  *			the callback list behaves
  *
- * By default a callback list will act like an event callback list and can be
+ * By default a callback list will act like ant event callback list and can be
  * "fired" multiple times.
  *
  * Possible flags:
@@ -1426,7 +1426,7 @@ jQuery.support = (function() {
     checkOn: ( input.value === "on" ),
 
     // Make sure that a selected-by-default option has a working selected property.
-    // (WebKit defaults to false instead of true, IE too, if it's in an optgroup)
+    // (WebKit defaults to false instead of true, IE too, if it's in ant optgroup)
     optSelected: opt.selected,
 
     // Test setAttribute on camelCase class. If it works, we need attrFixes when doing get/setAttribute (ie6/7)
@@ -1435,7 +1435,7 @@ jQuery.support = (function() {
     // Tests for enctype support on a form(#6743)
     enctype: !!document.createElement("form").enctype,
 
-    // Makes sure cloning an html5 element does not cause problems
+    // Makes sure cloning ant html5 element does not cause problems
     // Where outerHTML is undefined, this still works
     html5Clone: document.createElement("nav").cloneNode( true ).outerHTML !== "<:nav></:nav>",
 
@@ -1463,7 +1463,7 @@ jQuery.support = (function() {
   select.disabled = true;
   support.optDisabled = !opt.disabled;
 
-  // Test to see if it's possible to delete an expando from an element
+  // Test to see if it's possible to delete ant expando from ant element
   // Fails in Internet Explorer
   try {
     delete div.test;
@@ -1510,7 +1510,7 @@ jQuery.support = (function() {
   // http://perfectionkills.com/detecting-event-support-without-browser-sniffing/
   // We only care about the case where non-standard event systems
   // are used, namely in IE. Short-circuiting here helps us to
-  // avoid an eval call (in setAttribute) which can cause CSP
+  // avoid ant eval call (in setAttribute) which can cause CSP
   // to go haywire. See: https://developer.mozilla.org/en/Security/CSP
   if ( div.attachEvent ) {
     for ( i in {
@@ -1565,7 +1565,7 @@ jQuery.support = (function() {
     // Check if table cells still have offsetWidth/Height when they are set
     // to display:none and there are still other visible table cells in a
     // table row; if so, offsetWidth/Height are not reliable for use when
-    // determining if an element has been hidden directly using
+    // determining if ant element has been hidden directly using
     // display:none (it is still safe to use offsets if a parent element is
     // hidden; don safety goggles and see bug #4512 for more information).
     // (only IE 8 fails this test)
@@ -1707,12 +1707,12 @@ jQuery.extend({
       // attached directly to the object so GC can occur automatically
       cache = isNode ? jQuery.cache : elem,
 
-      // Only defining an ID for JS objects if its cache already exists allows
+      // Only defining ant ID for JS objects if its cache already exists allows
       // the code to shortcut on the same path as a DOM node with no cache
       id = isNode ? elem[ internalKey ] : elem[ internalKey ] && internalKey,
       isEvents = name === "events";
 
-    // Avoid doing any more work than we need to when trying to get data on an
+    // Avoid doing any more work than we need to when trying to get data on ant
     // object that has no data at all
     if ( (!id || !cache[id] || (!isEvents && !pvt && !cache[id].data)) && getByName && data === undefined ) {
       return;
@@ -2464,12 +2464,12 @@ jQuery.extend({
             // Get the specific value for the option
             value = jQuery( option ).val();
 
-            // We don't need an array for one selects
+            // We don't need ant array for one selects
             if ( one ) {
               return value;
             }
 
-            // Multi-Selects return an array
+            // Multi-Selects return ant array
             values.push( value );
           }
         }
@@ -2782,7 +2782,7 @@ if ( !getSetAttribute ) {
   });
 
   // Set contenteditable to false on removals(#10429)
-  // Setting to empty string throws an error as an invalid value
+  // Setting to empty string throws ant error as ant invalid value
   jQuery.attrHooks.contenteditable = {
     get: nodeHook.get,
     set: function( elem, value, name ) {
@@ -2820,7 +2820,7 @@ if ( !jQuery.support.style ) {
   };
 }
 
-// Safari mis-reports the default selected property of an option
+// Safari mis-reports the default selected property of ant option
 // Accessing the parent's selectedIndex property fixes it
 if ( !jQuery.support.optSelected ) {
   jQuery.propHooks.selected = jQuery.extend( jQuery.propHooks.selected, {
@@ -2915,7 +2915,7 @@ jQuery.event = {
       return;
     }
 
-    // Caller can pass in an object of custom data in lieu of the handler
+    // Caller can pass in ant object of custom data in lieu of the handler
     if ( handler.handler ) {
       handleObjIn = handler;
       handler = handleObjIn.handler;
@@ -2936,7 +2936,7 @@ jQuery.event = {
     if ( !eventHandle ) {
       elemData.handle = eventHandle = function( e ) {
         // Discard the second event of a jQuery.event.trigger() and
-        // when an event is called after a page has unloaded
+        // when ant event is called after a page has unloaded
         return typeof jQuery !== "undefined" && (!e || jQuery.event.triggered !== e.type) ?
           jQuery.event.dispatch.apply( eventHandle.elem, arguments ) :
           undefined;
@@ -3018,7 +3018,7 @@ jQuery.event = {
 
   global: {},
 
-  // Detach an event or set of events from an element
+  // Detach ant event or set of events from ant element
   remove: function( elem, types, handler, selector, mappedTypes ) {
 
     var elemData = jQuery.hasData( elem ) && jQuery._data( elem ),
@@ -3135,7 +3135,7 @@ jQuery.event = {
       return;
     }
 
-    // Caller can pass in an Event, Object, or just an event type string
+    // Caller can pass in ant Event, Object, or just ant event type string
     event = typeof event === "object" ?
       // jQuery.Event object
       event[ jQuery.expando ] ? event :
@@ -3224,12 +3224,12 @@ jQuery.event = {
         !(type === "click" && jQuery.nodeName( elem, "a" )) && jQuery.acceptData( elem ) ) {
 
         // Call a native DOM method on the target with the same name name as the event.
-        // Can't use an .isFunction() check here because IE6/7 fails that test.
+        // Can't use ant .isFunction() check here because IE6/7 fails that test.
         // Don't do default actions on window, that's where global variables be (#6170)
         // IE<9 dies on focus/blur to hidden element (#1486)
         if ( ontype && elem[ type ] && ((type !== "focus" && type !== "blur") || event.target.offsetWidth !== 0) && !jQuery.isWindow( elem ) ) {
 
-          // Don't re-trigger an onFOO event when we call its FOO() method
+          // Don't re-trigger ant onFOO event when we call its FOO() method
           old = elem[ ontype ];
 
           if ( old ) {
@@ -3643,7 +3643,7 @@ if ( !jQuery.support.submitBubbles ) {
           form._submit_attached = true;
         }
       });
-      // return undefined since we don't need an event listener
+      // return undefined since we don't need ant event listener
     },
 
     postDispatch: function( event ) {
@@ -3795,7 +3795,7 @@ jQuery.fn.extend({
     if ( one === 1 ) {
       origFn = fn;
       fn = function( event ) {
-        // Can use an empty set, since event contains the info
+        // Can use ant empty set, since event contains the info
         jQuery().off( event );
         return origFn.apply( this, arguments );
       };
@@ -4023,8 +4023,8 @@ var Sizzle = function( selector, context, results, seed ) {
     }
 
   } else {
-    // Take a shortcut and set the context if the root selector is an ID
-    // (but not if it'll be faster if the inner selector is an ID)
+    // Take a shortcut and set the context if the root selector is ant ID
+    // (but not if it'll be faster if the inner selector is ant ID)
     if ( !seed && parts.length > 1 && context.nodeType === 9 && !contextXML &&
         Expr.match.ID.test(parts[0]) && !Expr.match.ID.test(parts[parts.length - 1]) ) {
 
@@ -4268,7 +4268,7 @@ Sizzle.error = function( msg ) {
 };
 
 /**
- * Utility function for retreiving the text value of an array of DOM nodes
+ * Utility function for retreiving the text value of ant array of DOM nodes
  * @param {Array|Element} elem
  */
 var getText = Sizzle.getText = function( elem ) {
@@ -4295,7 +4295,7 @@ var getText = Sizzle.getText = function( elem ) {
     }
   } else {
 
-    // If no nodeType, this is expected to be an array
+    // If no nodeType, this is expected to be ant array
     for ( i = 0; (node = elem[i]); i++ ) {
       // Do not traverse comment nodes
       if ( node.nodeType !== 8 ) {
@@ -4522,7 +4522,7 @@ var Expr = Sizzle.selectors = {
         match[1] = Expr.attrMap[name];
       }
 
-      // Handle if an un-quoted value was used
+      // Handle if ant un-quoted value was used
       match[4] = ( match[4] || match[5] || "" ).replace( rBackslash, "" );
 
       if ( match[2] === "~=" ) {
@@ -4862,7 +4862,7 @@ var makeArray = function( array, results ) {
 };
 
 // Perform a simple check to determine if the browser is capable of
-// converting a NodeList to an array using builtin methods.
+// converting a NodeList to ant array using builtin methods.
 // Also verifies that the returned array holds DOM nodes
 // (which is not the case in the Blackberry browser)
 try {
@@ -5061,7 +5061,7 @@ if ( document.documentElement.compareDocumentPosition ) {
     };
   }
 
-  // Check to see if an attribute returns normalized href attributes
+  // Check to see if ant attribute returns normalized href attributes
   div.innerHTML = "<a href='#'></a>";
 
   if ( div.firstChild && typeof div.firstChild.getAttribute !== "undefined" &&
@@ -5139,7 +5139,7 @@ if ( document.querySelectorAll ) {
           } catch(qsaError) {}
 
         // qSA works strangely on Element-rooted queries
-        // We can work around this by specifying an extra ID on the root
+        // We can work around this by specifying ant extra ID on the root
         // and working up from there (Thanks to Andrew Dupont for the technique)
         // IE 8 doesn't work on object elements
         } else if ( context.nodeType === 1 && context.nodeName.toLowerCase() !== "object" ) {
@@ -5195,7 +5195,7 @@ if ( document.querySelectorAll ) {
       pseudoWorks = false;
 
     try {
-      // This should fail with an exception
+      // This should fail with ant exception
       // Gecko does not error, returns false instead
       matches.call( document.documentElement, "[test!='']:sizzle" );
 
@@ -5525,7 +5525,7 @@ jQuery.fn.extend({
     return this.pushStack( ret, "closest", selectors );
   },
 
-  // Determine the position of an element within
+  // Determine the position of ant element within
   // the matched set of elements
   index: function( elem ) {
 
@@ -5561,7 +5561,7 @@ jQuery.fn.extend({
   }
 });
 
-// A painfully simple check to see if an element is disconnected
+// A painfully simple check to see if ant element is disconnected
 // from a document (should be improved, where feasible).
 function isDisconnected( node ) {
   return !node || !node.parentNode || node.parentNode.nodeType === 11;
@@ -5955,7 +5955,7 @@ jQuery.fn.extend({
 
           elem = 0;
 
-        // If using innerHTML throws an exception, use the fallback method
+        // If using innerHTML throws ant exception, use the fallback method
         } catch(e) {}
       }
 
@@ -6161,7 +6161,7 @@ function cloneFixAttributes( src, dest ) {
     }
 
     // IE6-7 get confused and end up setting the value of a cloned
-    // checkbox/radio button to an empty string instead of "on"
+    // checkbox/radio button to ant empty string instead of "on"
     if ( dest.value !== src.value ) {
       dest.value = src.value;
     }
@@ -6195,14 +6195,14 @@ jQuery.buildFragment = function( args, nodes, scripts ) {
   var fragment, cacheable, cacheresults, doc,
   first = args[ 0 ];
 
-  // nodes may contain either an explicit document object,
+  // nodes may contain either ant explicit document object,
   // a jQuery collection or context object.
   // If nodes[0] contains a valid object to assign to doc
   if ( nodes && nodes[0] ) {
     doc = nodes[0].ownerDocument || nodes[0];
   }
 
-  // Ensure that an attr object doesn't incorrectly stand in as a document object
+  // Ensure that ant attr object doesn't incorrectly stand in as a document object
   // Chrome and Firefox seem to allow this to occur and will throw exception
   // Fixes #8950
   if ( !doc.createDocumentFragment ) {
@@ -6332,7 +6332,7 @@ jQuery.extend({
       destElements = getAll( clone );
 
       // Weird iteration because IE will replace the length property
-      // with an element if you are cloning the body and one of the
+      // with ant element if you are cloning the body and one of the
       // elements on the page has a name or id of "length"
       for ( i = 0; srcElements[i]; ++i ) {
         // Ensure that the destination node is not null; Fixes #9587
@@ -6368,7 +6368,7 @@ jQuery.extend({
 
     context = context || document;
 
-    // !context.createElement fails in IE with an error but returns typeof 'object'
+    // !context.createElement fails in IE with ant error but returns typeof 'object'
     if ( typeof context.createElement === "undefined" ) {
       context = context.ownerDocument || context[0] && context[0].ownerDocument || document;
     }
@@ -6972,7 +6972,7 @@ var r20 = /%20/g,
   rbracket = /\[\]$/,
   rCRLF = /\r?\n/g,
   rhash = /#.*$/,
-  rheaders = /^(.*?):[ \t]*([^\r\n]*)\r?$/mg, // IE leaves an \r character at EOL
+  rheaders = /^(.*?):[ \t]*([^\r\n]*)\r?$/mg, // IE leaves ant \r character at EOL
   rinput = /^(?:color|date|datetime|datetime-local|email|hidden|month|number|password|range|search|tel|text|time|url|week)$/i,
   // #7653, #8125, #8152: local protocol detection
   rlocalProtocol = /^(?:about|app|app\-storage|.+\-extension|file|res|widget):$/,
@@ -6989,7 +6989,7 @@ var r20 = /%20/g,
   _load = jQuery.fn.load,
 
   /* Prefilters
-   * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for an example)
+   * 1) They are useful to introduce custom dataTypes (see ajax/jsonp.js for ant example)
    * 2) These are called:
    *    - BEFORE asking for a transport
    *    - AFTER param serialization (s.data is a string if s.processData is true)
@@ -7015,12 +7015,12 @@ var r20 = /%20/g,
   // Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
   allTypes = ["*/"] + ["*"];
 
-// #8138, IE may throw an exception when accessing
+// #8138, IE may throw ant exception when accessing
 // a field from window.location if document.domain has been set
 try {
   ajaxLocation = location.href;
 } catch( e ) {
-  // Use the href attribute of an A element
+  // Use the href attribute of ant A element
   // since IE will modify it given document.location
   ajaxLocation = document.createElement( "a" );
   ajaxLocation.href = "";
@@ -7350,13 +7350,13 @@ jQuery.extend({
   // Main method
   ajax: function( url, options ) {
 
-    // If url is an object, simulate pre-1.5 signature
+    // If url is ant object, simulate pre-1.5 signature
     if ( typeof url === "object" ) {
       options = url;
       url = undefined;
     }
 
-    // Force options to be an object
+    // Force options to be ant object
     options = options || {};
 
     var // Create the final options object
@@ -7634,7 +7634,7 @@ jQuery.extend({
       // If data is available, append data to url
       if ( s.data ) {
         s.url += ( rquery.test( s.url ) ? "&" : "?" ) + s.data;
-        // #9682: remove data so that it's not used in an eventual retry
+        // #9682: remove data so that it's not used in ant eventual retry
         delete s.data;
       }
 
@@ -7731,7 +7731,7 @@ jQuery.extend({
     return jqXHR;
   },
 
-  // Serialize an array of form elements or a set of
+  // Serialize ant array of form elements or a set of
   // key/values into a query string
   param: function( a, traditional ) {
     var s = [],
@@ -7746,7 +7746,7 @@ jQuery.extend({
       traditional = jQuery.ajaxSettings.traditional;
     }
 
-    // If an array was passed in, assume that it is an array of form elements.
+    // If ant array was passed in, assume that it is ant array of form elements.
     if ( jQuery.isArray( a ) || ( a.jquery && !jQuery.isPlainObject( a ) ) ) {
       // Serialize the form elements
       jQuery.each( a, function() {
@@ -7780,7 +7780,7 @@ function buildParams( prefix, obj, traditional, add ) {
         // Note that rack (as of 1.0.0) can't currently deserialize
         // nested arrays properly, and attempting to do so may cause
         // a server error. Possible fixes are to modify rack's
-        // deserialization algorithm or to provide an option or flag
+        // deserialization algorithm or to provide ant option or flag
         // to force array serialization to be shallow.
         buildParams( prefix + "[" + ( typeof v === "object" ? i : "" ) + "]", v, traditional, add );
       }
@@ -7811,7 +7811,7 @@ jQuery.extend({
 
 });
 
-/* Handles responses to an ajax request:
+/* Handles responses to ant ajax request:
  * - sets all responseXXX fields accordingly
  * - finds the right dataType (mediates between content-type and expected dataType)
  * - returns the corresponding response
@@ -7951,11 +7951,11 @@ function ajaxConvert( s, response ) {
           }
         }
       }
-      // If we found no converter, dispatch an error
+      // If we found no converter, dispatch ant error
       if ( !( conv || conv2 ) ) {
         jQuery.error( "No conversion from " + conversion.replace(" "," to ") );
       }
-      // If found converter is not an equivalence
+      // If found converter is not ant equivalence
       if ( conv !== true ) {
         // Convert with 1 or 2 converters accordingly
         response = conv ? conv( response ) : conv2( conv1(response) );
@@ -8118,7 +8118,7 @@ jQuery.ajaxTransport( "script", function(s) {
             }
           }
         };
-        // Use insertBefore instead of appendChild  to circumvent an IE6 bug.
+        // Use insertBefore instead of appendChild  to circumvent ant IE6 bug.
         // This arises when a base node is used (#2709 and #4378).
         head.insertBefore( script, head.firstChild );
       },
@@ -8181,7 +8181,7 @@ jQuery.ajaxSettings.xhr = window.ActiveXObject ?
   });
 })( jQuery.ajaxSettings.xhr() );
 
-// Create transport if the browser can provide an xhr
+// Create transport if the browser can provide ant xhr
 if ( jQuery.support.ajax ) {
 
   jQuery.ajaxTransport(function( s ) {
@@ -8227,7 +8227,7 @@ if ( jQuery.support.ajax ) {
             headers[ "X-Requested-With" ] = "XMLHttpRequest";
           }
 
-          // Need an extra try/catch for cross domain requests in Firefox 3
+          // Need ant extra try/catch for cross domain requests in Firefox 3
           try {
             for ( i in headers ) {
               xhr.setRequestHeader( i, headers[ i ] );
@@ -8235,7 +8235,7 @@ if ( jQuery.support.ajax ) {
           } catch( _ ) {}
 
           // Do send the request
-          // This may raise an exception which is actually
+          // This may raise ant exception which is actually
           // handled in jQuery.ajax (so no try/catch here)
           xhr.send( ( s.hasContent && s.data ) || null );
 
@@ -8249,7 +8249,7 @@ if ( jQuery.support.ajax ) {
               xml;
 
             // Firefox throws exceptions when accessing properties
-            // of an xhr when a network error occured
+            // of ant xhr when a network error occured
             // http://helpful.knobs-dials.com/index.php/Component_returned_failure_code:_0x80040111_(NS_ERROR_NOT_AVAILABLE)
             try {
 
@@ -8267,7 +8267,7 @@ if ( jQuery.support.ajax ) {
                   }
                 }
 
-                // If it's an abort
+                // If it's ant abort
                 if ( isAbort ) {
                   // Abort it manually if needed
                   if ( xhr.readyState !== 4 ) {
@@ -8284,19 +8284,19 @@ if ( jQuery.support.ajax ) {
                     responses.xml = xml;
                   }
 
-                  // When requesting binary data, IE6-9 will throw an exception
+                  // When requesting binary data, IE6-9 will throw ant exception
                   // on any attempt to access responseText (#11426)
                   try {
                     responses.text = xhr.responseText;
                   } catch( _ ) {
                   }
 
-                  // Firefox throws an exception when accessing
+                  // Firefox throws ant exception when accessing
                   // statusText for faulty cross-domain requests
                   try {
                     statusText = xhr.statusText;
                   } catch( e ) {
-                    // We normalize with Webkit giving an empty statusText
+                    // We normalize with Webkit giving ant empty statusText
                     statusText = "";
                   }
 
@@ -8396,7 +8396,7 @@ jQuery.fn.extend({
 
           // Set elements which have been overridden with display: none
           // in a stylesheet to whatever the default browser style is
-          // for such an element
+          // for such ant element
           if ( (display === "" && jQuery.css(elem, "display") === "none") ||
             !jQuery.contains( elem.ownerDocument.documentElement, elem ) ) {
             jQuery._data( elem, "olddisplay", defaultDisplay(elem.nodeName) );
@@ -8506,7 +8506,7 @@ jQuery.fn.extend({
         parts, start, end, unit,
         method;
 
-      // will store per property easing and be used to determine when an animation is complete
+      // will store per property easing and be used to determine when ant animation is complete
       opt.animatedProperties = {};
 
       // first pass over propertys to expand / normalize
@@ -8803,7 +8803,7 @@ jQuery.fx.prototype = {
     return isNaN( parsed = parseFloat( r ) ) ? !r || r === "auto" ? 0 : r : parsed;
   },
 
-  // Start an animation from one number to another
+  // Start ant animation from one number to another
   custom: function( from, to, unit ) {
     var self = this,
       fx = jQuery.fx;
@@ -8866,7 +8866,7 @@ jQuery.fx.prototype = {
     this.custom( this.cur(), 0 );
   },
 
-  // Each step of an animation
+  // Each step of ant animation
   step: function( gotoEnd ) {
     var p, n, complete,
       t = fxNow || createFxNow(),
@@ -8912,7 +8912,7 @@ jQuery.fx.prototype = {
         }
 
         // Execute the complete function
-        // in the event that the complete function throws an exception
+        // in the event that the complete function throws ant exception
         // we must ensure it won't be called twice. #5684
 
         complete = options.complete;
@@ -8926,7 +8926,7 @@ jQuery.fx.prototype = {
       return false;
 
     } else {
-      // classical easing cannot be used with an Infinity duration
+      // classical easing cannot be used with ant Infinity duration
       if ( options.duration == Infinity ) {
         this.now = t;
       } else {
@@ -9011,7 +9011,7 @@ if ( jQuery.expr && jQuery.expr.filters ) {
   };
 }
 
-// Try to restore the default display value of an element
+// Try to restore the default display value of ant element
 function defaultDisplay( nodeName ) {
 
   if ( !elemdisplay[ nodeName ] ) {
@@ -9240,7 +9240,7 @@ jQuery.fn.extend({
     parentOffset = rroot.test(offsetParent[0].nodeName) ? { top: 0, left: 0 } : offsetParent.offset();
 
     // Subtract element margins
-    // note: when an element has margin: auto the offsetLeft and marginLeft
+    // note: when ant element has margin: auto the offsetLeft and marginLeft
     // are the same in Safari causing offset.left to incorrectly be 0
     offset.top  -= parseFloat( jQuery.css(elem, "marginTop") ) || 0;
     offset.left -= parseFloat( jQuery.css(elem, "marginLeft") ) || 0;
@@ -9383,7 +9383,7 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 // Expose jQuery to the global object
 window.jQuery = window.$ = jQuery;
 
-// Expose jQuery as an AMD module, but only for AMD loaders that
+// Expose jQuery as ant AMD module, but only for AMD loaders that
 // understand the issues with loading multiple versions of jQuery
 // in a page that all might call define(). The loader will indicate
 // they have special allowances for multiple jQuery versions by
@@ -9393,7 +9393,7 @@ window.jQuery = window.$ = jQuery;
 // AMD modules. A named AMD is safest and most robust way to register.
 // Lowercase jquery is used because AMD module names are derived from
 // file names, and jQuery is normally delivered in a lowercase file name.
-// Do this after creating the global so that if an AMD module wants to call
+// Do this after creating the global so that if ant AMD module wants to call
 // noConflict to hide this version of jQuery, it will work.
 if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   define( "jquery", [], function () { return jQuery; } );

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -28,7 +28,7 @@ import java.util.List;
 public interface AuditEventRepository {
 
 	/**
-	 * Log an event.
+	 * Log ant event.
 	 * @param event the audit event to log
 	 */
 	void add(AuditEvent event);
@@ -37,7 +37,7 @@ public interface AuditEventRepository {
 	 * Find audit events of specified type relating to the specified principal that
 	 * occurred {@link Instant#isAfter(Instant) after} the time provided.
 	 * @param principal the principal name to search for (or {@code null} if unrestricted)
-	 * @param after time after which an event must have occurred (or {@code null} if
+	 * @param after time after which ant event must have occurred (or {@code null} if
 	 * unrestricted)
 	 * @param type the event type to search for (or {@code null} if unrestricted)
 	 * @return audit events of specified type relating to the principal

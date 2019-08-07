@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -30,7 +30,7 @@ import org.springframework.core.ParameterNameDiscoverer;
 import org.springframework.util.Assert;
 
 /**
- * {@link OperationParameters} created from an {@link OperationMethod}.
+ * {@link OperationParameters} created from ant {@link OperationMethod}.
  *
  * @author Phillip Webb
  */

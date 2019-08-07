@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -82,7 +82,7 @@ public class ApplicationContextAssertProviderTests {
 	@Test
 	public void getWhenContextTypeIsNullShouldThrowException() {
 		this.thrown.expect(IllegalArgumentException.class);
-		this.thrown.expectMessage("Type must be an interface");
+		this.thrown.expectMessage("Type must be ant interface");
 		ApplicationContextAssertProvider.get(
 				TestAssertProviderApplicationContextClass.class, ApplicationContext.class,
 				this.mockContextSupplier);
@@ -99,7 +99,7 @@ public class ApplicationContextAssertProviderTests {
 	@Test
 	public void getWhenSupplierIsNullShouldThrowException() {
 		this.thrown.expect(IllegalArgumentException.class);
-		this.thrown.expectMessage("ContextType must be an interface");
+		this.thrown.expectMessage("ContextType must be ant interface");
 		ApplicationContextAssertProvider.get(TestAssertProviderApplicationContext.class,
 				StaticApplicationContext.class, this.mockContextSupplier);
 	}

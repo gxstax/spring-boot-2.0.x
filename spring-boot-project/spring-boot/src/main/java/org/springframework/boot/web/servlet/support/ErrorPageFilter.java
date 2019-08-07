@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -49,7 +49,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.NestedServletException;
 
 /**
- * A Servlet {@link Filter} that provides an {@link ErrorPageRegistry} for non-embedded
+ * A Servlet {@link Filter} that provides ant {@link ErrorPageRegistry} for non-embedded
  * applications (i.e. deployed WAR files). It registers error pages and handles
  * application errors by filtering requests and forwarding to the error pages instead of
  * letting the server handle them. Error pages are a feature of the servlet spec but there

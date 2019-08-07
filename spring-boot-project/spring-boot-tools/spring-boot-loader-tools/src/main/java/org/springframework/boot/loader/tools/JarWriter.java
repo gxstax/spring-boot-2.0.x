@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -78,7 +78,7 @@ public class JarWriter implements LoaderClassesWriter, AutoCloseable {
 	/**
 	 * Create a new {@link JarWriter} instance.
 	 * @param file the file to write
-	 * @param launchScript an optional launch script to prepend to the front of the jar
+	 * @param launchScript ant optional launch script to prepend to the front of the jar
 	 * @throws IOException if the file cannot be opened
 	 * @throws FileNotFoundException if the file cannot be found
 	 */
@@ -159,7 +159,7 @@ public class JarWriter implements LoaderClassesWriter, AutoCloseable {
 	}
 
 	/**
-	 * Writes an entry. The {@code inputStream} is closed once the entry has been written
+	 * Writes ant entry. The {@code inputStream} is closed once the entry has been written
 	 * @param entryName the name of the entry
 	 * @param inputStream the stream from which the entry's data can be read
 	 * @throws IOException if the write fails
@@ -310,7 +310,7 @@ public class JarWriter implements LoaderClassesWriter, AutoCloseable {
 	}
 
 	/**
-	 * {@link EntryWriter} that writes content from an {@link InputStream}.
+	 * {@link EntryWriter} that writes content from ant {@link InputStream}.
 	 */
 	private static class InputStreamEntryWriter implements EntryWriter {
 

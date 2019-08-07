@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -38,7 +38,7 @@ import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.util.Assert;
 
 /**
- * Utility design to run and an {@link ApplicationContext} and provide AssertJ style
+ * Utility design to run and ant {@link ApplicationContext} and provide AssertJ style
  * assertions. The test is best used as a field of a test class, describing the shared
  * configuration required for the test:
  *
@@ -71,7 +71,7 @@ import org.springframework.util.Assert;
  * assertions to the context. Upon completion, the context is automatically closed.
  * <p>
  * If the application context fails to start the {@code #run(ContextConsumer)} method is
- * called with a "failed" application context. Calls to the context will throw an
+ * called with a "failed" application context. Calls to the context will throw ant
  * {@link IllegalStateException} and assertions that expect a running context will fail.
  * The {@link ApplicationContextAssert#getFailure() getFailure()} assertion can be used if
  * further checks are required on the cause of the failure: <pre class="code">

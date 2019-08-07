@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -41,7 +41,7 @@ public @interface ConditionalOnJndi {
 
 	/**
 	 * JNDI Locations, one of which must exist. If no locations are specific the condition
-	 * matches solely based on the presence of an {@link InitialContext}.
+	 * matches solely based on the presence of ant {@link InitialContext}.
 	 * @return the JNDI locations
 	 */
 	String[] value() default {};

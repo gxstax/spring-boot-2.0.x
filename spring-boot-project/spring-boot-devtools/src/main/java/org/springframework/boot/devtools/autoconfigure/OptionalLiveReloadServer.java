@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -23,7 +23,7 @@ import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.devtools.livereload.LiveReloadServer;
 
 /**
- * Manages an optional {@link LiveReloadServer}. The {@link LiveReloadServer} may
+ * Manages ant optional {@link LiveReloadServer}. The {@link LiveReloadServer} may
  * gracefully fail to start (e.g. because of a port conflict) or may be omitted entirely.
  *
  * @author Phillip Webb

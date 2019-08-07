@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -27,7 +27,7 @@ import org.springframework.boot.cli.command.status.ExitStatus;
 import org.springframework.boot.loader.tools.JavaExecutable;
 
 /**
- * Decorate an existing command to run it by forking the current java process.
+ * Decorate ant existing command to run it by forking the current java process.
  *
  * @author Phillip Webb
  */

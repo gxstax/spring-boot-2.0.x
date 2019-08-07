@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -43,7 +43,7 @@ public abstract class AbstractReactiveHealthIndicator implements ReactiveHealthI
 	}
 
 	/**
-	 * Actual health check logic. If an error occurs in the pipeline it will be handled
+	 * Actual health check logic. If ant error occurs in the pipeline it will be handled
 	 * automatically.
 	 * @param builder the {@link Health.Builder} to report health status and details
 	 * @return a {@link Mono} that provides the {@link Health}

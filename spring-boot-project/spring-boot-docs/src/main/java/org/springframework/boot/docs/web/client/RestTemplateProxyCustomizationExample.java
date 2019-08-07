@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -36,7 +36,7 @@ import org.springframework.web.client.RestTemplate;
 public class RestTemplateProxyCustomizationExample {
 
 	/**
-	 * A {@link RestTemplateCustomizer} that applies an HttpComponents-based request
+	 * A {@link RestTemplateCustomizer} that applies ant HttpComponents-based request
 	 * factory that is configured to use a proxy.
 	 */
 	// tag::customizer[]

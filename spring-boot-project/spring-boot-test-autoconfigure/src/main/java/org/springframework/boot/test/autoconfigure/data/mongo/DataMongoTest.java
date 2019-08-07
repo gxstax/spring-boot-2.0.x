@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -41,7 +41,7 @@ import org.springframework.test.context.BootstrapWith;
  * Using this annotation will disable full auto-configuration and instead apply only
  * configuration relevant to MongoDB tests.
  * <p>
- * By default, tests annotated with {@code @DataMongoTest} will use an embedded in-memory
+ * By default, tests annotated with {@code @DataMongoTest} will use ant embedded in-memory
  * MongoDB process (if available).
  *
  * @author Michael Simons

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -26,7 +26,7 @@ import org.springframework.util.Assert;
 
 /**
  * {@link ClientHttpRequestInterceptor} to populate arbitrary HTTP headers with a value.
- * For example, it might be used to provide an X-AUTH-TOKEN and value for security
+ * For example, it might be used to provide ant X-AUTH-TOKEN and value for security
  * purposes.
  *
  * @author Rob Winch

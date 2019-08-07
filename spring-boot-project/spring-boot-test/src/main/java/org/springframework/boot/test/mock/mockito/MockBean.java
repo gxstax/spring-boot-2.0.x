@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -84,7 +84,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  * </pre>
  * <p>
  * This annotation is {@code @Repeatable} and may be specified multiple times when working
- * with Java 8 or contained within an {@link MockBeans @MockBeans} annotation.
+ * with Java 8 or contained within ant {@link MockBeans @MockBeans} annotation.
  *
  * @author Phillip Webb
  * @since 1.4.0
@@ -98,14 +98,14 @@ public @interface MockBean {
 
 	/**
 	 * The name of the bean to register or replace. If not specified the name will either
-	 * be generated or, if the mock replaces an existing bean, the existing name will be
+	 * be generated or, if the mock replaces ant existing bean, the existing name will be
 	 * used.
 	 * @return the name of the bean
 	 */
 	String name() default "";
 
 	/**
-	 * The classes to mock. This is an alias of {@link #classes()} which can be used for
+	 * The classes to mock. This is ant alias of {@link #classes()} which can be used for
 	 * brevity if no other attributes are defined. See {@link #classes()} for details.
 	 * @return the classes to mock
 	 */

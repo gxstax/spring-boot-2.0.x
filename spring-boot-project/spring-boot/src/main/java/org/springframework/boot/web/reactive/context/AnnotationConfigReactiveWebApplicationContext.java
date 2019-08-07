@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -46,7 +46,7 @@ import org.springframework.util.StringUtils;
  * <p>
  * Note: In case of multiple {@code @Configuration} classes, later {@code @Bean}
  * definitions will override ones defined in earlier loaded files. This can be leveraged
- * to deliberately override certain bean definitions via an extra Configuration class.
+ * to deliberately override certain bean definitions via ant extra Configuration class.
  *
  * @author Phillip Webb
  * @since 2.0.0
@@ -100,7 +100,7 @@ public class AnnotationConfigReactiveWebApplicationContext
 	 * {@link AnnotatedBeanDefinitionReader} and/or
 	 * {@link ClassPathBeanDefinitionScanner}.
 	 * <p>
-	 * Default is an
+	 * Default is ant
 	 * {@link org.springframework.context.annotation.AnnotationScopeMetadataResolver}.
 	 * @param scopeMetadataResolver the scope metadata resolver
 	 * @see AnnotatedBeanDefinitionReader#setScopeMetadataResolver
@@ -286,7 +286,7 @@ public class AnnotationConfigReactiveWebApplicationContext
 	}
 
 	/**
-	 * Build an {@link AnnotatedBeanDefinitionReader} for the given bean factory.
+	 * Build ant {@link AnnotatedBeanDefinitionReader} for the given bean factory.
 	 * <p>
 	 * This should be pre-configured with the {@code Environment} (if desired) but not
 	 * with a {@code BeanNameGenerator} or {@code ScopeMetadataResolver} yet.

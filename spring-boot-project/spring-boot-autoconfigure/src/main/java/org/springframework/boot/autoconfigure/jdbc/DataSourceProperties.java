@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -52,7 +52,7 @@ public class DataSourceProperties implements BeanClassLoaderAware, InitializingB
 	private ClassLoader classLoader;
 
 	/**
-	 * Name of the datasource. Default to "testdb" when using an embedded database.
+	 * Name of the datasource. Default to "testdb" when using ant embedded database.
 	 */
 	private String name;
 
@@ -135,7 +135,7 @@ public class DataSourceProperties implements BeanClassLoaderAware, InitializingB
 	private String dataPassword;
 
 	/**
-	 * Whether to stop if an error occurs while initializing the database.
+	 * Whether to stop if ant error occurs while initializing the database.
 	 */
 	private boolean continueOnError = false;
 

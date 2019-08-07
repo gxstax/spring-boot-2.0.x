@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -28,12 +28,12 @@ import org.springframework.web.server.ServerWebExchange;
 
 /**
  * {@link ApplicationContext} backed {@link ServerWebExchangeMatcher}. Can work directly
- * with the {@link ApplicationContext}, obtain an existing bean or
+ * with the {@link ApplicationContext}, obtain ant existing bean or
  * {@link AutowireCapableBeanFactory#createBean(Class, int, boolean) create a new bean}
  * that is autowired in the usual way.
  *
  * @param <C> the type of the context that the match method actually needs to use. Can be
- * an {@link ApplicationContext} or a class of an {@link ApplicationContext#getBean(Class)
+ * ant {@link ApplicationContext} or a class of ant {@link ApplicationContext#getBean(Class)
  * existing bean}.
  * @author Madhura Bhave
  * @since 2.0.0
@@ -60,7 +60,7 @@ public abstract class ApplicationContextServerWebExchangeMatcher<C>
 	/**
 	 * Decides whether the rule implemented by the strategy matches the supplied exchange.
 	 * @param exchange the source exchange
-	 * @param context a supplier for the initialized context (may throw an exception)
+	 * @param context a supplier for the initialized context (may throw ant exception)
 	 * @return if the exchange matches
 	 */
 	protected abstract Mono<MatchResult> matches(ServerWebExchange exchange,
@@ -81,7 +81,7 @@ public abstract class ApplicationContextServerWebExchangeMatcher<C>
 
 	/**
 	 * Called once the context has been initialized.
-	 * @param context a supplier for the initialized context (may throw an exception)
+	 * @param context a supplier for the initialized context (may throw ant exception)
 	 */
 	protected void initialized(Supplier<C> context) {
 	}

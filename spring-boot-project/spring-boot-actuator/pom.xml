@@ -223,7 +223,7 @@
 			<optional>true</optional>
 			<exclusions>
 				<!-- the version of solr here is incompatible with jackson-xml because
-					of an old woodstox -->
+					of ant old woodstox -->
 				<exclusion>
 					<artifactId>wstx-asl</artifactId>
 					<groupId>org.codehaus.woodstox</groupId>

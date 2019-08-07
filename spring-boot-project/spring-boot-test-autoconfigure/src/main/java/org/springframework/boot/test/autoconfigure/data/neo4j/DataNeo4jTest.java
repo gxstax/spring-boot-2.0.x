@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -42,7 +42,7 @@ import org.springframework.transaction.annotation.Transactional;
  * Using this annotation will disable full auto-configuration and instead apply only
  * configuration relevant to Neo4j tests.
  * <p>
- * By default, tests annotated with {@code @DataNeo4jTest} will use an embedded in-memory
+ * By default, tests annotated with {@code @DataNeo4jTest} will use ant embedded in-memory
  * Neo4j process (if available). They will also be transactional with the usual
  * test-related semantics (i.e. rollback by default).
  *

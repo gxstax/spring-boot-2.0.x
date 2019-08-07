@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -19,7 +19,7 @@ package org.springframework.boot.web.codec;
 import org.springframework.http.codec.CodecConfigurer;
 
 /**
- * Callback interface that can be used to customize codecs configuration for an HTTP
+ * Callback interface that can be used to customize codecs configuration for ant HTTP
  * client and/or server with a {@link CodecConfigurer}.
  *
  * @author Brian Clozel

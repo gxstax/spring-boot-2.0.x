@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -38,7 +38,7 @@ import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
 /**
- * Utility class that can be used to repackage an archive so that it can be executed using
+ * Utility class that can be used to repackage ant archive so that it can be executed using
  * '{@literal java -jar}'.
  *
  * @author Phillip Webb
@@ -84,7 +84,7 @@ public class Repackager {
 			throw new IllegalArgumentException("Source file must be provided");
 		}
 		if (!source.exists() || !source.isFile()) {
-			throw new IllegalArgumentException("Source must refer to an existing file, "
+			throw new IllegalArgumentException("Source must refer to ant existing file, "
 					+ "got " + source.getAbsolutePath());
 		}
 		this.source = source.getAbsoluteFile();
@@ -164,7 +164,7 @@ public class Repackager {
 	 * {@literal java -jar}'.
 	 * @param destination the destination file (may be the same as the source)
 	 * @param libraries the libraries required to run the archive
-	 * @param launchScript an optional launch script prepended to the front of the jar
+	 * @param launchScript ant optional launch script prepended to the front of the jar
 	 * @throws IOException if the file cannot be repackaged
 	 * @since 1.3.0
 	 */
@@ -412,7 +412,7 @@ public class Repackager {
 	}
 
 	/**
-	 * An {@link UnpackHandler} that determines that an entry needs to be unpacked if a
+	 * An {@link UnpackHandler} that determines that ant entry needs to be unpacked if a
 	 * library that requires unpacking has a matching entry name.
 	 */
 	private final class WritableLibraries implements UnpackHandler {

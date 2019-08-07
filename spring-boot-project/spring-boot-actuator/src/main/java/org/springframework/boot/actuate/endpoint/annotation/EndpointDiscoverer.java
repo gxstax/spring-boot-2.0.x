@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -54,7 +54,7 @@ import org.springframework.util.StringUtils;
 /**
  * A Base for {@link EndpointsSupplier} implementations that discover
  * {@link Endpoint @Endpoint} beans and {@link EndpointExtension @EndpointExtension} beans
- * in an application context.
+ * in ant application context.
  *
  * @param <E> the endpoint type
  * @param <O> the operation type
@@ -256,7 +256,7 @@ public abstract class EndpointDiscoverer<E extends ExposableEndpoint<O>, O exten
 	}
 
 	/**
-	 * Determine if an extension bean should be exposed. Subclasses can override this
+	 * Determine if ant extension bean should be exposed. Subclasses can override this
 	 * method to provide additional logic.
 	 * @param extensionBean the extension bean
 	 * @return {@code true} if the extension is exposed
@@ -272,7 +272,7 @@ public abstract class EndpointDiscoverer<E extends ExposableEndpoint<O>, O exten
 	}
 
 	/**
-	 * Determine if an endpoint bean should be exposed. Subclasses can override this
+	 * Determine if ant endpoint bean should be exposed. Subclasses can override this
 	 * method to provide additional logic.
 	 * @param endpointBean the endpoint bean
 	 * @return {@code true} if the endpoint is exposed
@@ -367,7 +367,7 @@ public abstract class EndpointDiscoverer<E extends ExposableEndpoint<O>, O exten
 			boolean enabledByDefault, Collection<O> operations);
 
 	/**
-	 * Factory method to create an {@link Operation endpoint operation}.
+	 * Factory method to create ant {@link Operation endpoint operation}.
 	 * @param endpointId the endpoint id
 	 * @param operationMethod the operation method
 	 * @param invoker the invoker to use
@@ -381,7 +381,7 @@ public abstract class EndpointDiscoverer<E extends ExposableEndpoint<O>, O exten
 	}
 
 	/**
-	 * Factory method to create an {@link Operation endpoint operation}.
+	 * Factory method to create ant {@link Operation endpoint operation}.
 	 * @param endpointId the endpoint id
 	 * @param operationMethod the operation method
 	 * @param invoker the invoker to use
@@ -394,14 +394,14 @@ public abstract class EndpointDiscoverer<E extends ExposableEndpoint<O>, O exten
 			DiscoveredOperationMethod operationMethod, OperationInvoker invoker);
 
 	/**
-	 * Create an {@link OperationKey} for the given operation.
+	 * Create ant {@link OperationKey} for the given operation.
 	 * @param operation the source operation
 	 * @return the operation key
 	 */
 	protected abstract OperationKey createOperationKey(O operation);
 
 	/**
-	 * A key generated for an {@link Operation} based on specific criteria from the actual
+	 * A key generated for ant {@link Operation} based on specific criteria from the actual
 	 * operation implementation.
 	 */
 	protected static final class OperationKey {
@@ -446,7 +446,7 @@ public abstract class EndpointDiscoverer<E extends ExposableEndpoint<O>, O exten
 	}
 
 	/**
-	 * Information about an {@link Endpoint @Endpoint} bean.
+	 * Information about ant {@link Endpoint @Endpoint} bean.
 	 */
 	private static class EndpointBean {
 
@@ -517,7 +517,7 @@ public abstract class EndpointDiscoverer<E extends ExposableEndpoint<O>, O exten
 	}
 
 	/**
-	 * Information about an {@link EndpointExtension EndpointExtension} bean.
+	 * Information about ant {@link EndpointExtension EndpointExtension} bean.
 	 */
 	private static class ExtensionBean {
 
@@ -540,7 +540,7 @@ public abstract class EndpointDiscoverer<E extends ExposableEndpoint<O>, O exten
 					.findMergedAnnotationAttributes(endpointType, Endpoint.class, true,
 							true);
 			Assert.state(endpointAttributes != null, () -> "Extension "
-					+ endpointType.getName() + " does not specify an endpoint");
+					+ endpointType.getName() + " does not specify ant endpoint");
 			this.endpointId = EndpointId.of(endpointAttributes.getString("id"));
 			this.filter = attributes.getClass("filter");
 		}

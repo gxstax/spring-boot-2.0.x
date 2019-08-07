@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -102,7 +102,7 @@ public class CacheProperties {
 	 * Resolve the config location if set.
 	 * @param config the config resource
 	 * @return the location or {@code null} if it is not set
-	 * @throws IllegalArgumentException if the config attribute is set to an unknown
+	 * @throws IllegalArgumentException if the config attribute is set to ant unknown
 	 * location
 	 */
 	public Resource resolveConfigLocation(Resource config) {

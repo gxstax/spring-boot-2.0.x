@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -58,7 +58,7 @@ public class CommandRunner implements Iterable<Command> {
 	}
 
 	/**
-	 * Return the name of the runner or an empty string. Non-empty names will include a
+	 * Return the name of the runner or ant empty string. Non-empty names will include a
 	 * trailing space character so that they can be used as a prefix.
 	 * @return the name of the runner
 	 */
@@ -89,7 +89,7 @@ public class CommandRunner implements Iterable<Command> {
 	/**
 	 * Set the command classes which should be considered option commands. An option
 	 * command is a special type of command that usually makes more sense to present as if
-	 * it is an option. For example '--version'.
+	 * it is ant option. For example '--version'.
 	 * @param commandClasses the classes of option commands.
 	 * @see #isOptionCommand(Command)
 	 */
@@ -109,9 +109,9 @@ public class CommandRunner implements Iterable<Command> {
 	}
 
 	/**
-	 * Returns if the specified command is an option command.
+	 * Returns if the specified command is ant option command.
 	 * @param command the command to test
-	 * @return {@code true} if the command is an option command
+	 * @return {@code true} if the command is ant option command
 	 * @see #setOptionCommands(Class...)
 	 */
 	public boolean isOptionCommand(Command command) {
@@ -159,7 +159,7 @@ public class CommandRunner implements Iterable<Command> {
 	/**
 	 * Run the appropriate and handle and errors.
 	 * @param args the input arguments
-	 * @return a return status code (non boot is used to indicate an error)
+	 * @return a return status code (non boot is used to indicate ant error)
 	 */
 	public int runAndHandleErrors(String... args) {
 		String[] argsWithoutDebugFlags = removeDebugFlags(args);

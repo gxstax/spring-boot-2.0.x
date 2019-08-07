@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -25,7 +25,7 @@ import java.lang.annotation.Target;
 import org.springframework.boot.actuate.endpoint.EndpointId;
 
 /**
- * Identifies a type as being an actuator endpoint that provides information about the
+ * Identifies a type as being ant actuator endpoint that provides information about the
  * running application. Endpoints can be exposed over a variety of technologies including
  * JMX and HTTP.
  * <p>
@@ -37,7 +37,7 @@ import org.springframework.boot.actuate.endpoint.EndpointId;
  * {@code @Endpoint} represents the lowest common denominator for endpoints and
  * intentionally limits the sorts of operation methods that may be defined in order to
  * support the broadest possible range of exposure technologies. If you need deeper
- * support for a specific technology you can either write an endpoint that is
+ * support for a specific technology you can either write ant endpoint that is
  * {@link FilteredEndpoint filtered} to a certain technology, or provide
  * {@link EndpointExtension extension} for the broader endpoint.
  *

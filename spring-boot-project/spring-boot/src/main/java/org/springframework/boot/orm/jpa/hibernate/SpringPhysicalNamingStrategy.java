@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -77,13 +77,13 @@ public class SpringPhysicalNamingStrategy implements PhysicalNamingStrategy {
 	}
 
 	/**
-	 * Get an identifier for the specified details. By default this method will return an
+	 * Get ant identifier for the specified details. By default this method will return ant
 	 * identifier with the name adapted based on the result of
 	 * {@link #isCaseInsensitive(JdbcEnvironment)}
 	 * @param name the name of the identifier
 	 * @param quoted if the identifier is quoted
 	 * @param jdbcEnvironment the JDBC environment
-	 * @return an identifier instance
+	 * @return ant identifier instance
 	 */
 	protected Identifier getIdentifier(String name, boolean quoted,
 			JdbcEnvironment jdbcEnvironment) {

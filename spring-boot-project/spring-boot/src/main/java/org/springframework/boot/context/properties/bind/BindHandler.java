@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -36,7 +36,7 @@ public interface BindHandler {
 	};
 
 	/**
-	 * Called when binding of an element starts but before any result has been determined.
+	 * Called when binding of ant element starts but before any result has been determined.
 	 * @param name the name of the element being bound
 	 * @param target the item being bound
 	 * @param context the bind context
@@ -48,7 +48,7 @@ public interface BindHandler {
 	}
 
 	/**
-	 * Called when binding of an element ends with a successful result. Implementations
+	 * Called when binding of ant element ends with a successful result. Implementations
 	 * may change the ultimately returned result or perform addition validation.
 	 * @param name the name of the element being bound
 	 * @param target the item being bound
@@ -64,7 +64,7 @@ public interface BindHandler {
 	/**
 	 * Called when binding fails for any reason (including failures from
 	 * {@link #onSuccess} calls). Implementations may choose to swallow exceptions and
-	 * return an alternative result.
+	 * return ant alternative result.
 	 * @param name the name of the element being bound
 	 * @param target the item being bound
 	 * @param context the bind context

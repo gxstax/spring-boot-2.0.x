@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -46,7 +46,7 @@ public class TestEntityManager {
 	}
 
 	/**
-	 * Make an instance managed and persistent then return it's ID. Delegates to
+	 * Make ant instance managed and persistent then return it's ID. Delegates to
 	 * {@link EntityManager#persist(Object)} then {@link #getId(Object)}.
 	 * <p>
 	 * Helpful when setting up test data in a test: <pre class="code">
@@ -61,7 +61,7 @@ public class TestEntityManager {
 	}
 
 	/**
-	 * Make an instance managed and persistent then return it's ID. Delegates to
+	 * Make ant instance managed and persistent then return it's ID. Delegates to
 	 * {@link EntityManager#persist(Object)} then {@link #getId(Object, Class)}.
 	 * <p>
 	 * Helpful when setting up test data in a test: <pre class="code">
@@ -79,7 +79,7 @@ public class TestEntityManager {
 	}
 
 	/**
-	 * Make an instance managed and persistent. Delegates to
+	 * Make ant instance managed and persistent. Delegates to
 	 * {@link EntityManager#persist(Object)} then returns the original source entity.
 	 * <p>
 	 * Helpful when setting up test data in a test: <pre class="code">
@@ -95,7 +95,7 @@ public class TestEntityManager {
 	}
 
 	/**
-	 * Make an instance managed and persistent, synchronize the persistence context to the
+	 * Make ant instance managed and persistent, synchronize the persistence context to the
 	 * underlying database and finally find the persisted entity by its ID. Delegates to
 	 * {@link #persistAndFlush(Object)} then {@link #find(Class, Object)} with the
 	 * {@link #getId(Object) entity ID}.
@@ -116,7 +116,7 @@ public class TestEntityManager {
 	}
 
 	/**
-	 * Make an instance managed and persistent then synchronize the persistence context to
+	 * Make ant instance managed and persistent then synchronize the persistence context to
 	 * the underlying database. Delegates to {@link EntityManager#persist(Object)} then
 	 * {@link #flush()} and finally returns the original source entity.
 	 * <p>

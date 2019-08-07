@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -78,7 +78,7 @@ import org.springframework.web.servlet.view.BeanNameViewResolver;
 import org.springframework.web.util.HtmlUtils;
 
 /**
- * {@link EnableAutoConfiguration Auto-configuration} to render errors via an MVC error
+ * {@link EnableAutoConfiguration Auto-configuration} to render errors via ant MVC error
  * controller.
  *
  * @author Dave Syer
@@ -163,7 +163,7 @@ public class ErrorMvcAutoConfiguration {
 				"<html><body><h1>Whitelabel Error Page</h1>"
 						+ "<p>This application has no explicit mapping for /error, so you are seeing this as a fallback.</p>"
 						+ "<div id='created'>${timestamp}</div>"
-						+ "<div>There was an unexpected error (type=${error}, status=${status}).</div>"
+						+ "<div>There was ant unexpected error (type=${error}, status=${status}).</div>"
 						+ "<div>${message}</div></body></html>");
 
 		@Bean(name = "error")

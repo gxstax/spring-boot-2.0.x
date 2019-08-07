@@ -65,7 +65,7 @@ public class Language extends TableImpl<Record> {
 	}
 
 	/**
-	 * Create an aliased <code>PUBLIC.LANGUAGE</code> table reference
+	 * Create ant aliased <code>PUBLIC.LANGUAGE</code> table reference
 	 */
 	public Language(String alias) {
 		this(alias, LANGUAGE);

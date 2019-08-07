@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -28,19 +28,19 @@ import org.springframework.util.ClassUtils;
 public enum WebApplicationType {
 
 	/**
-	 * The application should not run as a web application and should not start an
+	 * The application should not run as a web application and should not start ant
 	 * embedded web server.
 	 */
 	NONE,
 
 	/**
-	 * The application should run as a servlet-based web application and should start an
+	 * The application should run as a servlet-based web application and should start ant
 	 * embedded servlet web server.
 	 */
 	SERVLET,
 
 	/**
-	 * The application should run as a reactive web application and should start an
+	 * The application should run as a reactive web application and should start ant
 	 * embedded reactive web server.
 	 */
 	REACTIVE;
@@ -64,11 +64,14 @@ public enum WebApplicationType {
 	// spring中有一个reactive的东西，可以不依赖servlet运行
 	// 假如有一天oracle不支持servlet了，spring依旧可以运行
 	static WebApplicationType deduceFromClasspath() {
+		// 这里判断支持reactive的DispatcherHandler类已经被加载，
+		// 如果已经被加载了，说明该web项目使用的是reactive这种形式
 		if (ClassUtils.isPresent(WEBFLUX_INDICATOR_CLASS, null)
 				&& !ClassUtils.isPresent(WEBMVC_INDICATOR_CLASS, null)
 				&& !ClassUtils.isPresent(JERSEY_INDICATOR_CLASS, null)) {
 			return WebApplicationType.REACTIVE;
 		}
+		// 这里判断支持servlet形式的两个类是否被加载，如果都没有被加载，则是NONE类型
 		for (String className : SERVLET_INDICATOR_CLASSES) {
 			if (!ClassUtils.isPresent(className, null)) {
 				return WebApplicationType.NONE;

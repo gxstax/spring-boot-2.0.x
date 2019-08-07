@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -378,7 +378,7 @@ public class RabbitAutoConfigurationTests {
 	public void testStaticQueues() {
 		this.contextRunner.withUserConfiguration(TestConfiguration.class)
 				.withPropertyValues("spring.rabbitmq.dynamic:false").run((context) -> {
-					// There should NOT be an AmqpAdmin bean when dynamic is switch to
+					// There should NOT be ant AmqpAdmin bean when dynamic is switch to
 					// false
 					this.thrown.expect(NoSuchBeanDefinitionException.class);
 					this.thrown.expectMessage("No qualifying bean of type");

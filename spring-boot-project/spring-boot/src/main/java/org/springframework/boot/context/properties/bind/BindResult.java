@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -27,7 +27,7 @@ import org.springframework.util.ObjectUtils;
 
 /**
  * A container object to return the result of a {@link Binder} bind operation. May contain
- * either a successfully bound object or an empty result.
+ * either a successfully bound object or ant empty result.
  *
  * @param <T> the result type
  * @author Phillip Webb
@@ -79,12 +79,12 @@ public final class BindResult<T> {
 	}
 
 	/**
-	 * Apply the provided mapping function to the bound value, or return an updated
+	 * Apply the provided mapping function to the bound value, or return ant updated
 	 * unbound result if no value has been bound.
 	 * @param <U> the type of the result of the mapping function
 	 * @param mapper a mapping function to apply to the bound value. The mapper will not
 	 * be invoked if no value has been bound.
-	 * @return an {@code BindResult} describing the result of applying a mapping function
+	 * @return ant {@code BindResult} describing the result of applying a mapping function
 	 * to the value of this {@code BindResult}.
 	 */
 	public <U> BindResult<U> map(Function<? super T, ? extends U> mapper) {
@@ -125,7 +125,7 @@ public final class BindResult<T> {
 	}
 
 	/**
-	 * Return the object that was bound, or throw an exception to be created by the
+	 * Return the object that was bound, or throw ant exception to be created by the
 	 * provided supplier if no value has been bound.
 	 * @param <X> the type of the exception to be thrown
 	 * @param exceptionSupplier the supplier which will return the exception to be thrown

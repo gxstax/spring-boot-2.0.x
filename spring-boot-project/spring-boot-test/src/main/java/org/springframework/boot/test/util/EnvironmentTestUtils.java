@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -38,10 +38,10 @@ import org.springframework.core.env.MutablePropertySources;
 public abstract class EnvironmentTestUtils {
 
 	/**
-	 * Add additional (high priority) values to an {@link Environment} owned by an
+	 * Add additional (high priority) values to ant {@link Environment} owned by ant
 	 * {@link ApplicationContext}. Name-value pairs can be specified with colon (":") or
 	 * equals ("=") separators.
-	 * @param context the context with an environment to modify
+	 * @param context the context with ant environment to modify
 	 * @param pairs the name:value pairs
 	 */
 	public static void addEnvironment(ConfigurableApplicationContext context,
@@ -50,7 +50,7 @@ public abstract class EnvironmentTestUtils {
 	}
 
 	/**
-	 * Add additional (high priority) values to an {@link Environment}. Name-value pairs
+	 * Add additional (high priority) values to ant {@link Environment}. Name-value pairs
 	 * can be specified with colon (":") or equals ("=") separators.
 	 * @param environment the environment to modify
 	 * @param pairs the name:value pairs
@@ -61,7 +61,7 @@ public abstract class EnvironmentTestUtils {
 	}
 
 	/**
-	 * Add additional (high priority) values to an {@link Environment}. Name-value pairs
+	 * Add additional (high priority) values to ant {@link Environment}. Name-value pairs
 	 * can be specified with colon (":") or equals ("=") separators.
 	 * @param environment the environment to modify
 	 * @param name the property source name

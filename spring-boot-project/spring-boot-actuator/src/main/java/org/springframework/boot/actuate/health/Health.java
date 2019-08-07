@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -77,7 +77,7 @@ public final class Health {
 
 	/**
 	 * Return the details of the health.
-	 * @return the details (or an empty map)
+	 * @return the details (or ant empty map)
 	 */
 	public Map<String, Object> getDetails() {
 		return this.details;
@@ -107,7 +107,7 @@ public final class Health {
 	}
 
 	/**
-	 * Create a new {@link Builder} instance with an {@link Status#UNKNOWN} status.
+	 * Create a new {@link Builder} instance with ant {@link Status#UNKNOWN} status.
 	 * @return a new {@link Builder} instance
 	 */
 	public static Builder unknown() {
@@ -115,7 +115,7 @@ public final class Health {
 	}
 
 	/**
-	 * Create a new {@link Builder} instance with an {@link Status#UP} status.
+	 * Create a new {@link Builder} instance with ant {@link Status#UP} status.
 	 * @return a new {@link Builder} instance
 	 */
 	public static Builder up() {
@@ -123,7 +123,7 @@ public final class Health {
 	}
 
 	/**
-	 * Create a new {@link Builder} instance with an {@link Status#DOWN} status and the
+	 * Create a new {@link Builder} instance with ant {@link Status#DOWN} status and the
 	 * specified exception details.
 	 * @param ex the exception
 	 * @return a new {@link Builder} instance
@@ -141,7 +141,7 @@ public final class Health {
 	}
 
 	/**
-	 * Create a new {@link Builder} instance with an {@link Status#OUT_OF_SERVICE} status.
+	 * Create a new {@link Builder} instance with ant {@link Status#OUT_OF_SERVICE} status.
 	 * @return a new {@link Builder} instance
 	 */
 	public static Builder outOfService() {

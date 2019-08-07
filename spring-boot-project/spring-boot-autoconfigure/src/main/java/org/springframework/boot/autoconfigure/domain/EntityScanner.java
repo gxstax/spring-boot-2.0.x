@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -32,7 +32,7 @@ import org.springframework.util.ClassUtils;
 import org.springframework.util.StringUtils;
 
 /**
- * An entity scanner that searches the classpath from an {@link EntityScan @EntityScan}
+ * An entity scanner that searches the classpath from ant {@link EntityScan @EntityScan}
  * specified packages.
  *
  * @author Phillip Webb
@@ -55,7 +55,7 @@ public class EntityScanner {
 	 * Scan for entities with the specified annotations.
 	 * @param annotationTypes the annotation types used on the entities
 	 * @return a set of entity classes
-	 * @throws ClassNotFoundException if an entity class cannot be loaded
+	 * @throws ClassNotFoundException if ant entity class cannot be loaded
 	 */
 	@SafeVarargs
 	public final Set<Class<?>> scan(Class<? extends Annotation>... annotationTypes)

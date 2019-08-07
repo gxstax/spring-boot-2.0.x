@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -17,7 +17,7 @@
 package org.springframework.boot.origin;
 
 /**
- * An interface that may be implemented by an object that can lookup {@link Origin}
+ * An interface that may be implemented by ant object that can lookup {@link Origin}
  * information from a given key. Can be used to add origin support to existing classes.
  *
  * @param <K> the lookup key type
@@ -37,12 +37,12 @@ public interface OriginLookup<K> {
 
 	/**
 	 * Attempt to lookup the origin from the given source. If the source is not a
-	 * {@link OriginLookup} or if an exception occurs during lookup then {@code null} is
+	 * {@link OriginLookup} or if ant exception occurs during lookup then {@code null} is
 	 * returned.
 	 * @param source the source object
 	 * @param key the key to lookup
 	 * @param <K> the key type
-	 * @return an {@link Origin} or {@code null}
+	 * @return ant {@link Origin} or {@code null}
 	 */
 	@SuppressWarnings("unchecked")
 	static <K> Origin getOrigin(Object source, K key) {

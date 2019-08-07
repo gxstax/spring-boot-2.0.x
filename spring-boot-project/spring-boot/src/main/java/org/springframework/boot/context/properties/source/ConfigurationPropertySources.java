@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -65,7 +65,7 @@ public final class ConfigurationPropertySources {
 	 * <p>
 	 * The attached resolver will dynamically track any additions or removals from the
 	 * underlying {@link Environment} property sources.
-	 * @param environment the source environment (must be an instance of
+	 * @param environment the source environment (must be ant instance of
 	 * {@link ConfigurableEnvironment})
 	 * @see #get(Environment)
 	 */
@@ -88,9 +88,9 @@ public final class ConfigurationPropertySources {
 	/**
 	 * Return a set of {@link ConfigurationPropertySource} instances that have previously
 	 * been {@link #attach(Environment) attached} to the {@link Environment}.
-	 * @param environment the source environment (must be an instance of
+	 * @param environment the source environment (must be ant instance of
 	 * {@link ConfigurableEnvironment})
-	 * @return an iterable set of configuration property sources
+	 * @return ant iterable set of configuration property sources
 	 * @throws IllegalStateException if not configuration property sources have been
 	 * attached
 	 */
@@ -110,7 +110,7 @@ public final class ConfigurationPropertySources {
 	 * Return {@link Iterable} containing a single new {@link ConfigurationPropertySource}
 	 * adapted from the given Spring {@link PropertySource}.
 	 * @param source the Spring property source to adapt
-	 * @return an {@link Iterable} containing a single newly adapted
+	 * @return ant {@link Iterable} containing a single newly adapted
 	 * {@link SpringConfigurationPropertySource}
 	 */
 	public static Iterable<ConfigurationPropertySource> from(PropertySource<?> source) {
@@ -127,7 +127,7 @@ public final class ConfigurationPropertySources {
 	 * automatically tracked. The underlying source should be thread safe, for example a
 	 * {@link MutablePropertySources}
 	 * @param sources the Spring property sources to adapt
-	 * @return an {@link Iterable} containing newly adapted
+	 * @return ant {@link Iterable} containing newly adapted
 	 * {@link SpringConfigurationPropertySource} instances
 	 */
 	public static Iterable<ConfigurationPropertySource> from(

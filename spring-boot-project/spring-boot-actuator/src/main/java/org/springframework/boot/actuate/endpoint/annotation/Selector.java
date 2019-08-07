@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -23,7 +23,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * A {@code Selector} can be used on a parameter of an {@link Endpoint} method to indicate
+ * A {@code Selector} can be used on a parameter of ant {@link Endpoint} method to indicate
  * that the parameter is used to select a subset of the endpoint's data.
  *
  * @author Andy Wilkinson

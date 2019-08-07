@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -50,7 +50,7 @@ public class DataSourceBeanCreationFailureAnalyzerTests {
 				"no embedded datasource could be configured",
 				"Failed to determine a suitable driver class");
 		assertThat(failureAnalysis.getAction()).contains(
-				"If you want an embedded database (H2, HSQL or Derby), please put it on the classpath",
+				"If you want ant embedded database (H2, HSQL or Derby), please put it on the classpath",
 				"If you have database settings to be loaded from a particular profile you may need to activate it",
 				"(no profiles are currently active)");
 	}

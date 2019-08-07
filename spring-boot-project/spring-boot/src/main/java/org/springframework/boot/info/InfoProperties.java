@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -37,7 +37,7 @@ public class InfoProperties implements Iterable<InfoProperties.Entry> {
 	private final Properties entries;
 
 	/**
-	 * Create an instance with the specified entries.
+	 * Create ant instance with the specified entries.
 	 * @param entries the information to expose
 	 */
 	public InfoProperties(Properties entries) {
@@ -55,8 +55,8 @@ public class InfoProperties implements Iterable<InfoProperties.Entry> {
 	}
 
 	/**
-	 * Return the value of the specified property as an {@link Instant} or {@code null} if
-	 * the value is not a valid {@link Long} representation of an epoch time.
+	 * Return the value of the specified property as ant {@link Instant} or {@code null} if
+	 * the value is not a valid {@link Long} representation of ant epoch time.
 	 * @param key the key of the property
 	 * @return the property value
 	 */

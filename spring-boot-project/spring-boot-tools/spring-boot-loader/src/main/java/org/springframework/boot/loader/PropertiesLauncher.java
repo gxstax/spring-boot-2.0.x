@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -541,7 +541,7 @@ public class PropertiesLauncher extends Launcher {
 		List<Archive> archives = new ArrayList<>(parent.getNestedArchives(filter));
 		if (("".equals(root) || ".".equals(root)) && !path.endsWith(".jar")
 				&& parent != this.parent) {
-			// You can't find the root with an entry filter so it has to be added
+			// You can't find the root with ant entry filter so it has to be added
 			// explicitly. But don't add the root of the parent archive.
 			archives.add(parent);
 		}
@@ -550,7 +550,7 @@ public class PropertiesLauncher extends Launcher {
 
 	private void addNestedEntries(List<Archive> lib) {
 		// The parent archive might have "BOOT-INF/lib/" and "BOOT-INF/classes/"
-		// directories, meaning we are running from an executable JAR. We add nested
+		// directories, meaning we are running from ant executable JAR. We add nested
 		// entries from there with low priority (i.e. at end).
 		try {
 			lib.addAll(this.parent.getNestedArchives((entry) -> {

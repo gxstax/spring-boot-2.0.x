@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -280,7 +280,7 @@ public class CassandraProperties {
 	public static class Pool {
 
 		/**
-		 * Idle timeout before an idle connection is removed. If a duration suffix is not
+		 * Idle timeout before ant idle connection is removed. If a duration suffix is not
 		 * specified, seconds will be used.
 		 */
 		@DurationUnit(ChronoUnit.SECONDS)
@@ -292,7 +292,7 @@ public class CassandraProperties {
 		private Duration poolTimeout = Duration.ofMillis(5000);
 
 		/**
-		 * Heartbeat interval after which a message is sent on an idle connection to make
+		 * Heartbeat interval after which a message is sent on ant idle connection to make
 		 * sure it's still alive. If a duration suffix is not specified, seconds will be
 		 * used.
 		 */

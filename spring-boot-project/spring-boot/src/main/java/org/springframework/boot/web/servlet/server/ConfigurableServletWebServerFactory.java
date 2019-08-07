@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -47,7 +47,7 @@ public interface ConfigurableServletWebServerFactory
 	/**
 	 * Sets the context path for the web server. The context should start with a "/"
 	 * character but not end with a "/" character. The default context path can be
-	 * specified using an empty string.
+	 * specified using ant empty string.
 	 * @param contextPath the contextPath to set
 	 */
 	void setContextPath(String contextPath);

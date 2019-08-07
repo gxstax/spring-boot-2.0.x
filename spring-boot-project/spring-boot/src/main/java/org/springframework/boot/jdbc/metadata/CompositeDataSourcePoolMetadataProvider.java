@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -36,7 +36,7 @@ public class CompositeDataSourcePoolMetadataProvider
 	private final List<DataSourcePoolMetadataProvider> providers;
 
 	/**
-	 * Create a {@link CompositeDataSourcePoolMetadataProvider} instance with an initial
+	 * Create a {@link CompositeDataSourcePoolMetadataProvider} instance with ant initial
 	 * collection of delegates to use.
 	 * @param providers the data source pool metadata providers
 	 */

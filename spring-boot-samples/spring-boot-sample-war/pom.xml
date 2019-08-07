@@ -23,7 +23,7 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 		<dependency>
-			<!-- To build an executable war use one of the profiles below -->
+			<!-- To build ant executable war use one of the profiles below -->
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<scope>provided</scope>

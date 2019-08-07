@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -31,7 +31,7 @@ public abstract class AbstractDataSourcePoolMetadata<T extends DataSource>
 	private final T dataSource;
 
 	/**
-	 * Create an instance with the data source to use.
+	 * Create ant instance with the data source to use.
 	 * @param dataSource the data source
 	 */
 	protected AbstractDataSourcePoolMetadata(T dataSource) {

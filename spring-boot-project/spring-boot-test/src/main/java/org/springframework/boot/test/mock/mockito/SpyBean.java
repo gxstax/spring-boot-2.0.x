@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -98,13 +98,13 @@ public @interface SpyBean {
 
 	/**
 	 * The name of the bean to spy. If not specified the name will either be generated or,
-	 * if the spy is for an existing bean, the existing name will be used.
+	 * if the spy is for ant existing bean, the existing name will be used.
 	 * @return the name of the bean
 	 */
 	String name() default "";
 
 	/**
-	 * The classes to spy. This is an alias of {@link #classes()} which can be used for
+	 * The classes to spy. This is ant alias of {@link #classes()} which can be used for
 	 * brevity if no other attributes are defined. See {@link #classes()} for details.
 	 * @return the classes to spy
 	 */

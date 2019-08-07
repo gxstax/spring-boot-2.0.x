@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -71,7 +71,7 @@ public @interface EntityScan {
 	String[] value() default {};
 
 	/**
-	 * Base packages to scan for entities. {@link #value()} is an alias for (and mutually
+	 * Base packages to scan for entities. {@link #value()} is ant alias for (and mutually
 	 * exclusive with) this attribute.
 	 * <p>
 	 * Use {@link #basePackageClasses()} for a type-safe alternative to String-based

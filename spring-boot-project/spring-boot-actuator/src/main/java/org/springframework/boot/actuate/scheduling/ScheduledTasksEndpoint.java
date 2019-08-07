@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -42,7 +42,7 @@ import org.springframework.scheduling.support.PeriodicTrigger;
 import org.springframework.scheduling.support.ScheduledMethodRunnable;
 
 /**
- * {@link Endpoint} to expose information about an application's scheduled tasks.
+ * {@link Endpoint} to expose information about ant application's scheduled tasks.
  *
  * @author Andy Wilkinson
  * @since 2.0.0
@@ -67,7 +67,7 @@ public class ScheduledTasksEndpoint {
 	}
 
 	/**
-	 * A report of an application's scheduled {@link Task Tasks}, primarily intended for
+	 * A report of ant application's scheduled {@link Task Tasks}, primarily intended for
 	 * serialization to JSON.
 	 */
 	public static final class ScheduledTasksReport {
@@ -162,7 +162,7 @@ public class ScheduledTasksEndpoint {
 	}
 
 	/**
-	 * A description of an {@link IntervalTask}.
+	 * A description of ant {@link IntervalTask}.
 	 */
 	public static class IntervalTaskDescription extends TaskDescription {
 

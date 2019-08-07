@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -90,7 +90,7 @@ public @interface SpringBootTest {
 	String[] properties() default {};
 
 	/**
-	 * The <em>annotated classes</em> to use for loading an
+	 * The <em>annotated classes</em> to use for loading ant
 	 * {@link org.springframework.context.ApplicationContext ApplicationContext}. Can also
 	 * be specified using
 	 * {@link ContextConfiguration#classes() @ContextConfiguration(classes=...)}. If no
@@ -137,7 +137,7 @@ public @interface SpringBootTest {
 		DEFINED_PORT(true),
 
 		/**
-		 * Creates an {@link ApplicationContext} and sets
+		 * Creates ant {@link ApplicationContext} and sets
 		 * {@link SpringApplication#setWebApplicationType(WebApplicationType)} to
 		 * {@link WebApplicationType#NONE}.
 		 */
@@ -150,8 +150,8 @@ public @interface SpringBootTest {
 		}
 
 		/**
-		 * Return if the environment uses an {@link ServletWebServerApplicationContext}.
-		 * @return if an {@link ServletWebServerApplicationContext} is used.
+		 * Return if the environment uses ant {@link ServletWebServerApplicationContext}.
+		 * @return if ant {@link ServletWebServerApplicationContext} is used.
 		 */
 		public boolean isEmbedded() {
 			return this.embedded;

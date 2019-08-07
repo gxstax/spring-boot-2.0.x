@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -134,7 +134,7 @@ public class HttpTunnelServer {
 	}
 
 	/**
-	 * Handle an incoming HTTP connection.
+	 * Handle ant incoming HTTP connection.
 	 * @param request the HTTP request
 	 * @param response the HTTP response
 	 * @throws IOException in case of I/O errors
@@ -145,7 +145,7 @@ public class HttpTunnelServer {
 	}
 
 	/**
-	 * Handle an incoming HTTP connection.
+	 * Handle ant incoming HTTP connection.
 	 * @param httpConnection the HTTP connection
 	 * @throws IOException in case of I/O errors
 	 */
@@ -325,7 +325,7 @@ public class HttpTunnelServer {
 		}
 
 		/**
-		 * Handle an incoming {@link HttpConnection}.
+		 * Handle ant incoming {@link HttpConnection}.
 		 * @param httpConnection the connection to handle.
 		 * @throws IOException in case of I/O errors
 		 */

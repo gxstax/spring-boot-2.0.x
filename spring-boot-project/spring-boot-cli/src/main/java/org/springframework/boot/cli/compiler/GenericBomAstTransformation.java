@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -41,7 +41,7 @@ import org.springframework.core.Ordered;
 /**
  * A base class that lets plugin authors easily add additional BOMs to all apps. All the
  * dependencies in the BOM (and its transitives) will be added to the dependency
- * management lookup, so an app can use just the artifact id (e.g. "spring-jdbc") in a
+ * management lookup, so ant app can use just the artifact id (e.g. "spring-jdbc") in a
  * {@code @Grab}. To install, implement the missing methods and list the class in
  * {@code META-INF/services/org.springframework.boot.cli.compiler.SpringBootAstTransformation}
  * . The {@link #getOrder()} value needs to be before

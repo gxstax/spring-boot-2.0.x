@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -46,7 +46,7 @@ public class CompositeHealthIndicator implements HealthIndicator {
 	/**
 	 * Create a new {@link CompositeHealthIndicator} from the specified indicators.
 	 * @param healthAggregator the health aggregator
-	 * @param indicators a map of {@link HealthIndicator}s with the key being used as an
+	 * @param indicators a map of {@link HealthIndicator}s with the key being used as ant
 	 * indicator name.
 	 */
 	public CompositeHealthIndicator(HealthAggregator healthAggregator,

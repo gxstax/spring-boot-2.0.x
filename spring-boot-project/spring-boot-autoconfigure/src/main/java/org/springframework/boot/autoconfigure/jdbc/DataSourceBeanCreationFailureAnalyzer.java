@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -72,7 +72,7 @@ class DataSourceBeanCreationFailureAnalyzer
 		StringBuilder action = new StringBuilder();
 		action.append(String.format("Consider the following:%n"));
 		if (EmbeddedDatabaseConnection.NONE == cause.getConnection()) {
-			action.append(String.format("\tIf you want an embedded database (H2, HSQL or "
+			action.append(String.format("\tIf you want ant embedded database (H2, HSQL or "
 					+ "Derby), please put it on the classpath.%n"));
 		}
 		else {

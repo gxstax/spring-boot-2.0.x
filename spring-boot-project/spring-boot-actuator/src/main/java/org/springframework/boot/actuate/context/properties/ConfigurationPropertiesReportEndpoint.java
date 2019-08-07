@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -145,8 +145,8 @@ public class ConfigurationPropertiesReportEndpoint implements ApplicationContext
 	}
 
 	/**
-	 * Cautiously serialize the bean to a map (returning a map with an error message
-	 * instead of throwing an exception if there is a problem).
+	 * Cautiously serialize the bean to a map (returning a map with ant error message
+	 * instead of throwing ant exception if there is a problem).
 	 * @param mapper the object mapper
 	 * @param bean the source bean
 	 * @param prefix the prefix
@@ -287,7 +287,7 @@ public class ConfigurationPropertiesReportEndpoint implements ApplicationContext
 	 * <ul>
 	 * <li>Properties that have a name starting with '$$'.
 	 * <li>Properties that are self-referential.
-	 * <li>Properties that throw an exception when retrieving their value.
+	 * <li>Properties that throw ant exception when retrieving their value.
 	 * </ul>
 	 */
 	private static class ConfigurationPropertiesPropertyFilter
@@ -327,7 +327,7 @@ public class ConfigurationPropertiesReportEndpoint implements ApplicationContext
 				catch (Exception ex) {
 					if (logger.isDebugEnabled()) {
 						logger.debug("Skipping '" + writer.getFullName() + "' on '"
-								+ pojo.getClass().getName() + "' as an exception "
+								+ pojo.getClass().getName() + "' as ant exception "
 								+ "was thrown when retrieving its value", ex);
 					}
 					return;
@@ -390,7 +390,7 @@ public class ConfigurationPropertiesReportEndpoint implements ApplicationContext
 		 * Determine the accessor suffix of the specified {@code propertyName}, see
 		 * section 8.8 "Capitalization of inferred names" of the JavaBean specs for more
 		 * details.
-		 * @param propertyName the property name to turn into an accessor suffix
+		 * @param propertyName the property name to turn into ant accessor suffix
 		 * @return the accessor suffix for {@code propertyName}
 		 */
 		private String determineAccessorSuffix(String propertyName) {
@@ -404,7 +404,7 @@ public class ConfigurationPropertiesReportEndpoint implements ApplicationContext
 	}
 
 	/**
-	 * A description of an application's {@link ConfigurationProperties} beans. Primarily
+	 * A description of ant application's {@link ConfigurationProperties} beans. Primarily
 	 * intended for serialization to JSON.
 	 */
 	public static final class ApplicationConfigurationProperties {
@@ -423,7 +423,7 @@ public class ConfigurationPropertiesReportEndpoint implements ApplicationContext
 	}
 
 	/**
-	 * A description of an application context's {@link ConfigurationProperties} beans.
+	 * A description of ant application context's {@link ConfigurationProperties} beans.
 	 * Primarily intended for serialization to JSON.
 	 */
 	public static final class ContextConfigurationProperties {

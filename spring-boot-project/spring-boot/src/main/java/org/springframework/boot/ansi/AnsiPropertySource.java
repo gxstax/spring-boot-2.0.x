@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -30,7 +30,7 @@ import org.springframework.util.StringUtils;
  * {@link PropertyResolver} for {@link AnsiStyle}, {@link AnsiColor} and
  * {@link AnsiBackground} elements. Supports properties of the form
  * {@code AnsiStyle.BOLD}, {@code AnsiColor.RED} or {@code AnsiBackground.GREEN}. Also
- * supports a prefix of {@code Ansi.} which is an aggregation of everything (with
+ * supports a prefix of {@code Ansi.} which is ant aggregation of everything (with
  * background colors prefixed {@code BG_}).
  *
  * @author Phillip Webb
@@ -84,7 +84,7 @@ public class AnsiPropertySource extends PropertySource<AnsiElement> {
 	}
 
 	/**
-	 * Mapping between an enum and the pseudo property source.
+	 * Mapping between ant enum and the pseudo property source.
 	 */
 	private static class MappedEnum<E extends Enum<E>> {
 

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -20,7 +20,7 @@ import org.springframework.boot.actuate.endpoint.EndpointId;
 import org.springframework.boot.actuate.endpoint.OperationType;
 
 /**
- * Allows additional functionality to be applied to an {@link OperationInvoker}.
+ * Allows additional functionality to be applied to ant {@link OperationInvoker}.
  *
  * @author Phillip Webb
  * @since 2.0.0
@@ -34,7 +34,7 @@ public interface OperationInvokerAdvisor {
 	 * @param operationType the operation type
 	 * @param parameters the operation parameters
 	 * @param invoker the invoker to advise
-	 * @return an potentially new operation invoker with support for additional features
+	 * @return ant potentially new operation invoker with support for additional features
 	 * @since 2.0.6
 	 */
 	default OperationInvoker apply(EndpointId endpointId, OperationType operationType,
@@ -49,7 +49,7 @@ public interface OperationInvokerAdvisor {
 	 * @param operationType the operation type
 	 * @param parameters the operation parameters
 	 * @param invoker the invoker to advise
-	 * @return an potentially new operation invoker with support for additional features
+	 * @return ant potentially new operation invoker with support for additional features
 	 * @deprecated since 2.0.6 in favor of
 	 * {@link #apply(EndpointId, OperationType, OperationParameters, OperationInvoker)}
 	 */

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -107,7 +107,7 @@ final class BeanTypeRegistry implements SmartInitializingSingleton {
 	 * cause early bean initialization.
 	 * @param type the class or interface to match (must not be {@code null})
 	 * @return the names of beans (or objects created by FactoryBeans) matching the given
-	 * object type (including subclasses), or an empty set if none
+	 * object type (including subclasses), or ant empty set if none
 	 */
 	Set<String> getNamesForType(Class<?> type) {
 		updateTypesIfNecessary();
@@ -125,7 +125,7 @@ final class BeanTypeRegistry implements SmartInitializingSingleton {
 	 * cause early bean initialization.
 	 * @param annotation the annotation to match (must not be {@code null})
 	 * @return the names of beans (or objects created by FactoryBeans) annotated with the
-	 * given annotation, or an empty set if none
+	 * given annotation, or ant empty set if none
 	 */
 	Set<String> getNamesForAnnotation(Class<? extends Annotation> annotation) {
 		updateTypesIfNecessary();

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -29,11 +29,11 @@ import org.springframework.util.ObjectUtils;
 /**
  * A configuration property name composed of elements separated by dots. User created
  * names may contain the characters "{@code a-z}" "{@code 0-9}") and "{@code -}", they
- * must be lower-case and must start with an alpha-numeric character. The "{@code -}" is
+ * must be lower-case and must start with ant alpha-numeric character. The "{@code -}" is
  * used purely for formatting, i.e. "{@code foo-bar}" and "{@code foobar}" are considered
  * equivalent.
  * <p>
- * The "{@code [}" and "{@code ]}" characters may be used to indicate an associative
+ * The "{@code [}" and "{@code ]}" characters may be used to indicate ant associative
  * index(i.e. a {@link Map} key or a {@link Collection} index. Indexes names are not
  * restricted and are considered case-sensitive.
  * <p>
@@ -135,7 +135,7 @@ public final class ConfigurationPropertyName
 	}
 
 	/**
-	 * Return an element in the name in the given form.
+	 * Return ant element in the name in the given form.
 	 * @param elementIndex the element index
 	 * @param form the form to return
 	 * @return the last element
@@ -217,9 +217,9 @@ public final class ConfigurationPropertyName
 	}
 
 	/**
-	 * Returns {@code true} if this element is an immediate parent of the specified name.
+	 * Returns {@code true} if this element is ant immediate parent of the specified name.
 	 * @param name the name to check
-	 * @return {@code true} if this name is an ancestor
+	 * @return {@code true} if this name is ant ancestor
 	 */
 	public boolean isParentOf(ConfigurationPropertyName name) {
 		Assert.notNull(name, "Name must not be null");
@@ -230,10 +230,10 @@ public final class ConfigurationPropertyName
 	}
 
 	/**
-	 * Returns {@code true} if this element is an ancestor (immediate or nested parent) of
+	 * Returns {@code true} if this element is ant ancestor (immediate or nested parent) of
 	 * the specified name.
 	 * @param name the name to check
-	 * @return {@code true} if this name is an ancestor
+	 * @return {@code true} if this name is ant ancestor
 	 */
 	public boolean isAncestorOf(ConfigurationPropertyName name) {
 		Assert.notNull(name, "Name must not be null");
@@ -417,7 +417,7 @@ public final class ConfigurationPropertyName
 
 	/**
 	 * Returns if the given name is valid. If this method returns {@code true} then the
-	 * name may be used with {@link #of(CharSequence)} without throwing an exception.
+	 * name may be used with {@link #of(CharSequence)} without throwing ant exception.
 	 * @param name the name to test
 	 * @return {@code true} if the name is valid
 	 */

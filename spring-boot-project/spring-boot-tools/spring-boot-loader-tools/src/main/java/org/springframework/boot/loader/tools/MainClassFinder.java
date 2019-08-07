@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -96,7 +96,7 @@ public abstract class MainClassFinder {
 
 	/**
 	 * Find a single main class from the given {@code rootFolder}. A main class annotated
-	 * with an annotation with the given {@code annotationName} will be preferred over a
+	 * with ant annotation with the given {@code annotationName} will be preferred over a
 	 * main class with no such annotation.
 	 * @param rootFolder the root folder to search
 	 * @param annotationName the name of the annotation that may be present on the main
@@ -188,7 +188,7 @@ public abstract class MainClassFinder {
 	}
 
 	/**
-	 * Find a single main class in a given jar file. A main class annotated with an
+	 * Find a single main class in a given jar file. A main class annotated with ant
 	 * annotation with the given {@code annotationName} will be preferred over a main
 	 * class with no such annotation.
 	 * @param jarFile the jar file to search
@@ -415,7 +415,7 @@ public abstract class MainClassFinder {
 	}
 
 	/**
-	 * Find a single main class, throwing an {@link IllegalStateException} if multiple
+	 * Find a single main class, throwing ant {@link IllegalStateException} if multiple
 	 * candidates exist.
 	 */
 	private static final class SingleMainClassCallback

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -78,7 +78,7 @@ class ProjectGenerator {
 		if (request.isExtract()) {
 			return true;
 		}
-		// explicit name hasn't been provided for an archive and there is no extension
+		// explicit name hasn't been provided for ant archive and there is no extension
 		if (isZipArchive(response) && request.getOutput() != null
 				&& !request.getOutput().contains(".")) {
 			return true;
@@ -123,7 +123,7 @@ class ProjectGenerator {
 				throw new ReportableException((file.isDirectory() ? "Directory" : "File")
 						+ " '" + file.getName()
 						+ "' already exists. Use --force if you want to overwrite or "
-						+ "specify an alternate location.");
+						+ "specify ant alternate location.");
 			}
 			if (!entry.isDirectory()) {
 				FileCopyUtils.copy(StreamUtils.nonClosing(zipStream),
@@ -144,7 +144,7 @@ class ProjectGenerator {
 			if (!overwrite) {
 				throw new ReportableException("File '" + outputFile.getName()
 						+ "' already exists. Use --force if you want to "
-						+ "overwrite or specify an alternate location.");
+						+ "overwrite or specify ant alternate location.");
 			}
 			if (!outputFile.delete()) {
 				throw new ReportableException(

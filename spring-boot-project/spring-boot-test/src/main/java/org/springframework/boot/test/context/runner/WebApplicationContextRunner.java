@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -44,7 +44,7 @@ public final class WebApplicationContextRunner extends
 		AbstractApplicationContextRunner<WebApplicationContextRunner, ConfigurableWebApplicationContext, AssertableWebApplicationContext> {
 
 	/**
-	 * Create a new {@link WebApplicationContextRunner} instance using an
+	 * Create a new {@link WebApplicationContextRunner} instance using ant
 	 * {@link AnnotationConfigWebApplicationContext} with a {@link MockServletContext} as
 	 * the underlying source.
 	 * @see #withMockServletContext(Supplier)
@@ -89,7 +89,7 @@ public final class WebApplicationContextRunner extends
 	 * Decorate the specified {@code contextFactory} to set a {@link MockServletContext}
 	 * on each newly created {@link WebApplicationContext}.
 	 * @param contextFactory the context factory to decorate
-	 * @return an updated supplier that will set the {@link MockServletContext}
+	 * @return ant updated supplier that will set the {@link MockServletContext}
 	 */
 	public static Supplier<ConfigurableWebApplicationContext> withMockServletContext(
 			Supplier<ConfigurableWebApplicationContext> contextFactory) {

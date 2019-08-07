@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -57,7 +57,7 @@ import org.springframework.util.Assert;
 import org.springframework.util.ReflectionUtils;
 
 /**
- * Allows a running application to be restarted with an updated classpath. The restarter
+ * Allows a running application to be restarted with ant updated classpath. The restarter
  * works by creating a new application ClassLoader that is split into two parts. The top
  * part contains static URLs that don't change (for example 3rd party libraries and Spring
  * Boot itself) and the bottom part contains URLs where classes and resources might be
@@ -69,7 +69,7 @@ import org.springframework.util.ReflectionUtils;
  * {@link #initialize(String[])} directly if your SpringApplication arguments are not
  * identical to your main method arguments.
  * <p>
- * By default, applications running in an IDE (i.e. those not packaged as "fat jars") will
+ * By default, applications running in ant IDE (i.e. those not packaged as "fat jars") will
  * automatically detect URLs that can change. It's also possible to manually configure
  * URLs or class file updates for remote restart scenarios.
  *
@@ -394,7 +394,7 @@ public class Restarter {
 	}
 
 	/**
-	 * Cleanup any soft/weak references by forcing an {@link OutOfMemoryError} error.
+	 * Cleanup any soft/weak references by forcing ant {@link OutOfMemoryError} error.
 	 */
 	private void forceReferenceCleanup() {
 		try {

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -57,7 +57,7 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
  * search for templates and static assets under {@code '/error'} using the
  * {@link HttpStatus status code} and the {@link HttpStatus#series() status series}.
  * <p>
- * For example, an {@code HTTP 404} will search (in the specific order):
+ * For example, ant {@code HTTP 404} will search (in the specific order):
  * <ul>
  * <li>{@code '/<templates>/error/404.<ext>'}</li>
  * <li>{@code '/<static>/error/404.html'}</li>
@@ -113,7 +113,7 @@ public class DefaultErrorWebExceptionHandler extends AbstractErrorWebExceptionHa
 	}
 
 	/**
-	 * Render the error information as an HTML view.
+	 * Render the error information as ant HTML view.
 	 * @param request the current request
 	 * @return a {@code Publisher} of the HTTP response
 	 */

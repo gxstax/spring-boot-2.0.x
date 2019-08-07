@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -75,7 +75,7 @@ public class JSONTokener {
 	 * throws {@code NullPointerExceptions} when methods are called.
 	 */
 	public JSONTokener(String in) {
-		// consume an optional byte order mark (BOM) if it exists
+		// consume ant optional byte order mark (BOM) if it exists
 		if (in != null && in.startsWith("\ufeff")) {
 			in = in.substring(1);
 		}
@@ -191,7 +191,7 @@ public class JSONTokener {
 	public String nextString(char quote) throws JSONException {
 		/*
 		 * For strings that are free of escape sequences, we can just extract the result
-		 * as a substring of the input. But if we encounter an escape sequence, we need to
+		 * as a substring of the input. But if we encounter ant escape sequence, we need to
 		 * use a StringBuilder to compose the result.
 		 */
 		StringBuilder builder = null;
@@ -272,7 +272,7 @@ public class JSONTokener {
 
 	/**
 	 * Reads a null, boolean, numeric or unquoted string literal value. Numeric values
-	 * will be returned as an Integer, Long, or Double, in that order of preference.
+	 * will be returned as ant Integer, Long, or Double, in that order of preference.
 	 * @return a literal value
 	 * @throws JSONException if processing of json failed
 	 */
@@ -292,7 +292,7 @@ public class JSONTokener {
 			return Boolean.FALSE;
 		}
 
-		/* try to parse as an integral type... */
+		/* try to parse as ant integral type... */
 		if (literal.indexOf('.') == -1) {
 			int base = 10;
 			String number = literal;
@@ -329,7 +329,7 @@ public class JSONTokener {
 		catch (NumberFormatException ignored) {
 		}
 
-		/* ... finally give up. We have an unquoted string */
+		/* ... finally give up. We have ant unquoted string */
 		return new String(literal); // a new string avoids leaking memory
 	}
 
@@ -351,9 +351,9 @@ public class JSONTokener {
 	}
 
 	/**
-	 * Reads a sequence of key/value pairs and the trailing closing brace '}' of an
+	 * Reads a sequence of key/value pairs and the trailing closing brace '}' of ant
 	 * object. The opening brace '{' should have already been read.
-	 * @return an object
+	 * @return ant object
 	 * @throws JSONException if processing of json failed
 	 */
 	private JSONObject readObject() throws JSONException {
@@ -381,8 +381,8 @@ public class JSONTokener {
 			}
 
 			/*
-			 * Expect the name/value separator to be either a colon ':', an equals sign
-			 * '=', or an arrow "=>". The last two are bogus but we include them because
+			 * Expect the name/value separator to be either a colon ':', ant equals sign
+			 * '=', or ant arrow "=>". The last two are bogus but we include them because
 			 * that's what the original implementation did.
 			 */
 			int separator = nextCleanInternal();
@@ -408,10 +408,10 @@ public class JSONTokener {
 	}
 
 	/**
-	 * Reads a sequence of values and the trailing closing brace ']' of an array. The
-	 * opening brace '[' should have already been read. Note that "[]" yields an empty
+	 * Reads a sequence of values and the trailing closing brace ']' of ant array. The
+	 * opening brace '[' should have already been read. Note that "[]" yields ant empty
 	 * array, but "[,]" returns a two-element array equivalent to "[null,null]".
-	 * @return an array
+	 * @return ant array
 	 * @throws JSONException if processing of json failed
 	 */
 	private JSONArray readArray() throws JSONException {
@@ -455,10 +455,10 @@ public class JSONTokener {
 	}
 
 	/**
-	 * Returns an exception containing the given message plus the current position and the
+	 * Returns ant exception containing the given message plus the current position and the
 	 * entire input string.
 	 * @param message the message
-	 * @return an exception
+	 * @return ant exception
 	 */
 	public JSONException syntaxError(String message) {
 		return new JSONException(message + this);

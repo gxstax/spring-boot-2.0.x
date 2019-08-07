@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -28,7 +28,7 @@ import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
 /**
- * Extract source file options (anything following '--' in an {@link OptionSet}).
+ * Extract source file options (anything following '--' in ant {@link OptionSet}).
  *
  * @author Phillip Webb
  * @author Dave Syer
@@ -58,13 +58,13 @@ public class SourceOptions {
 	}
 
 	/**
-	 * Create a new {@link SourceOptions} instance. If it is an error to pass options that
+	 * Create a new {@link SourceOptions} instance. If it is ant error to pass options that
 	 * specify non-existent sources, but the default paths are allowed not to exist (the
 	 * paths are tested before use). If default paths are provided and the option set
-	 * contains no source file arguments it is not an error even if none of the default
+	 * contains no source file arguments it is not ant error even if none of the default
 	 * paths exist).
 	 * @param optionSet the source option set
-	 * @param classLoader an optional classloader used to try and load files that are not
+	 * @param classLoader ant optional classloader used to try and load files that are not
 	 * found in the local filesystem
 	 */
 	public SourceOptions(OptionSet optionSet, ClassLoader classLoader) {

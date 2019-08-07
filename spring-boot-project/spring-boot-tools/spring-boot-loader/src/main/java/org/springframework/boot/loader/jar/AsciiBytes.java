@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -19,7 +19,7 @@ package org.springframework.boot.loader.jar;
 import java.nio.charset.StandardCharsets;
 
 /**
- * Simple wrapper around a byte array that represents an ASCII. Used for performance
+ * Simple wrapper around a byte array that represents ant ASCII. Used for performance
  * reasons to save constructing Strings for ZIP data.
  *
  * @author Phillip Webb
@@ -243,7 +243,7 @@ final class AsciiBytes {
 	public static int hashCode(CharSequence charSequence) {
 		// We're compatible with String's hashCode()
 		if (charSequence instanceof StringSequence) {
-			// ... but save making an unnecessary String for StringSequence
+			// ... but save making ant unnecessary String for StringSequence
 			return charSequence.hashCode();
 		}
 		return charSequence.toString().hashCode();

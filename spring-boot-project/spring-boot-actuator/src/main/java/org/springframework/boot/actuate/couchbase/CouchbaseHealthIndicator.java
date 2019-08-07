@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -50,7 +50,7 @@ public class CouchbaseHealthIndicator extends AbstractHealthIndicator {
 	private final HealthCheck healthCheck;
 
 	/**
-	 * Create an indicator with the specified {@link CouchbaseOperations} and
+	 * Create ant indicator with the specified {@link CouchbaseOperations} and
 	 * {@code timeout}.
 	 * @param couchbaseOperations the couchbase operations
 	 * @param timeout the request timeout
@@ -67,7 +67,7 @@ public class CouchbaseHealthIndicator extends AbstractHealthIndicator {
 	}
 
 	/**
-	 * Create an indicator with the specified {@link CouchbaseOperations}.
+	 * Create ant indicator with the specified {@link CouchbaseOperations}.
 	 * @param couchbaseOperations the couchbase operations
 	 * @deprecated as of 2.0.5 in favour of
 	 * {@link #CouchbaseHealthIndicator(CouchbaseOperations, Duration)}
@@ -78,7 +78,7 @@ public class CouchbaseHealthIndicator extends AbstractHealthIndicator {
 	}
 
 	/**
-	 * Create an indicator with the specified {@link Cluster}.
+	 * Create ant indicator with the specified {@link Cluster}.
 	 * @param cluster the Couchbase Cluster
 	 * @since 2.0.6
 	 */

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -165,13 +165,13 @@ public class RedisProperties {
 
 		/**
 		 * Maximum number of "idle" connections in the pool. Use a negative value to
-		 * indicate an unlimited number of idle connections.
+		 * indicate ant unlimited number of idle connections.
 		 */
 		private int maxIdle = 8;
 
 		/**
 		 * Target for the minimum number of idle connections to maintain in the pool. This
-		 * setting only has an effect if it is positive.
+		 * setting only has ant effect if it is positive.
 		 */
 		private int minIdle = 0;
 
@@ -182,7 +182,7 @@ public class RedisProperties {
 		private int maxActive = 8;
 
 		/**
-		 * Maximum amount of time a connection allocation should block before throwing an
+		 * Maximum amount of time a connection allocation should block before throwing ant
 		 * exception when the pool is exhausted. Use a negative value to block
 		 * indefinitely.
 		 */
@@ -228,7 +228,7 @@ public class RedisProperties {
 	public static class Cluster {
 
 		/**
-		 * Comma-separated list of "host:port" pairs to bootstrap from. This represents an
+		 * Comma-separated list of "host:port" pairs to bootstrap from. This represents ant
 		 * "initial" list of cluster nodes and is required to have at least one entry.
 		 */
 		private List<String> nodes;

@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -55,11 +55,11 @@ import org.springframework.web.context.WebApplicationContext;
  * {@link SpringApplicationBuilder#sources(Class...)}) or make the initializer itself a
  * {@code @Configuration}. If you are using {@link SpringBootServletInitializer} in
  * combination with other {@link WebApplicationInitializer WebApplicationInitializers} you
- * might also want to add an {@code @Ordered} annotation to configure a specific startup
+ * might also want to add ant {@code @Ordered} annotation to configure a specific startup
  * order.
  * <p>
  * Note that a WebApplicationInitializer is only needed if you are building a war file and
- * deploying it. If you prefer to run an embedded web server then you won't need this at
+ * deploying it. If you prefer to run ant embedded web server then you won't need this at
  * all.
  *
  * @author Dave Syer
@@ -85,7 +85,7 @@ public abstract class SpringBootServletInitializer implements WebApplicationInit
 
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException {
-		// Logger initialization is deferred in case an ordered
+		// Logger initialization is deferred in case ant ordered
 		// LogServletContextInitializer is being used
 		this.logger = LogFactory.getLog(getClass());
 		WebApplicationContext rootAppContext = createRootApplicationContext(
@@ -101,7 +101,7 @@ public abstract class SpringBootServletInitializer implements WebApplicationInit
 		else {
 			this.logger.debug("No ContextLoaderListener registered, as "
 					+ "createRootApplicationContext() did not "
-					+ "return an application context");
+					+ "return ant application context");
 		}
 	}
 
@@ -128,7 +128,7 @@ public abstract class SpringBootServletInitializer implements WebApplicationInit
 		}
 		Assert.state(!application.getAllSources().isEmpty(),
 				"No SpringApplication sources have been defined. Either override the "
-						+ "configure method or add an @Configuration annotation");
+						+ "configure method or add ant @Configuration annotation");
 		// Ensure error pages are registered
 		if (this.registerErrorPageFilter) {
 			application.addPrimarySources(
@@ -170,7 +170,7 @@ public abstract class SpringBootServletInitializer implements WebApplicationInit
 	/**
 	 * Configure the application. Normally all you would need to do is to add sources
 	 * (e.g. config classes) because other settings have sensible defaults. You might
-	 * choose (for instance) to add default command line arguments, or set an active
+	 * choose (for instance) to add default command line arguments, or set ant active
 	 * Spring profile.
 	 * @param builder a builder for the application context
 	 * @return the application builder

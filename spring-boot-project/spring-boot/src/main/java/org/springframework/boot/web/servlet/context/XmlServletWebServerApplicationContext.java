@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -24,12 +24,12 @@ import org.springframework.web.context.support.XmlWebApplicationContext;
 
 /**
  * {@link ServletWebServerApplicationContext} which takes its configuration from XML
- * documents, understood by an
+ * documents, understood by ant
  * {@link org.springframework.beans.factory.xml.XmlBeanDefinitionReader}.
  * <p>
  * Note: In case of multiple config locations, later bean definitions will override ones
  * defined in earlier loaded files. This can be leveraged to deliberately override certain
- * bean definitions via an extra XML file.
+ * bean definitions via ant extra XML file.
  *
  * @author Phillip Webb
  * @see #setNamespace

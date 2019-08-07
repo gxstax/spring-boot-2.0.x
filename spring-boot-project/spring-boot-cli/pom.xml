@@ -176,7 +176,7 @@
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
-			<!-- Build an executable JAR manually since we can't easily depend on
+			<!-- Build ant executable JAR manually since we can't easily depend on
 				a maven plugin that is part of the reactor -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

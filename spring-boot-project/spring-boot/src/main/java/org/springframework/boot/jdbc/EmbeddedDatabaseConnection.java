@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -101,7 +101,7 @@ public enum EmbeddedDatabaseConnection {
 	}
 
 	/**
-	 * Convenience method to determine if a given driver class name represents an embedded
+	 * Convenience method to determine if a given driver class name represents ant embedded
 	 * database type.
 	 * @param driverClass the driver class
 	 * @return true if the driver class is one of the embedded types
@@ -113,7 +113,7 @@ public enum EmbeddedDatabaseConnection {
 	}
 
 	/**
-	 * Convenience method to determine if a given data source represents an embedded
+	 * Convenience method to determine if a given data source represents ant embedded
 	 * database type.
 	 * @param dataSource the data source to interrogate
 	 * @return true if the data source is one of the embedded types
@@ -132,7 +132,7 @@ public enum EmbeddedDatabaseConnection {
 	 * Returns the most suitable {@link EmbeddedDatabaseConnection} for the given class
 	 * loader.
 	 * @param classLoader the class loader used to check for classes
-	 * @return an {@link EmbeddedDatabaseConnection} or {@link #NONE}.
+	 * @return ant {@link EmbeddedDatabaseConnection} or {@link #NONE}.
 	 */
 	public static EmbeddedDatabaseConnection get(ClassLoader classLoader) {
 		for (EmbeddedDatabaseConnection candidate : EmbeddedDatabaseConnection.values()) {

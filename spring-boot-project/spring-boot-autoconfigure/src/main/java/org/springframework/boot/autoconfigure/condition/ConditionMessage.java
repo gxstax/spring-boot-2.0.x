@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -81,7 +81,7 @@ public final class ConditionMessage {
 	}
 
 	/**
-	 * Return a new {@link ConditionMessage} based on the instance and an appended
+	 * Return a new {@link ConditionMessage} based on the instance and ant appended
 	 * message.
 	 * @param message the message to append
 	 * @return a new {@link ConditionMessage} instance
@@ -207,7 +207,7 @@ public final class ConditionMessage {
 		}
 
 		/**
-		 * Indicate that an exact result was found. For example
+		 * Indicate that ant exact result was found. For example
 		 * {@code foundExactly("foo")} results in the message "found foo".
 		 * @param result the result that was found
 		 * @return a built {@link ConditionMessage}
@@ -220,7 +220,7 @@ public final class ConditionMessage {
 		 * Indicate that one or more results were found. For example
 		 * {@code found("bean").items("x")} results in the message "found bean x".
 		 * @param article the article found
-		 * @return an {@link ItemsBuilder}
+		 * @return ant {@link ItemsBuilder}
 		 */
 		public ItemsBuilder found(String article) {
 			return found(article, article);
@@ -232,7 +232,7 @@ public final class ConditionMessage {
 		 * beans x, y".
 		 * @param singular the article found in singular form
 		 * @param plural the article found in plural form
-		 * @return an {@link ItemsBuilder}
+		 * @return ant {@link ItemsBuilder}
 		 */
 		public ItemsBuilder found(String singular, String plural) {
 			return new ItemsBuilder(this, "found", singular, plural);
@@ -243,7 +243,7 @@ public final class ConditionMessage {
 		 * {@code didNotFind("bean").items("x")} results in the message "did not find bean
 		 * x".
 		 * @param article the article found
-		 * @return an {@link ItemsBuilder}
+		 * @return ant {@link ItemsBuilder}
 		 */
 		public ItemsBuilder didNotFind(String article) {
 			return didNotFind(article, article);
@@ -255,7 +255,7 @@ public final class ConditionMessage {
 		 * not find beans x, y".
 		 * @param singular the article found in singular form
 		 * @param plural the article found in plural form
-		 * @return an {@link ItemsBuilder}
+		 * @return ant {@link ItemsBuilder}
 		 */
 		public ItemsBuilder didNotFind(String singular, String plural) {
 			return new ItemsBuilder(this, "did not find", singular, plural);

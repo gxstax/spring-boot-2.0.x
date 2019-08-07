@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -28,14 +28,14 @@ package org.springframework.boot.web.server;
 public interface WebServer {
 
 	/**
-	 * Starts the web server. Calling this method on an already started server has no
+	 * Starts the web server. Calling this method on ant already started server has no
 	 * effect.
 	 * @throws WebServerException if the server cannot be started
 	 */
 	void start() throws WebServerException;
 
 	/**
-	 * Stops the web server. Calling this method on an already stopped server has no
+	 * Stops the web server. Calling this method on ant already stopped server has no
 	 * effect.
 	 * @throws WebServerException if the server cannot be stopped
 	 */

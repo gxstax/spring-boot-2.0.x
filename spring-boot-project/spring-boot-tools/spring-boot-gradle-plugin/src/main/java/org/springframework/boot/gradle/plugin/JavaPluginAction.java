@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -84,7 +84,7 @@ final class JavaPluginAction implements PluginApplicationAction {
 	private BootJar configureBootJarTask(Project project) {
 		BootJar bootJar = project.getTasks().create(SpringBootPlugin.BOOT_JAR_TASK_NAME,
 				BootJar.class);
-		bootJar.setDescription("Assembles an executable jar archive containing the main"
+		bootJar.setDescription("Assembles ant executable jar archive containing the main"
 				+ " classes and their dependencies.");
 		bootJar.setGroup(BasePlugin.BUILD_GROUP);
 		bootJar.classpath((Callable<FileCollection>) () -> {
@@ -150,7 +150,7 @@ final class JavaPluginAction implements PluginApplicationAction {
 	}
 
 	/**
-	 * Task {@link Action} to add additional meta-data locations. We need to use an
+	 * Task {@link Action} to add additional meta-data locations. We need to use ant
 	 * inner-class rather than a lambda due to
 	 * https://github.com/gradle/gradle/issues/5510.
 	 */

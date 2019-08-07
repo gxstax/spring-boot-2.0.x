@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -26,7 +26,7 @@ import org.springframework.boot.origin.OriginTrackedValue;
  * A {@link ConfigurationPropertySource} with a fully {@link Iterable} set of entries.
  * Implementations of this interface <strong>must</strong> be able to iterate over all
  * contained configuration properties. Any {@code non-null} result from
- * {@link #getConfigurationProperty(ConfigurationPropertyName)} must also have an
+ * {@link #getConfigurationProperty(ConfigurationPropertyName)} must also have ant
  * equivalent entry in the {@link #iterator() iterator}.
  *
  * @author Phillip Webb
@@ -42,9 +42,9 @@ public interface IterableConfigurationPropertySource
 		extends ConfigurationPropertySource, Iterable<ConfigurationPropertyName> {
 
 	/**
-	 * Return an iterator for the {@link ConfigurationPropertyName names} managed by this
+	 * Return ant iterator for the {@link ConfigurationPropertyName names} managed by this
 	 * source.
-	 * @return an iterator (never {@code null})
+	 * @return ant iterator (never {@code null})
 	 */
 	@Override
 	default Iterator<ConfigurationPropertyName> iterator() {

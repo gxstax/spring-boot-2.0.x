@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
+ * distributed under the License is distributed on ant "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
@@ -81,7 +81,7 @@ class SpringApplicationAdminClient {
 	/**
 	 * Stop the application managed by this instance.
 	 * @throws MojoExecutionException if the JMX service could not be contacted
-	 * @throws IOException if an I/O error occurs
+	 * @throws IOException if ant I/O error occurs
 	 * @throws InstanceNotFoundException if the lifecycle mbean cannot be found
 	 */
 	public void stop()
@@ -107,7 +107,7 @@ class SpringApplicationAdminClient {
 	}
 
 	/**
-	 * Create a connector for an {@link javax.management.MBeanServer} exposed on the
+	 * Create a connector for ant {@link javax.management.MBeanServer} exposed on the
 	 * current machine and the current port. Security should be disabled.
 	 * @param port the port on which the mbean server is exposed
 	 * @return a connection
